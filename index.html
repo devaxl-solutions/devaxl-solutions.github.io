@@ -1,465 +1,1008 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
   <!-- Basic Page Needs
 ================================================== -->
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Devaxl -Development Accelerated</title>
 
   <!-- Mobile Specific Metas
 ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Construction Html5 Template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <link rel="icon" type="image/png" href="images/devaxlWhiteLogo.svg" />
   <!-- CSS
 ================================================== -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
   <!-- Animation -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="plugins/animate-css/animate.css" />
   <!-- slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css" />
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
   <!-- Colorbox -->
-  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css" />
   <!-- Template styles-->
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- POppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- POppins Font  end-->
 </head>
+
 <body>
   <div class="body-inner">
-
-    <div id="top-bar" class="top-bar">
+    <!-- Header start -->
+    <header id="header" class="header-one">
+      <div id="top-bar" class="bg-white top-bar">
         <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-md-8">
-                <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Lahore, Pakistan</p>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top info end -->
-  
-              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-                <ul class="list-unstyled">
-                    <li>
-                      <a title="Facebook" href="https://facebbok.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                      </a>
-                      <a title="Twitter" href="https://twitter.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
-                      </a>
-                      <a title="Instagram" href="https://instagram.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                      </a>
-                      <a title="Linkdin" href="https://github.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-github"></i></span>
-                      </a>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top social end -->
-          </div>
-          <!--/ Content row end -->
-        </div>
-        <!--/ Container end -->
-    </div>
-    <!--/ Topbar end -->
-<!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+          <div class="logo-area">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                 <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="Constra">
+                  <img loading="lazy" src="./images/logo.png" id="logo" alt="Devaxl" />
                 </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
+              </div>
+              <!-- logo end -->
+
+              <div class="col-lg-9 header-right">
                 <ul class="top-info-box">
                   <li>
                     <div class="info-box">
                       <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle"><a href="tel:(+9) 847-291-4353">+92-311-4970728</a></p>
+                        <p class="info-box-title">Call Us</p>
+                        <p class="info-box-subtitle">
+                          <a href="tel:(+9) 847-291-4353">+92-311-4970728</a>
+                        </p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="info-box">
                       <div class="info-box-content">
-                          <p class="info-box-title">Email Us</p>
-                          <p class="info-box-subtitle"><a href="mailto:office@Constra.com">office@devaxl.com</a></p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="last">
-                    <div class="info-box last">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Mon-Fri 9:00-08:00</p>
-                          <p class="info-box-subtitle">Saturday,Sunday Closed</p>
+                        <p class="info-box-title">Email Us</p>
+                        <p class="info-box-subtitle">
+                          <a href="mailto:sales@devaxl.com">sales@devaxl.com</a>
+                        </p>
                       </div>
                     </div>
                   </li>
                   <li class="header-get-a-quote">
                     <a class="btn btn-primary" href="contact.html">Get A Quote</a>
                   </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
-
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
-
-<div class="banner-carousel banner-carousel-1 mb-0">
-  <div class="banner-carousel-item" style="background-color:#252525">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                <h2 class="slide-title-box" data-animation-in="slideInDown">World Class Service</h2>
-                <h3 class="slide-sub-title" data-animation-in="slideInLeft">Web Application Development</h3>
-                <h3 class="slide-title" data-animation-in="fadeIn">Devaxl is expert in web application development, we take care of everything, from development to deployment and maintenance.</h3>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="services.html" class="slider btn btn-primary">Our Services</a>
-                    <a href="contact.html" class="slider btn btn-primary border">Get Free Quote</a>
-                </p>
+                </ul>
+                <!-- Ul end -->
               </div>
+              <!-- header right end -->
+            </div>
+            <!-- logo area end -->
           </div>
+          <!-- Row end -->
         </div>
-    </div>
-  </div>
+        <!-- Container end -->
+      </div>
+      <div class="site-navigation" style="background: rgba(22, 22, 23, 0.8)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-  <div class="banner-carousel-item" style="background-color:#252525">
-    <div class="slider-content text-left">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h3 class="slide-sub-title" data-animation-in="slideInLeft">Mobile Application Development</h3>
-                <h3 class="slide-title" data-animation-in="fadeIn">Devaxl provides one stop solution for your mobile development needs.</h3>
-                <p data-animation-in="slideInRight">
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="#main-container" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="#servicedevaxl" class="nav-link">Services</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="#testimonialdevaxl" class="nav-link">Testimonial</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="team.html" class="nav-link">Our Team</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!--/ Col end -->
+          </div>
+          <!--/ Row end -->
+
+          <!-- Site search end -->
+        </div>
+        <!--/ Container end -->
+      </div>
+      <!--/ Navigation end -->
+    </header>
+    <!--/ Social Media icon -->
+          <div class="sticky-icon">
+                  <a href="https://www.instagram.com/?hl=en" class="skype">
+                    <i class="fab fa-skype"></i> Skype 
+                  </a>
+                  <a href="https://www.facebook.com/" class="Facebook">
+                    <i class="fab fa-facebook-f"> </i> Facebook 
+                  </a>
+                  <a href="https://aboutme.google.com/u/0/?referer=gplus" class="linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn  
+                  </a>
+                  <a href="https://www.youtube.com/" class="github"> <i class="fab fa-github"></i>GitHub 
+                  </a>
+          </div>
+
+    <div class="banner-carousel position-relative banner-carousel-1 mb-5">
+      <div class="banner-carousel-item" style="background-color: #000000">
+        <div class="slider-content">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h2 class="slide-title-box" data-animation-in="slideInDown">
+                  World Class Service
+                </h2>
+                <h3 class="slide-sub-title" data-animation-in="slideInLeft">
+                  Web Application Development
+                </h3>
+                <h3 class="slide-title" data-animation-in="fadeIn">
+                  Devaxl is expert in web application development, we take
+                  care of everything, from development to deployment and
+                  maintenance.
+                </h3>
+                <p data-animation-in="slideInLeft" data-duration-in="1.2">
                   <a href="services.html" class="slider btn btn-primary">Our Services</a>
                   <a href="contact.html" class="slider btn btn-primary border">Get Free Quote</a>
                 </p>
-              </div>
+           
+            </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <div class="banner-carousel-item" style="background-color:#252525">
-    <div class="slider-content text-right">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h2 class="slide-title" data-animation-in="slideInDown">Work With Our Engineers</h2>
-                <h3 class="slide-sub-title" data-animation-in="fadeIn">Dedicated Development Teams</h3>
-                <p class="slider-description lead" data-animation-in="slideInRight">Get complete control over your technical teams. With us you work with dedicated teams for your specific project.</p>
+      <div class="banner-carousel-item" style="background-color: #000000">
+        <div class="slider-content">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h3 class="slide-sub-title" data-animation-in="slideInLeft">
+                  Mobile Application Development
+                </h3>
+                <h3 class="slide-title" data-animation-in="fadeIn">
+                  Devaxl provides one stop solution for your mobile
+                  development needs.
+                </h3>
+                <p data-animation-in="slideInRight">
+                  <a href="#servicedevaxl" class="slider btn btn-primary">Our Services</a>
+                  <a href="contact.html" class="slider btn btn-primary border">Get Free Quote</a>
+                </p>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-carousel-item" style="background-color: #000000">
+        <div class="slider-content">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h2 class="slide-title" data-animation-in="slideInDown">
+                  Work With Our Engineers
+                </h2>
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">
+                  Dedicated Development Teams
+                </h3>
+                <p class="slider-description lead" data-animation-in="slideInRight">
+                  Get complete control over your technical teams. With us you
+                  work with dedicated teams for your specific project.
+                </p>
                 <div data-animation-in="slideInLeft">
-                    <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
-                    <a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn more</a>
+                  <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
+                  <a href="#" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn more!</a>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-    </div>
-  </div>
+      </div>
 
-  <div class="banner-carousel-item" style="background-color:#252525">
-    <div class="slider-content text-right">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h2 class="slide-title" data-animation-in="slideInDown">We get it, most of our clients started "smaller"</h2>
-                <h3 class="slide-sub-title" data-animation-in="fadeIn">Our STEP-UP Program</h3>
-                <p class="slider-description lead" data-animation-in="slideInRight">Let's start small, see some results. Once we see that it's working, we can look at stepping up down the road.</p>
+      <div class="banner-carousel-item" style="background-color: #000000">
+        <div class="slider-content">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h2 class="slide-title" data-animation-in="slideInDown">
+                  We get it, most of our clients started "smaller"
+                </h2>
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">
+                  Our STEP-UP Program
+                </h3>
+                <p class="slider-description lead" data-animation-in="slideInRight">
+                  Let's start small, see some results. Once we see that it's
+                  working, we can look at stepping up down the road.
+                </p>
                 <div data-animation-in="slideInLeft">
-                    <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
-                    <a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn more</a>
+                  <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
+                  <a href="#" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn
+                    more</a>
                 </div>
+               
               </div>
+            </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<section class="call-to-action-box no-padding">
-  <div class="container">
-    <div class="action-style-box">
-        <div class="row align-items-center">
-          <div class="col-md-8 text-center text-md-left">
-              <div class="call-to-action-text">
-                <h3 class="action-title">We understand your busniess needs</h3>
-              </div>
-          </div><!-- Col end -->
-          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-              <div class="call-to-action-btn">
-                <a class="btn btn-dark" href="#">Request Free Quote</a>
-              </div>
-          </div><!-- col end -->
-        </div><!-- row end -->
-    </div><!-- Action style box -->
-  </div><!-- Container end -->
-</section><!-- Action end -->
-
-<section id="ts-features" class="ts-features">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-          <div class="ts-intro">
-              <h2 class="into-title">About Us</h2>
-              <h3 class="into-sub-title">We deliver astonishing projects</h3>
-              <p>Devaxl is focusing exclusively in high quality and cost-effective software development and implementation of services. We are advancing on a tremendous pace and with involvement of skilled and experienced people working in the organization.</p>
-          </div><!-- Intro box end -->
-
-          <div class="gap-20"></div>
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-trophy"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We've Repution for Excellence</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-sliders-h"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We Build Partnerships</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-thumbs-up"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Guided by Commitment</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-users"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">A Team of Professionals</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-        </div><!-- Col end -->
-
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <h3 class="into-sub-title">Client Profile our "best fit"</h3>
-          <p>We serve clients of all sizes.  However, we are particularly well suited to help clients of these
-            types.</p>
-
-          <div class="accordion accordion-group" id="our-values-accordion">
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        RESULTS-DRIVEN / GOAL-ORIENTED
-                      </button>
-                    </h2>
-                </div>
-              
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      We tend to work best with companies who are results-driven and are interested in setting real goals 
-and meeting objectives.
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        SKEPTICAL BUT WILLING
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Most of our clients have already worked with other agencies who have underperformed.  This creates 
-a “healthy
-skepticism”.   We thrive on this ... as long as it hasn't killed your faith completely.
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        AGGRESSIVE GOALS
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      The more aggressive  you are with  your goals, the more excited we  get.  lt's fun for us to work  
-with companies  that want to dominate  their market.
-                    </div>
-                </div>
-              </div>
+    <section id="servicedevaxl" class="ts-service-area pb-0">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3 class="section-sub-title mt-2">What We offer</h3>
           </div>
-          <!--/ Accordion end -->
+        </div>
+        <!--/ Title row end -->
 
-        </div><!-- Col end -->
-    </div><!-- Row end -->
-  </div><!-- Container end -->
-</section><!-- Feature are end -->
+        <div id="custom-services-container">
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/mob.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">Mobile Application</a>
+                </h3>
+                <p>
+                  Mobile application services are more than code – they're a
+                  gateway to innovation. We bring your vision to life on every
+                  screen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 1 end -->
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/web.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">Web Application</a>
+                </h3>
+                <p>
+                  we transform ideas into interactive experiences, cultivating
+                  a dynamic online presence that resonates with innovation and
+                  user-centric design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2 start -->
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/cloud.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">Cloud Services</a>
+                </h3>
+                <p>
+                  We offers scalable and on-demand computing resources,
+                  storage, and services over the internet allowing users to
+                  efficiently manage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/uiux.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">UI/UX Design</a>
+                </h3>
+                <p>
+                  Providing comprehensive UI/UX services, we specialize in
+                  crafting visually appealing and intuitive user interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 1 end -->
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/devops.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">DevOps</a>
+                </h3>
+                <p>
+                  Delivering DevOps solutions for streamlined software
+                  development and IT operations, we automate processes, foster
+                  collaboration..
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2 start -->
+          <div class="custom-service-item" id="custom-border-services">
+            <div class="ts-service-box gapServices d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/buissness.svg" alt="service-icon" />
+              </div>
+              <div class="">
+                <h3 class="service-box-title">
+                  <a href="#">Business Solutions</a>
+                </h3>
+                <p>
+                  Tailoring business solutions to drive efficiency and growth,
+                  our services integrate technology and strategy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2 end -->
 
-<section id="facts" class="facts-area dark-bg">
-  <div class="container">
-    <div class="facts-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 ts-facts">
+          <!-- Service 6 end -->
+        </div>
+
+        <!-- Content row end -->
+      </div>
+      <!--/ Container end -->
+    </section>
+    <!-- Service end -->
+    <section id="facts" style="background: #000000" class="section-padding facts-area mt-5">
+      <div class="container">
+        <div class="facts-wrapper">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 ts-facts">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img" />
               </div>
               <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="17">0</span></h2>
+                <h2 class="ts-facts-num">
+                  <span class="counterUp" data-count="17">0</span>
+                </h2>
                 <h3 class="ts-facts-title">Total Projects</h3>
               </div>
-          </div><!-- Col end -->
+            </div>
+            <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img" />
               </div>
               <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="11">0</span></h2>
+                <h2 class="ts-facts-num">
+                  <span class="counterUp" data-count="11">0</span>
+                </h2>
                 <h3 class="ts-facts-title">Staff Members</h3>
               </div>
-          </div><!-- Col end -->
+            </div>
+            <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img" />
               </div>
               <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="6500">0</span></h2>
+                <h2 class="ts-facts-num">
+                  <span class="counterUp" data-count="6500">0</span>
+                </h2>
                 <h3 class="ts-facts-title">Hours of Work</h3>
               </div>
-          </div><!-- Col end -->
+            </div>
+            <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img" />
               </div>
               <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="7">0</span></h2>
+                <h2 class="ts-facts-num">
+                  <span class="counterUp" data-count="7">0</span>
+                </h2>
                 <h3 class="ts-facts-title">Countries Experience</h3>
               </div>
-          </div><!-- Col end -->
-
-        </div> <!-- Facts end -->
-    </div>
-    <!--/ Content row end -->
-  </div>
-  <!--/ Container end -->
-</section><!-- Facts end -->
-<!--/ News end -->
-
-  <footer id="footer" class="footer bg-overlay">
-    <div class="footer-main">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-4 col-md-6 footer-widget footer-about">
-            <h3 class="widget-title">About Us</h3>
-            <p>Devaxl is focusing exclusively in high quality and cost-effective software development and implementation of services.</p>
-            <div class="footer-social">
-              <ul>
-                <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
-                      class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
-                      class="fab fa-instagram"></i></a></li>
-                <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
-              </ul>
-            </div><!-- Footer social end -->
-          </div><!-- Col end -->
-
-          <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
-            <h3 class="widget-title">Working Hours</h3>
-            <div class="working-hours">
-              We work 5 days a week, every day excluding major holidays. Contact us if you have an emergency, with our
-              Hotline and Contact form.
-              <br><br> Monday - Friday: <span class="text-right">9:00 - 19:00 </span>
             </div>
-          </div><!-- Col end -->
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-            <h3 class="widget-title">Services</h3>
-            <ul class="list-arrow">
-              <li><a href="index.html">Web App Development</a></li>
-              <li><a href="index.html">Mobile App Development</a></li>
-              <li><a href="index.html">Dedicated Development Teams</a></li>
-            </ul>
-          </div><!-- Col end -->
-        </div><!-- Row end -->
-      </div><!-- Container end -->
-    </div><!-- Footer main end -->
-
-    <div class="copyright">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="copyright-info text-center text-md-left">
-              <span>Copyright &copy; <script>
-                  document.write(new Date().getFullYear())
-                </script>, Designed &amp; Developed by <a href="https://devaxl.com">Devaxl</a></span>
-            </div>
+            <!-- Col end -->
           </div>
-        </div><!-- Row end -->
-
-        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
-          <button class="btn btn-primary" title="Back to Top">
-            <i class="fa fa-angle-double-up"></i>
-          </button>
+          <!-- Facts end -->
         </div>
+        <!--/ Content row end -->
+      </div>
+      <!--/ Container end -->
+    </section>
+    <!-- Facts end -->
+    <section id="main-container" class="main-container pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h3 class="section-sub-title mt-5">Recent Projects</h3>
+          </div>
+        </div>
+        <!--/ Title row end -->
 
-      </div><!-- Container end -->
-    </div><!-- Copyright end -->
-  </footer><!-- Footer end -->
+        <div class="row">
+          <div class="col-12">
+            <div class="shuffle-btn-group">
+              <label class="active" for="all">
+                <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked" />Show All
+              </label>
+              <label for="commercial">
+                <input type="radio" name="shuffle-filter" id="commercial" value="commercial" />Health
+              </label>
+              <label for="education">
+                <input type="radio" name="shuffle-filter" id="education" value="education" />Transport
+              </label>
+            </div>
+            <!-- project filter end -->
 
+            <div class="shuffle-wrapper project-wrapper">
+              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups='["government","healthcare"]'>
+                <div class="project-img-container">
+                  <a class="gallery-popup" href="images/projects/Apolloe.png" aria-label="project-img">
+                    <img class="img-fluid" src="images/projects/Apolloe.png" alt="project-img" />
+                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                  </a>
+                  <div class="project-item-info">
+                    <div class="project-item-info-content">
+                      <h3 class="project-item-title text-white">
+                        Apolloe
+                      </h3>
+                      <p class="project-cat" onclick="document.location='project-apolloe.html'"">
+                      BRANDING, WEBDESIGN, WEB DEVELOPMENT
+                      </p>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+<!-- shuffle item 1 end -->
+
+               <div class=" col-lg-4 col-sm-6 shuffle-item" data-groups='["healthcare"]'>
+                      <div class="project-img-container">
+                        <a class="gallery-popup" href="images/projects/authorityAlert.png" aria-label="project-img">
+                          <img class="img-fluid" src="images/projects/authorityAlert.png" alt="project-img" />
+                          <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                        </a>
+                        <div class="project-item-info">
+                          <div class="project-item-info-content">
+                            <h3 class="project-item-title text-white">
+                              Authority Alert 
+                            </h3>
+                            <p class="project-cat" onclick="document.location='project-authorityalert.html'""> 
+
+                              WEBDESIGN, WEB DEVELOPMENT
+                              </p>
+                            </div>
+                            </div>
+                            </div>
+              </div>
+                              <!-- shuffle item 2 end -->
+
+                  <div class=" col-lg-4 col-sm-6 shuffle-item" data-groups='["infrastructure","commercial"]'>
+                      <div class="project-img-container">
+                        <a class="gallery-popup" href="images/projects/career network.png"
+                          aria-label="project-img">
+                          <img class="img-fluid" src="images/projects/career network.png" alt="project-img" />
+                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                      </a>
+                  <div class="project-item-info">
+                    <div class="project-item-info-content">
+                      <h3 class="project-item-title text-white">
+                        Carrier Network
+                      </h3>
+                      <p class="project-cat" onclick="document.location='project-careernetwork.html'"">
+                          WEB DEVELOPMENT, WEBDESIGN
+                      </p>
+
+
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+    <!-- shuffle item 3 end -->
+
+                  <div class=" col-lg-4 col-sm-6 shuffle-item" data-groups='["education","infrastructure"]'>
+                    <div class="project-img-container">
+                      <a class="gallery-popup" href="images/projects/chatCenter.png"
+                        aria-label="project-img">
+                        <img class="img-fluid" src="images/projects/chatCenter.png" alt="project-img" />
+                        <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                      </a>
+                      <div class="project-item-info">
+                        <div class="project-item-info-content">
+                          <h3 class="project-item-title text-white">
+                     Chat Center 
+                          </h3>
+                          <p class="project-cat" onclick="document.location='project-chatcenter.html'"">
+                  WEB DEVELOPMENT
+                  </p>
+
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+<!-- shuffle item 4 end -->
+
+                  <div class=" col-lg-4 col-sm-6 shuffle-item" data-groups='["infrastructure","education"]'>
+                                    <div class="project-img-container">
+                                      <a class="gallery-popup" href="images/projects/driverapp.png"
+                                        aria-label="project-img">
+                                        <img class="img-fluid" src="images/projects/driverapp.png"
+                                          alt="project-img" />
+                                        <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                                      </a>
+                                      <div class="project-item-info">
+                                        <div class="project-item-info-content">
+                                          <h3 class="project-item-title text-white">
+                                            Driver App 
+                                          </h3>
+                                          <p class="project-cat"
+                                            onclick="document.location='project-driverapp.html'"">
+                                              MOBILE APP DEVELOPMENT
+                                            </p>
+
+                                  </div>
+                          </div>
+                    </div>
+                  </div>
+
+                 <div class=" col-lg-4 col-sm-6 shuffle-item" data-groups='["infrastructure","education"]'>
+                                              <div class="project-img-container">
+                                                <a class="gallery-popup" href="images/projects/Propforce.png"
+                                                  aria-label="project-img">
+                                                  <img class="img-fluid" src="images/projects/Propforce.png"
+                                                    alt="project-img" />
+                                                  <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                                <div class="project-item-info">
+                                                  <div class="project-item-info-content">
+                                                    <h3 class="project-item-title text-white">Propforce</h3>
+                                                    <p class="project-cat"
+                                                   onclick="document.location='project-propforce.html'"">
+                                               WEB DEVELOPMENT
+                                              </p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                    <!-- shuffle item 6 end -->
+            </div>
+                    <!-- shuffle end -->
+          </div>
+                  <div class=" col-12">
+                    <div class="general-btn text-center">
+                      <a class="btn btn-primary" href="projects.html">View All
+                        Projects</a>
+                    </div>
+                  </div>
+        </div>
+                <!-- Content row end -->
+      </div>
+                                              <!-- Conatiner end -->
+    </section>
+
+    <!-- Contatc-form -->
+    <div id="contactBg" class="my-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8">
+            <h3 class="column-title text-center text-white mb-5 pt-5">
+              Contact Us
+            </h3>
+
+            <!-- contact form works with formspree.io  -->
+            <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="post" role="form">
+              <div class="error-container"></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="labelContact">Name</label>
+                    <input type="hidden" name="access_key" value="332f2de0-4be9-4a53-a089-0caa29823592" />
+                    <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text"
+                      required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="labelContact">Email</label>
+                    <input class="form-control form-control-email" name="email" id="email" placeholder="" type="email"
+                      required />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="labelContact">Message</label>
+                <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="5"
+                  required></textarea>
+              </div>
+              <div class="text-center mb-1 pb-4">
+                <br />
+                <button class="btn btn-primary solid blank" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! Testimonial ! -->
+    <section id="testimonialdevaxl" class="content mb-5">
+      <div class="container">
+        <h3 class="section-sub-title testimonial-area text-center">Testimonials & Happy Clients</h3>
+        <div class="row">
+          <div class="col-lg-6 mb-5 md:mb-0">
+
+            <div id="testimonial-slide" class="testimonial-slide">
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Devaxl is an extraordinary software company who combines
+                    technical expertise with professionalism, excellent
+                    communication, timeliness, and flexibility. We
+                    wholeheartedly recommend and have every intention of
+                    engaging him for future projects. If you're in need of a
+                    top-notch developer who specializes in React, Strapi, and
+                    Node.js, your search should end with Devaxl.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Wecept</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Devaxl has one of the most talented programmers I have
+                    ever meet in Upwork. Communication was top-notch, they met
+                    all deadlines, skills were very strong and super fast on
+                    any task was given to him. Perfect work is done. Would
+                    re-hire and highly recommended!! .
+                  </span>
+
+                  <div class="quote-item-footer">
+      
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Cristiana</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Totally recommended. Communication was good and the final
+                    delivery was exactly as requested. Took a little longer
+                    than originally planned but it was totally worth it for
+                    the clean and thorough result that I received. Thank you
+                    Devaxl for a really great and fast job!
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Takneo</h3>
+                      <span class="quote-subtext">Fiverr</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Devaxl did an amazing job with the project I handed them
+                    over. Everything was working perfectly in the end. Would
+                    defintely hire them again in future. 100% recommended.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Mark</h3>
+                      <span class="quote-subtext">Fiverr</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    I needed help converting html/css to Angular8 - Devaxl
+                    responded within minutes and completed the project in less
+                    than a day.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Laura</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    The program finished as I want it, he is very helpful and
+                    mindless on help to setup the demo site. Will keep working
+                    on this project with him.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Gary</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Love the quality of service and attention to detail. Very
+                    friendly and quick response time.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Tom</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Devaxl is more than a five-star review; They are fantastic
+                    human being to work with. Exceptional communication, job
+                    knowledge, business acumen, and concept understanding
+                    exceeded expectations. They transformed our application.
+                    If you need an expert web developer, hire from Devaxl for
+                    quality work. Excited to work with him again soon!
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Mateen</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    Devaxl has very professional and a highly skilled software
+                    engineers, when I started working with them, our app was
+                    messed up and there were so many errors and bugs. They
+                    took responsibility and in a very short time, resolved any
+                    bugs and issues that we had. Also communication was
+                    excellent, would always reach out to me for meetings when
+                    required and would clear all the doubts for a smooth
+                    development and delivery.
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">John</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <!--/ Item 1 end -->
+
+              <div class="item">
+                <div class="quote-item">
+                  <span class="quote-text">
+                    I came to know that Devaxl have cloud guy as well. I asked
+                    them to move the whole architecture on AWS and also do
+                    video hosting on AWS, they did that very smoothly and our
+                    app in now on AWS architecture. Our video streaming is now
+                    better than before and it works greatly. Thanks Devaxl!
+                  </span>
+
+                  <div class="quote-item-footer">
+                    <div class="quote-item-info">
+                      <h3 class="quote-author">Anthony</h3>
+                      <span class="quote-subtext">Upwork</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Quote item end -->
+              </div>
+              <!--/ Item 3 end -->
+            </div>
+            <!--/ Testimonial carousel end-->
+          </div>
+          <!-- Col end -->
+
+          <div class="col-lg-6 mt-lg-0">
+            <div class="row all-clients">
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client1.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 1 end -->
+
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client2.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 2 end -->
+
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client3.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 3 end -->
+
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client4.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 4 end -->
+
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client5.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 5 end -->
+
+              <div class="col-sm-4 col-6">
+                <figure class="clients-logo">
+                  <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client6.png"
+                      alt="clients-logo" /></a>
+                </figure>
+              </div>
+              <!-- Client 6 end -->
+            </div>
+            <!-- Clients row end -->
+          </div>
+          <!-- Col end -->
+        </div>
+        <!--/ Content row end -->
+      </div>
+      <!--/ Container end -->
+    </section>
+
+    <footer id="footer" class="footer bg-overlay">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-widget footer-about">
+              <h3 class="widget-title">About Us</h3>
+              <img loading="lazy" width="200px" class="footer-logo" src="images/devaxlWhiteLogo.svg" alt="Devaxl" />
+              <p>
+                Devaxl is an IT solutions provider company, we help growing businesses, develop an IT 
+                ecosystem that strengthens their business process. We take your products and projects from idea to 
+                implementation through our services of design, code and maintain.
+             </p>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="https://facebook.com/themefisher" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="https://facebook.com/themefisher" aria-label="LinkedIn"><i class="fab fa-skype"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer social end -->
+            </div>
+            <!-- Col end -->
+
+            <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+              <h3 class="widget-title">Working Hours</h3>
+              <div class="working-hours">
+                We work 7 days a week, every day excluding major holidays.
+                Contact us if you have an emergency, with our Hotline and
+                Contact form.
+                <br /><br />
+                Monday - Friday:
+                <span class="text-right">10:00 - 16:00 </span> <br />
+                Saturday: <span class="text-right">12:00 - 15:00</span> <br />
+                Sunday and holidays:
+                <span class="text-right">09:00 - 12:00</span>
+              </div>
+            </div>
+            <!-- Col end -->
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+              <h3 class="widget-title">Services</h3>
+              <ul class="list-arrow">
+                <li><span>Mobile Application</span></li>
+                <li><span>Web Application</span></li>
+                <li><span>Cloud Services</span></li>
+                <li><span>Devops</span></li>
+                <li><span>UI/UX Design</span></li>
+                <li><span>Business Solutions</span></li>
+              </ul>
+            </div>
+            <!-- Col end -->
+          </div>
+          <!-- Row end -->
+        </div>
+        <!-- Container end -->
+      </div>
+      <!-- Footer main end -->
+
+      <!-- Copyright end -->
+    </footer>
+  </div>
+  <!-- Footer end -->
 
   <!-- Javascript Files
-  ================================================== -->
+================================================== -->
 
   <!-- initialize jQuery Library -->
+
   <script src="plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap jQuery -->
   <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
@@ -471,7 +1014,6 @@ with companies  that want to dominate  their market.
   <!-- shuffle -->
   <script src="plugins/shuffle/shuffle.min.js" defer></script>
 
-
   <!-- Google Map API Key-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
   <!-- Google Map Plugin-->
@@ -480,7 +1022,7 @@ with companies  that want to dominate  their market.
   <!-- Template custom -->
   <script src="js/script.js"></script>
 
-  </div><!-- Body inner end -->
-  </body>
+  <!-- Body inner end -->
+</body>
 
-  </html>
+</html>
