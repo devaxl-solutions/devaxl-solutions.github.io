@@ -165,7 +165,7 @@ body {
   position: fixed;
   top: 30%; /* Adjust this value based on your design */
   right: 0;
-  z-index: 10000000;
+  z-index: 1;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -247,16 +247,87 @@ body {
   width: 8rem;
 }
 .dedicated-team {
+  position: relative;
   background: url("/images/team/Banner.png");
   background-color: #000000;
-  max-width: 100%;
-  background-position: 50% 50%;
-  background-size: contain;
+  background-position: bottom center;
+  background-size: 80% 50%;
   background-repeat: no-repeat;
+}
+.dedicated-team-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 70px;
+  /* padding: 30px 0 50px; */
+}
 
+.Leadership-title {
+  margin-top: 60px !important;
+}
+
+.web-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 150px;
+}
+.web-container-content {
+  flex-basis: 70%;
+}
+.web-container-img {
+  flex-basis: 30%;
+}
+.web-container-img img {
+  width: 70%;
+  background-color: #e5e7eb;
+  border-radius: 18px;
+  background-size: contain;
+  background-position: center;
+}
+.meet-developer-pro {
+  position: absolute;
+  right: 30%;
+  top: 10%;
+  z-index: 1;
+}
+.meet-developer-pro .meet-pro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.meet-developer-pro .meet-pro img {
+  width: 90px;
+}
+.meet-developer-pro p {
+  margin: 0;
+}
+.meet-developer-pro .meet-pro p {
+  color: #ffb600;
+}
+
+.slider-description{
+  max-width: 700px;
+  margin-inline: auto;
+  margin-block: 0;
 }
 
 
+@media (max-width: 900px) {
+  .meet-developer-pro {
+    display: none;
+  }
+  .web-container {
+    padding-top: 0;
+  }
+  .web-container-img {
+    display: none;
+  }
+  .web-container-content {
+    width: 100%;
+  }
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .social-btn {
   display: flex;
@@ -1438,10 +1509,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 ================================================== */
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
-  min-height: 350px;
+  height: 100vh;
   color: #fff;
-  background-position: 50% 50%;
-  background-size: cover;
 }
 
 @media (max-width: 991px) {
@@ -1497,7 +1566,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .slide-sub-title {
   font-style: normal;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 58px;
   margin: 20px 0;
   color: #fff;
@@ -1576,7 +1645,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .banner-carousel .carousel-control {
   position: absolute;
   top: 44%;
-  z-index: 5;
+  z-index: -1;
   display: inline-block;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1589,7 +1658,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   outline: 0;
   border: 0;
 }
-
+.slick-dots li button:before {
+  color: #fff;
+}
 @media (max-width: 575px) {
   .banner-carousel .carousel-control {
     display: none !important;
@@ -1603,7 +1674,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .slick-dots li button::before {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .slick-dots li button:hover:before,
@@ -1625,11 +1696,11 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .banner-carousel .carousel-control.left {
-  left: 90px;
+  left: 74px;
 }
 
 .banner-carousel .carousel-control.right {
-  right: 90px;
+  right: 74px;
 }
 
 .banner-carousel .carousel-control i {
@@ -2856,14 +2927,13 @@ img.testimonial-thumb {
 }
 .banner-area-team {
   position: relative;
-  color: #fff;
-  max-width: 100%;
-  min-height: 350px;
-  background-position: 50% 50%;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(/images/team/Banner.png);
+  background-color: #000000;
+  background-position: bottom center;
+  background-size: 70% 70%;
+  min-height: 65vh;
 }
-
 
 .banner-area-contact {
   position: relative;
@@ -2876,7 +2946,7 @@ img.testimonial-thumb {
 .banner-title {
   color: #fff;
   text-transform: uppercase;
-  font-size: 58px;
+  font-size: 38px;
   font-weight: 900;
 }
 
@@ -2910,7 +2980,7 @@ img.testimonial-thumb {
 }
 .banner-heading-team {
   position: absolute;
-  top: -200px;
+  top: -180px;
   left: 0;
   right: 0;
   text-align: center;
