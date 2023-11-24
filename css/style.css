@@ -169,6 +169,7 @@ body {
   width: 220px;
   display: flex;
   flex-direction: column;
+  display: none;  
 }
 .sticky-icon a {
   transform: translate(160px, 0px);
@@ -243,25 +244,32 @@ body {
 #myBtn:hover {
   background-color: #555;
 }
-.team-img-wrapper img {
-  width: 8rem;
-}
 .dedicated-team {
   position: relative;
   background: url("/images/team/Banner.png");
   background-color: #000000;
-  background-position: bottom center;
-  background-size: 80% 50%;
+  background-position: 50% 50%;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+.dedicated-team::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
 }
 .dedicated-team-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-top: 70px;
-  /* padding: 30px 0 50px; */
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
+
 
 .Leadership-title {
   margin-top: 60px !important;
@@ -271,17 +279,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 150px;
+  gap: 20px;
+  /* padding-top: 150px; */
 }
 .web-container-content {
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 .web-container-img {
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 .web-container-img img {
-  width: 70%;
-  background-color: #e5e7eb;
+  width: 100%;
   border-radius: 18px;
   background-size: contain;
   background-position: center;
@@ -305,12 +313,6 @@ body {
 }
 .meet-developer-pro .meet-pro p {
   color: #ffb600;
-}
-
-.slider-description{
-  max-width: 700px;
-  margin-inline: auto;
-  margin-block: 0;
 }
 
 
@@ -1645,7 +1647,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .banner-carousel .carousel-control {
   position: absolute;
   top: 44%;
-  z-index: -1;
+  z-index: 1;
   display: inline-block;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2930,9 +2932,19 @@ img.testimonial-thumb {
   background-repeat: no-repeat;
   background-image: url(/images/team/Banner.png);
   background-color: #000000;
-  background-position: bottom center;
-  background-size: 70% 70%;
-  min-height: 65vh;
+  background-position: 50% 50%;
+  background-size: contain;
+  min-height: 390px;
+}
+.banner-area-team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for the opacity (0 is fully transparent, 1 is fully opaque) */
+  z-index: 1; /* Ensure the overlay is above the background image */
 }
 
 .banner-area-contact {
@@ -2946,19 +2958,31 @@ img.testimonial-thumb {
 .banner-title {
   color: #fff;
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 48px;
   font-weight: 900;
 }
 
 @media (max-width: 767px) {
   .banner-title {
     font-size: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .banner-area-team{
+    background-image: none;
+    min-height: 300px;
+  }
+
+
 }
 
 @media (max-width: 575px) {
   .banner-title {
     font-size: 32px;
+    min-height: 300px;
   }
 }
 
@@ -2976,13 +3000,6 @@ img.testimonial-thumb {
 }
 
 .banner-heading {
-  text-align: center;
-}
-.banner-heading-team {
-  position: absolute;
-  top: -180px;
-  left: 0;
-  right: 0;
   text-align: center;
 }
 
