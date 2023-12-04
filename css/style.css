@@ -169,7 +169,7 @@ body {
   width: 220px;
   display: flex;
   flex-direction: column;
-  display: none;  
+  display: none;
 }
 .sticky-icon a {
   transform: translate(160px, 0px);
@@ -244,23 +244,19 @@ body {
 #myBtn:hover {
   background-color: #555;
 }
-.dedicated-team {
-  position: relative;
-  background: url("/images/team/Banner.png");
-  background-color: #000000;
-  background-position: center bottom; 
-  background-size: 90%;
-  background-repeat: no-repeat;
+.ts-service-area {
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
-.dedicated-team::after{
+.dedicated-team::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .dedicated-team-content {
   position: absolute;
@@ -269,7 +265,11 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
+@media (max-width: 500px) {
+  .dedicated-team-content {
+    top: 45%;
+  }
+}
 
 .Leadership-title {
   margin-top: 60px !important;
@@ -314,7 +314,6 @@ body {
 .meet-developer-pro .meet-pro p {
   color: #ffb600;
 }
-
 
 @media (max-width: 900px) {
   .meet-developer-pro {
@@ -1160,7 +1159,9 @@ ul.top-info-box > li.nav-search i {
 
 .navbar-dark .navbar-toggler-icon,
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  color: #0a66c2;
+  background-color: #0a66c2;
 }
 
 ul.navbar-nav > li:hover > a,
@@ -1513,8 +1514,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .banner-carousel .banner-carousel-item {
   height: 100vh;
   color: #fff;
+  z-index: -1 !important;
 }
-
 
 @media (max-width: 1150px) {
   .banner-carousel .banner-carousel-item {
@@ -1818,6 +1819,13 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 /* Action style box */
 .call-to-action-box {
   margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 500px) {
+  .call-to-action-box {
+    margin-top: 12px;
+  }
 }
 
 .call-to-action-box .action-style-box {
@@ -2944,7 +2952,12 @@ img.testimonial-thumb {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for the opacity (0 is fully transparent, 1 is fully opaque) */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the last value for the opacity (0 is fully transparent, 1 is fully opaque) */
   z-index: 1; /* Ensure the overlay is above the background image */
 }
 
@@ -2965,24 +2978,24 @@ img.testimonial-thumb {
 
 @media (max-width: 767px) {
   .banner-title {
-    font-size: 48px;
+    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .banner-area-team{
-    background-image: none;
-    min-height: 300px;
+  .banner-title span{
+    margin-left: 10px;
   }
 
-
+  .banner-area-team {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 575px) {
   .banner-title {
-    font-size: 32px;
+    font-size: 27px;
     min-height: 300px;
   }
 }
