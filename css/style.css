@@ -260,7 +260,7 @@ body {
 }
 .dedicated-team-content {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -2939,7 +2939,7 @@ img.testimonial-thumb {
 .banner-area-team {
   position: relative;
   background-repeat: no-repeat;
-  background-image: url(/images/team/Banner.png);
+  background-image: url(/images/teamBannerUpdated.png);
   background-color: #000000;
   background-position: 50% 50%;
   background-size: contain;
