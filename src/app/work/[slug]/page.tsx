@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
-import { CASES, getCaseBySlug, getNextCase } from "@/lib/work";
+import { CASES, getCaseBySlug, getRelatedCase } from "@/lib/work";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { CALENDLY_URL } from "@/lib/site";
 import { CaseThumb } from "@/components/work/CaseThumb";
 import { FinalCta } from "@/components/site/FinalCta";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, caseStudySchema, graph } from "@/lib/schema";
 
 export function generateStaticParams() {
   return CASES.map((c) => ({ slug: c.slug }));
@@ -17,17 +22,30 @@ export function generateMetadata({
 }): Metadata {
   const c = getCaseBySlug(params.slug);
   if (!c) return { title: "Case study" };
-  return { title: c.name, description: `${c.name}: ${c.oneLiner}` };
+  return {
+    title: `${c.name} case study`,
+    description: c.oneLiner,
+    alternates: { canonical: `/work/${c.slug}` },
+  };
 }
 
 export default function CasePage({ params }: { params: { slug: string } }) {
   const c = getCaseBySlug(params.slug);
   if (!c) notFound();
 
-  const next = getNextCase(c.slug);
+  const { case: next, related } = getRelatedCase(c.slug);
 
   return (
     <main>
+      <JsonLd
+        data={graph(
+          caseStudySchema(c),
+          breadcrumbSchema([
+            { name: "Work", path: "/work" },
+            { name: c.name, path: `/work/${c.slug}` },
+          ]),
+        )}
+      />
       <article>
         {/* ---- Hero ---- */}
         <header className="relative overflow-hidden border-b border-faint pb-12 pt-[80px] max-md:pt-12">
@@ -317,6 +335,37 @@ export default function CasePage({ params }: { params: { slug: string } }) {
           </section>
         )}
 
+        {/* ---- Inline CTA — placed right after the outcome, at peak belief.
+             The page runs ~2,000 words and previously offered nothing to click
+             until the footer. ---- */}
+        <section className="border-t border-faint py-14 max-md:py-10">
+          <div className="wrap">
+            <div
+              data-reveal
+              className="flex items-center justify-between gap-8 rounded-xl border border-subtle bg-surface-1 p-8 shadow-[var(--shadow-sm),var(--inner-top)] max-md:flex-col max-md:items-start max-md:gap-6 max-md:p-7"
+            >
+              <div>
+                <h2 className="text-[clamp(1.15rem,1rem+0.6vw,1.4rem)] font-semibold tracking-[-0.01em] text-primary">
+                  Working on something similar?
+                </h2>
+                <p className="mt-2 max-w-[52ch] text-[14px] leading-relaxed text-secondary">
+                  Tell us where your product is today. Thirty minutes with a senior
+                  engineer, and a straight answer on whether we&rsquo;re the right fit.
+                </p>
+              </div>
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cta="book-call-case-study"
+                className={cn(buttonVariants({ size: "lg" }), "shrink-0 max-md:w-full")}
+              >
+                Book a scoping call
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ---- Next project ---- */}
         <section className="border-t border-faint py-16 max-md:py-12">
           <div className="wrap">
@@ -330,7 +379,7 @@ export default function CasePage({ params }: { params: { slug: string } }) {
               </div>
               <div className="flex-1">
                 <span className="font-mono text-[11px] uppercase tracking-caps text-tertiary">
-                  Next project — {next.category}
+                  {related ? "Related work" : "Next project"} — {next.category}
                 </span>
                 <h2 className="mt-3 text-[clamp(1.5rem,1.2rem+1.2vw,2rem)] font-semibold tracking-tight text-primary">
                   {next.name}

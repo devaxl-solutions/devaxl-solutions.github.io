@@ -1,6 +1,14 @@
 // Insights (blog) content. These 3 articles are SEED PLACEHOLDERS — replace
 // the prose, dates, authors, and cover/thumbnail media with real content.
-// Each is tagged [PLACEHOLDER: real article] in the UI.
+//
+// WARNING: there is no visible placeholder marker. An earlier version of this
+// comment claimed each article "is tagged [PLACEHOLDER: real article] in the UI"
+// — that tag was never implemented. These render as finished, dated articles,
+// they are in the sitemap, and they now carry BlogPosting structured data
+// (src/lib/schema.ts) that asserts their datePublished and author to search
+// engines and LLMs. Either byline them to a real person and treat them as
+// published, or pull /insights from the nav and sitemap until real articles
+// exist. Leaving them as-is publishes seed content under the Devaxl name.
 
 export type ArticleBlock =
   | { type: "p"; text: string }

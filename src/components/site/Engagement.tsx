@@ -8,31 +8,34 @@ import { SectionHead } from "./SectionHead";
 const TIERS = [
   {
     name: "MVP Build",
-    who: "For founders taking a validated idea to a production v1.",
+    cta_id: "book-call-mvp",
+    who: "For founders taking a validated idea to a working first release.",
     points: [
       "Fixed-scope, fixed-timeline delivery",
       "Design, engineering & QA included",
-      "Live, revenue-ready product",
+      "A live app people can pay for",
     ],
-    cta: "Start a build",
+    cta: "Scope your v1",
     featured: false,
   },
   {
     name: "Dedicated Team",
+    cta_id: "book-call-team",
     who: "For teams that need durable velocity against an evolving roadmap.",
     points: [
-      "Embedded senior squad, monthly",
+      "Embedded senior team, monthly",
       "Design + frontend + backend + PM",
-      "Works inside your tools & rituals",
+      "Works inside your Slack and tools",
     ],
-    cta: "Build a team",
+    cta: "Plan your team",
     featured: true,
   },
   {
     name: "Modernization Retainer",
-    who: "For platforms that need to get faster, stabler, and easier to extend.",
+    cta_id: "book-call-retainer",
+    who: "For an app that has to get faster, steadier, and easier to extend.",
     points: [
-      "Performance & reliability program",
+      "Performance & reliability work",
       "Incremental, zero-downtime rollout",
       "Ongoing architecture guidance",
     ],
@@ -83,6 +86,7 @@ export function Engagement() {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-cta={t.cta_id}
                 className={cn(
                   buttonVariants({ variant: t.featured ? "primary" : "ghost" }),
                   "w-full",

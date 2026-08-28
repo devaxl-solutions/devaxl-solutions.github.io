@@ -36,7 +36,7 @@ const PRINCIPLES: Principle[] = [
   {
     icon: Sparkles,
     title: "AI-native, end to end",
-    body: "We build AI into the products we ship, and use it intensively across delivery — so a small senior team moves with the velocity of a much larger one.",
+    body: "We build AI into the apps we ship, and use it across delivery — so a small senior team gets through the work of a much larger one.",
   },
   {
     icon: HeartHandshake,

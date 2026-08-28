@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CONTACT } from "@/lib/site";
+import { CALENDLY_URL, CONTACT } from "@/lib/site";
+import { trackEvent } from "@/components/site/Analytics";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -43,10 +44,12 @@ export function ContactForm() {
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
       if (res.ok && data.ok) {
         setStatus("success");
+        // Counted on delivery, not on click — a submit that errored isn't a lead.
+        trackEvent("contact-form-submit");
         form.reset();
       } else {
         setStatus("error");
-        setError(data.error ?? "Something went wrong. Please try again.");
+        setError(data.error ?? "That didn't send. Try again, or email us.");
       }
     } catch {
       setStatus("error");
@@ -68,8 +71,17 @@ export function ContactForm() {
           Message sent.
         </h3>
         <p className="mt-1.5 max-w-[40ch] text-[14px] text-secondary">
-          Thanks for reaching out — we&apos;ll reply within one business day. Prefer
-          to talk sooner? Book a call or email{" "}
+          We&apos;ll reply within one business day. Want to talk sooner?{" "}
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta="book-call-success"
+            className="text-accent hover:underline"
+          >
+            Book a scoping call
+          </a>
+          , or email{" "}
           <a href={CONTACT.emailHref} className="text-accent hover:underline">
             {CONTACT.email}
           </a>
@@ -151,7 +163,7 @@ export function ContactForm() {
 
       <div className="mt-4">
         <label htmlFor="cf-message" className={LABEL}>
-          What are you building?
+          What are you working on?
         </label>
         <textarea
           id="cf-message"
@@ -159,7 +171,7 @@ export function ContactForm() {
           required
           minLength={10}
           rows={5}
-          placeholder="A sentence or two on your product, stage, and where you'd like help."
+          placeholder="Even two lines helps — what you're building or fixing, and what's stuck."
           className={FIELD + " resize-y"}
         />
       </div>
@@ -179,7 +191,7 @@ export function ContactForm() {
             </>
           ) : (
             <>
-              Send message
+              Get our take
               <ArrowRight strokeWidth={2} />
             </>
           )}

@@ -6,16 +6,20 @@ import { TechStack } from "@/components/site/TechStack";
 import { Industries } from "@/components/site/Industries";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCta } from "@/components/site/FinalCta";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Our Product Engineering Studio",
   description:
-    "A small, senior product engineering studio. Senior engineers who have shipped, building and scaling SaaS and AI products for founders and CTOs — with a written plan, weekly demos, and code you fully own.",
+    "Devaxl is a small, senior product engineering studio building SaaS and AI products for founders and CTOs — a written plan, weekly demos, and code you fully own.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
     <main>
+      <JsonLd data={graph(breadcrumbSchema([{ name: "About", path: "/about" }]))} />
       <PageHeader
         eyebrow="About"
         title="Senior engineers who have shipped."

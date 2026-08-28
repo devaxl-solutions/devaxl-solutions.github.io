@@ -7,20 +7,30 @@ import { Engagement } from "@/components/site/Engagement";
 import { Process } from "@/components/site/Process";
 import { Faq } from "@/components/site/Faq";
 import { FinalCta } from "@/components/site/FinalCta";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, faqSchema, graph, servicesSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "SaaS, AI & MVP Development Services",
   description:
-    "How we help you ship: SaaS and AI products, modernization, and embedded product teams. AI built into the product and the process — one senior team, from first commit to scale.",
+    "SaaS and AI MVP builds, embedded development teams, and platform modernization. One senior squad, AI in the product and the process, from first commit to scale.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
   return (
     <main>
+      <JsonLd
+        data={graph(
+          servicesSchema(),
+          faqSchema(),
+          breadcrumbSchema([{ name: "Services", path: "/services" }]),
+        )}
+      />
       <PageHeader
         eyebrow="Services"
-        title="How we help you ship."
-        intro="We plug in where you need us — a fast v1, an AI feature your product needs, a rescue mission on an aging platform, or a long-term embedded squad. One senior, AI-native team, end to end."
+        title="Ship SaaS & AI products."
+        intro="We plug in where you need us — a first release, an AI feature your app needs, a rescue on a platform that has aged badly, or a long-term embedded team. One senior team, end to end."
       />
       <Capabilities />
       <AiNative />

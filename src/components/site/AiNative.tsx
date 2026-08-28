@@ -25,8 +25,8 @@ type Column = {
 const COLUMNS: Column[] = [
   {
     badge: Sparkles,
-    title: "In the products we ship",
-    blurb: "AI features that earn their place — shipped to production, not demos.",
+    title: "In the apps we ship",
+    blurb: "AI features that earn their place — shipped to real users, not demos.",
     items: [
       { icon: Search, term: "RAG & semantic search", desc: "Grounded answers over your own data." },
       { icon: Bot, term: "Agents & copilots", desc: "Task automation and in-app assistants." },
@@ -37,11 +37,11 @@ const COLUMNS: Column[] = [
   {
     badge: Cpu,
     title: "In how we build",
-    blurb: "AI woven through delivery, so a senior team ships like a much larger one.",
+    blurb: "AI across delivery, so a small senior team ships like a much larger one.",
     items: [
       { icon: ScrollText, term: "AI-assisted scoping", desc: "Specs and plans drafted in hours, not weeks." },
       { icon: Code2, term: "Code & test generation", desc: "More coverage, far less boilerplate." },
-      { icon: GitPullRequest, term: "AI-augmented review", desc: "A tireless second set of eyes on every PR." },
+      { icon: GitPullRequest, term: "AI-augmented review", desc: "A second set of eyes on every pull request." },
       { icon: Gauge, term: "Faster iteration", desc: "Prototypes in days to pressure-test ideas." },
     ],
   },
@@ -52,8 +52,8 @@ export function AiNative() {
     <section id="ai" className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
         <SectionHead eyebrow="AI-native" title="AI, built into the product — and the process.">
-          We build intelligent products for our clients, and use AI intensively
-          across our own delivery to ship them faster.
+          We build AI into the apps we ship for clients, and use it across our
+          own delivery to move faster without adding people.
         </SectionHead>
 
         <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 max-md:gap-4">

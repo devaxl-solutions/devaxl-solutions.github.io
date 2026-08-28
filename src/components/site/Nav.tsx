@@ -113,6 +113,7 @@ export function Nav() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
+            data-cta="book-call-nav"
             className={cn(buttonVariants({ size: "sm" }), "max-md:h-10")}
           >
             Book a call

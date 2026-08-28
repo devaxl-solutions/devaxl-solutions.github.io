@@ -34,8 +34,8 @@ export function TechStack() {
     <section className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
         <SectionHead eyebrow="Stack" title="The tools we build and ship with.">
-          A modern, AI-native stack chosen for what lasts — not what&apos;s
-          trending. We pick the right tool for your product, not a house template.
+          A modern stack chosen for what lasts — not what&apos;s trending. We
+          pick the right tool for your app, not whatever our last project used.
         </SectionHead>
 
         <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1 max-md:gap-4">

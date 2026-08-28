@@ -7,6 +7,8 @@ import { Prose } from "@/components/insights/Prose";
 import { ArticleCard } from "@/components/insights/ArticleCard";
 import { coverFor } from "@/components/insights/coverMeta";
 import { FinalCta } from "@/components/site/FinalCta";
+import { JsonLd } from "@/components/site/JsonLd";
+import { articleSchema, breadcrumbSchema, graph } from "@/lib/schema";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -19,7 +21,16 @@ export function generateMetadata({
 }): Metadata {
   const a = getArticleBySlug(params.slug);
   if (!a) return { title: "Insights" };
-  return { title: a.title, description: a.dek };
+  return {
+    title: a.title,
+    description: a.dek,
+    alternates: { canonical: `/insights/${a.slug}` },
+    openGraph: {
+      type: "article",
+      publishedTime: a.dateISO,
+      authors: [a.author],
+    },
+  };
 }
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
@@ -31,6 +42,15 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <JsonLd
+        data={graph(
+          articleSchema(a),
+          breadcrumbSchema([
+            { name: "Insights", path: "/insights" },
+            { name: a.title, path: `/insights/${a.slug}` },
+          ]),
+        )}
+      />
       <article>
         {/* ---- Header ---- */}
         <header className="relative overflow-hidden border-b border-faint pb-12 pt-[80px] max-md:pt-12">

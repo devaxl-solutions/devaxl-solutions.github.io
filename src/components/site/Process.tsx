@@ -7,10 +7,10 @@ import { SectionHead } from "./SectionHead";
 
 const STEPS = [
   { n: "01", title: "Discovery", body: "We pressure-test the problem, scope, and success metrics before a line of code." },
-  { n: "02", title: "Design", body: "Flows and interfaces designed against the real product, not throwaway mockups." },
+  { n: "02", title: "Design", body: "Flows and screens designed against the real app, not throwaway mockups." },
   { n: "03", title: "Build", body: "Senior engineers ship in tight, demoable increments you can use every week." },
   { n: "04", title: "Launch", body: "Production-hardened release — monitoring, CI/CD, and a runbook from day one." },
-  { n: "05", title: "Scale", body: "We stay on to optimize, harden, and extend as your user base grows." },
+  { n: "05", title: "Scale", body: "We stay on to speed up, harden, and extend as your user base grows." },
 ];
 
 export function Process() {

@@ -6,6 +6,7 @@ export type CaseStudy = {
   slug: string;
   name: string;
   categories: string[]; // real tags — also used as filter keys + chips
+  industry?: string; // vertical, used to link related cases (see getRelatedCase)
   category: string; // display string, e.g. "Branding · Web Development"
   oneLiner: string;
   overview: string;
@@ -39,6 +40,7 @@ export const WORK_FILTERS = [
 export const CASES: CaseStudy[] = [
   {
     "slug": "apolloe",
+    "industry": "Logistics",
     "name": "Apolloe",
     "categories": [
       "SaaS",
@@ -90,6 +92,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "aninja-crm",
+    "industry": "Sales & CRM",
     "name": "aNinja AI",
     "categories": [
       "SaaS",
@@ -206,6 +209,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "nrtur",
+    "industry": "Sales & CRM",
     "name": "Nrtur",
     "categories": [
       "SaaS",
@@ -275,6 +279,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "pma",
+    "industry": "Community & Media",
     "name": "Product Marketing Alliance",
     "categories": [
       "SaaS",
@@ -340,6 +345,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "securepoint360",
+    "industry": "IT & Security",
     "name": "SecurePoint 360",
     "categories": [
       "Security",
@@ -405,6 +411,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "itboost",
+    "industry": "IT & Security",
     "name": "ITBoost",
     "categories": [
       "SaaS",
@@ -453,6 +460,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "brb",
+    "industry": "Marketplace",
     "name": "BeautyRightBack (BRB)",
     "categories": [
       "AI",
@@ -514,6 +522,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "authority-alert",
+    "industry": "Marketplace",
     "name": "Authority Alert",
     "categories": [
       "SaaS",
@@ -580,6 +589,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "carrier-network",
+    "industry": "Logistics",
     "name": "Carrier Network",
     "categories": [
       "SaaS",
@@ -642,6 +652,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "trucking-guru",
+    "industry": "Logistics",
     "name": "Trucking Guru",
     "categories": [
       "Branding",
@@ -707,6 +718,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "chat-center",
+    "industry": "Logistics",
     "name": "Chat Center",
     "categories": [
       "SaaS",
@@ -773,6 +785,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "driver-app",
+    "industry": "Logistics",
     "name": "Driver App",
     "categories": [
       "Mobile App Development",
@@ -839,6 +852,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "sound-space",
+    "industry": "Community & Media",
     "name": "Sound Space",
     "categories": [
       "SaaS",
@@ -978,4 +992,45 @@ export function getCaseBySlug(slug: string): CaseStudy | undefined {
 export function getNextCase(slug: string): CaseStudy {
   const i = CASES.findIndex((c) => c.slug === slug);
   return CASES[(i + 1) % CASES.length];
+}
+
+/**
+ * The most closely related case, by shared discipline tags.
+ *
+ * The "next project" link used to walk the array in order, which chained all 15
+ * cases into a ring but linked them by accident of position. That left the
+ * strongest cluster on the site — five trucking and logistics builds (Apolloe,
+ * Carrier Network, Chat Center, Driver App, Trucking Guru) — with no thematic
+ * path between them. Preferring a case that shares tags means a reader deep in
+ * one logistics story is offered another, which is both better for them and the
+ * internal-linking signal that vertical was missing.
+ *
+ * Falls back to the next case in order, so every case still links somewhere and
+ * the ring property is preserved.
+ */
+export function getRelatedCase(slug: string): { case: CaseStudy; related: boolean } {
+  const current = getCaseBySlug(slug);
+  if (!current) return { case: getNextCase(slug), related: false };
+
+  const scored = CASES.filter((c) => c.slug !== slug)
+    .map((c) => ({
+      c,
+      // A shared vertical beats any number of shared disciplines: two trucking
+      // builds belong together more than two things that both happen to be SaaS.
+      shared:
+        (current.industry && c.industry === current.industry ? 10 : 0) +
+        c.categories.filter((cat) => current.categories.includes(cat)).length,
+    }))
+    .filter((x) => x.shared > 0)
+    .sort((a, b) => b.shared - a.shared);
+
+  // Rotate among equally-related cases by position, so the five logistics cases
+  // form a cycle rather than all pointing at the same one.
+  if (scored.length) {
+    const top = scored.filter((x) => x.shared === scored[0].shared).map((x) => x.c);
+    const i = CASES.findIndex((c) => c.slug === slug);
+    return { case: top[i % top.length], related: true };
+  }
+
+  return { case: getNextCase(slug), related: false };
 }

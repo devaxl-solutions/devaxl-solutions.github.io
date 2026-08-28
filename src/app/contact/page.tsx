@@ -3,11 +3,14 @@ import { ArrowUpRight, CalendarClock, Mail, Phone } from "lucide-react";
 import { PageHeader } from "@/components/site/PageHeader";
 import { ContactForm } from "@/components/site/ContactForm";
 import { CALENDLY_URL, CONTACT } from "@/lib/site";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Us or Book a Scoping Call",
   description:
     "Tell us where your product is today. Send a message, book a scoping call with a senior engineer, or email the team.",
+  alternates: { canonical: "/contact" },
 };
 
 const ACTIONS = [
@@ -18,6 +21,7 @@ const ACTIONS = [
     href: CALENDLY_URL,
     external: true,
     featured: true,
+    cta: "book-call-contact",
   },
   {
     icon: Mail,
@@ -26,6 +30,7 @@ const ACTIONS = [
     href: CONTACT.emailHref,
     external: false,
     featured: false,
+    cta: "email-click",
   },
   {
     icon: Phone,
@@ -34,12 +39,14 @@ const ACTIONS = [
     href: CONTACT.phoneHref,
     external: false,
     featured: false,
+    cta: "phone-click",
   },
 ];
 
 export default function ContactPage() {
   return (
     <main>
+      <JsonLd data={graph(breadcrumbSchema([{ name: "Contact", path: "/contact" }]))} />
       <PageHeader
         eyebrow="Contact"
         title="Tell us where your product is."
@@ -49,7 +56,7 @@ export default function ContactPage() {
       <section className="py-16 max-md:py-12">
         <div className="wrap grid grid-cols-[1.5fr_1fr] gap-8 max-lg:grid-cols-1 max-lg:gap-7">
           {/* Primary: the message form */}
-          <div data-reveal>
+          <div data-reveal className="max-lg:order-2">
             <h2 className="mb-5 text-[20px] font-semibold tracking-[-0.01em] text-primary">
               Send us a message
             </h2>
@@ -57,12 +64,13 @@ export default function ContactPage() {
           </div>
 
           {/* Secondary: quick ways to reach us */}
-          <div className="flex flex-col gap-4" data-reveal>
+          <div className="flex flex-col gap-4 max-lg:order-1" data-reveal>
             {ACTIONS.map((a) => (
               <a
                 key={a.label}
                 href={a.href}
                 {...(a.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                data-cta={a.cta}
                 className={
                   "group flex items-start gap-4 rounded-lg p-5 transition-[transform,border-color,box-shadow] duration-[180ms] ease-out hover:-translate-y-[3px] " +
                   (a.featured
@@ -89,8 +97,8 @@ export default function ContactPage() {
             ))}
 
             <p className="mt-1 text-[14px] text-tertiary">
-              Based remotely. We work with founders and CTOs worldwide — reach out
-              any way that suits you.
+              Remote, and we overlap with your working hours for calls and
+              demos. Founders and CTOs worldwide.
             </p>
           </div>
         </div>

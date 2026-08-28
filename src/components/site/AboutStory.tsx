@@ -1,7 +1,7 @@
 const FACTS = [
   { stat: "21+", label: "products shipped to production" },
   { stat: "27", label: "five-star client reviews" },
-  { stat: "Weeks, not months", label: "AI-native build velocity" },
+  { stat: "Weeks, not months", label: "our normal build pace" },
   { stat: "Remote", label: "working with teams worldwide" },
 ];
 
@@ -32,10 +32,10 @@ export function AboutStory() {
             </p>
             <p>
               That model shows up in the work. We&apos;ve taken validated ideas to
-              revenue-ready v1s, rescued aging platforms that had stopped scaling,
-              and embedded with in-house teams as a long-term squad. The thread
-              through all of it: clear plans, weekly demoable progress, and code
-              you fully own from the first commit.
+              first releases people pay for, rescued aging apps that had stopped
+              keeping up, and embedded with in-house teams for the long run. The
+              thread through all of it: clear plans, weekly demoable progress,
+              and code you fully own from the first commit.
             </p>
           </div>
         </div>

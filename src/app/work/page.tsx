@@ -4,11 +4,14 @@ import { WorkFilter } from "@/components/work/WorkFilter";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCta } from "@/components/site/FinalCta";
 import { getAllCases } from "@/lib/work";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "SaaS & AI Development Case Studies",
   description:
-    "Branding, design, and engineering work we've delivered for our clients.",
+    "15 case studies with numbers: a 300,000-member community platform, SOC 2 Type II in 6 months, an $800k deal closed, 74% lower CRM cost, 40% faster dispatch.",
+  alternates: { canonical: "/work" },
 };
 
 export default function WorkPage() {
@@ -16,6 +19,7 @@ export default function WorkPage() {
 
   return (
     <main>
+      <JsonLd data={graph(breadcrumbSchema([{ name: "Work", path: "/work" }]))} />
       <PageHeader
         eyebrow="Selected work"
         title="Real products we've shipped."

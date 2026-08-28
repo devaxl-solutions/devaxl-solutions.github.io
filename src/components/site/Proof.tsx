@@ -1,7 +1,16 @@
 import { Counter } from "@/components/ui/Counter";
 import { Marquee } from "@/components/ui/Marquee";
 
-const CLIENTS = [1, 2, 3, 4, 5, 6];
+// Company name shown in each logo, used for alt text so screen readers and
+// search engines get a name instead of "Devaxl client 1".
+const CLIENTS = [
+  { n: 1, name: "Techno Line" },
+  { n: 2, name: "Montorin" },
+  { n: 3, name: "Arrow Market" },
+  { n: 4, name: "Maxin Graphic" },
+  { n: 5, name: "Sontara" },
+  { n: 6, name: "Altra Technology" },
+];
 
 export function Proof() {
   return (
@@ -10,12 +19,12 @@ export function Proof() {
         {/* Real client logo wall */}
         <div className="mb-10 flex items-center gap-4" data-reveal>
           <Marquee>
-            {CLIENTS.map((n) => (
+            {CLIENTS.map((c) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                key={n}
-                src={`/clients/client${n}.png`}
-                alt={`Devaxl client ${n}`}
+                key={c.n}
+                src={`/clients/client${c.n}.png`}
+                alt={`${c.name} — Devaxl client`}
                 loading="lazy"
                 className="h-8 w-auto object-contain"
               />
