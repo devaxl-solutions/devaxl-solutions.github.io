@@ -216,10 +216,10 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "A lightweight CRM that replaced Bloom Creative's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
-    "overview": "Bloom Creative partnered with Nrtur to swap their overpriced HubSpot setup for a lightweight CRM built for small, fast-moving teams. The result was a 74% cut in software costs, 5-minute onboarding, and a pipeline that matched how the team actually sells.",
+    "oneLiner": "A four-person creative agency moved off HubSpot onto Nrtur — the CRM we build — cutting software costs 74% and getting the week back for client work.",
+    "overview": "A four-person creative agency we work with was paying enterprise prices for a CRM built for enterprises. They dropped HubSpot and moved onto Nrtur, the CRM we build and run ourselves: a 74% cut in software costs, five-minute setup, and a pipeline that matches how they actually sell.",
     "thumbnail": "/projects/nrtur.png",
-    "collaboration": "Bloom Creative, a design and creative services agency",
+    "collaboration": "A four-person creative agency, name withheld · Nrtur is our own product",
     "link": {
       "label": "nrtur.io",
       "href": "https://www.nrtur.io/"
@@ -238,7 +238,7 @@ export const CASES: CaseStudy[] = [
         "label": "Setup time vs. weeks"
       }
     ],
-    "challenge": "As a 4-person creative agency, Bloom Creative was paying enterprise prices for enterprise features they'd never use. HubSpot cost $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work.",
+    "challenge": "A four-person creative agency we work with was paying enterprise prices for enterprise features they'd never use. HubSpot cost them $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work. We had been building our own CRM for exactly that gap, so we asked them to try it.",
     "approach": [
       {
         "title": "Pricing Sanity",
@@ -246,7 +246,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Instant Adoption",
-        "body": "Setup took 5 minutes, not weeks. CEO Sarah Chen imported HubSpot contacts in under 30 minutes with migration help, and the whole team was logging deals and syncing emails by end of day, with no training sessions."
+        "body": "Setup took 5 minutes, not weeks. Their founder imported the HubSpot contacts in under 30 minutes with migration help from us, and the whole team was logging deals and syncing emails by end of day, with no training sessions."
       },
       {
         "title": "Pipeline & Email That Match Reality",
@@ -254,7 +254,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Automations That Stick",
-        "body": "A visual workflow builder let Sarah set up follow-up sequences without a consultant: proposal reminders, task assignments on stage changes, and email templates. It freed up mental overhead that had been eating her day."
+        "body": "A visual workflow builder let their founder set up follow-up sequences without a consultant: proposal reminders, task assignments on stage changes, and email templates. It freed up mental overhead that had been eating her day."
       }
     ],
     "results": [
@@ -272,10 +272,10 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Time Back on Client Work",
-        "body": "Sarah estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
+        "body": "Their founder estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
       }
     ],
-    "verdict": "Bloom Creative's story is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a 4-person agency. The 74% cost cut is remarkable, but the real win is getting the team's focus back on closing deals and serving clients instead of managing software."
+    "verdict": "This one is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a four-person team. Nrtur is our own product, so treat our opinion of it accordingly — but the 74% is their invoice, not our claim, and the bigger win is a team back on client work instead of managing software."
   },
   {
     "slug": "pma",
