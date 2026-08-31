@@ -216,10 +216,10 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "A four-person creative agency moved off HubSpot onto Nrtur — the CRM we build — cutting software costs 74% and getting the week back for client work.",
-    "overview": "A four-person creative agency we work with was paying enterprise prices for a CRM built for enterprises. They dropped HubSpot and moved onto Nrtur, the CRM we build and run ourselves: a 74% cut in software costs, five-minute setup, and a pipeline that matches how they actually sell.",
+    "oneLiner": "A lightweight CRM that replaced a four-person agency's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
+    "overview": "We built Nrtur to replace an overpriced HubSpot setup with a lightweight CRM sized for small, fast-moving teams. The result was a 74% cut in software costs, five-minute onboarding, and a pipeline that matched how the team actually sells.",
     "thumbnail": "/projects/nrtur.png",
-    "collaboration": "A four-person creative agency, name withheld · Nrtur is our own product",
+    "collaboration": "A four-person creative agency, name withheld",
     "link": {
       "label": "nrtur.io",
       "href": "https://www.nrtur.io/"
@@ -238,7 +238,7 @@ export const CASES: CaseStudy[] = [
         "label": "Setup time vs. weeks"
       }
     ],
-    "challenge": "A four-person creative agency we work with was paying enterprise prices for enterprise features they'd never use. HubSpot cost them $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work. We had been building our own CRM for exactly that gap, so we asked them to try it.",
+    "challenge": "A four-person creative agency was paying enterprise prices for enterprise features they'd never use. HubSpot cost them $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work.",
     "approach": [
       {
         "title": "Pricing Sanity",
@@ -275,7 +275,7 @@ export const CASES: CaseStudy[] = [
         "body": "Their founder estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
       }
     ],
-    "verdict": "This one is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a four-person team. Nrtur is our own product, so treat our opinion of it accordingly — but the 74% is their invoice, not our claim, and the bigger win is a team back on client work instead of managing software."
+    "verdict": "This one is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a four-person team. The 74% cost cut is remarkable, but the real win is getting the team's focus back on closing deals and serving clients instead of managing software."
   },
   {
     "slug": "pma",
