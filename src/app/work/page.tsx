@@ -8,9 +8,9 @@ import { JsonLd } from "@/components/site/JsonLd";
 import { breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "SaaS & AI Development Case Studies",
+  title: "SaaS, AI & Logistics Case Studies",
   description:
-    "15 case studies with numbers: a 300,000-member community platform, SOC 2 Type II in 6 months, an $800k deal closed, 74% lower CRM cost, 40% faster dispatch.",
+    "15 case studies with numbers: a 300,000-member platform, SOC 2 in 6 months, an $800k deal closed, 74% lower CRM cost, dispatch 40% faster. 5 logistics builds.",
   alternates: { canonical: "/work" },
 };
 

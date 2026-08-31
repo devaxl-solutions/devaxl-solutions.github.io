@@ -11,9 +11,9 @@ import { JsonLd } from "@/components/site/JsonLd";
 import { breadcrumbSchema, faqSchema, graph, servicesSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "SaaS, AI & MVP Development Services",
+  title: "SaaS, AI & Logistics Software Development",
   description:
-    "SaaS and AI MVP builds, embedded development teams, and platform modernization. One senior squad, AI in the product and the process, from first commit to scale.",
+    "MVP builds, embedded development teams, and platform modernization for SaaS, AI and logistics software. One senior team, from first commit to scale.",
   alternates: { canonical: "/services" },
 };
 
