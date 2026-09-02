@@ -419,10 +419,10 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · AI · Web Development",
-    "oneLiner": "We led the backend on an enterprise IT-documentation SaaS — scalable systems, secure auth, and high-load API integrations.",
-    "overview": "Devaxl led the backend for ITBoost, an MSP documentation SaaS by ConnectWise. We built scalable systems with Node.js, JWT, Redis, Async, and Passport, integrated with .NET services and third-party APIs under high load. We also contributed across the frontend (React, Redux, Bootstrap, Angular), with SaaS and AI automation and integrations to n8n, Make.com, Zapier, and GoHighLevel.",
+    "oneLiner": "Backend lead on an enterprise IT-documentation SaaS — scalable systems, secure auth, and high-load API integrations.",
+    "overview": "As Backend Project Lead for ITBoost — an MSP documentation SaaS by ConnectWise — built scalable systems with Node.js, JWT, Redis, Async, and Passport, integrated with .NET services and third-party APIs under high load. Also contributed across the frontend (React, Redux, Bootstrap, Angular), with SaaS and AI automation and integrations to n8n, Make.com, Zapier, and GoHighLevel.",
     "thumbnail": "/projects/itboost.png",
-    "role": "Backend project leadership, full-stack development, and third-party integration work",
+    "role": "Full-Stack Engineer & Backend Project Lead",
     "collaboration": "An MSP documentation SaaS by ConnectWise.",
     "link": {
       "label": "itboost.com",
@@ -447,12 +447,12 @@ export const CASES: CaseStudy[] = [
       "GoHighLevel (GHL)"
     ],
     "highlights": [
-      "We designed a robust backend with Node.js, JWT auth, Redis caching, async processing, and Passport authorization.",
-      "We integrated .NET services and multiple third-party APIs to extend functionality under high load.",
-      "We contributed to the frontend with React, Redux, Bootstrap, and Angular for a seamless, responsive SaaS experience.",
-      "We specialized in SaaS and AI automation, RAG, vector databases, and workflow automation (n8n, Make.com, Zapier).",
-      "We implemented secure authentication, caching strategies, and asynchronous workflows.",
-      "We delivered enterprise-grade performance, reliability, and security at scale."
+      "Designed a robust backend with Node.js, JWT auth, Redis caching, async processing, and Passport authorization.",
+      "Integrated .NET services and multiple third-party APIs to extend functionality under high load.",
+      "Contributed to the frontend with React, Redux, Bootstrap, and Angular for a seamless, responsive SaaS experience.",
+      "Specialized in SaaS and AI automation, RAG, vector databases, and workflow automation (n8n, Make.com, Zapier).",
+      "Implemented secure authentication, caching strategies, and asynchronous workflows.",
+      "Delivered enterprise-grade performance, reliability, and security at scale."
     ],
     "outcome": "A feature-rich, scalable, and secure IT-documentation SaaS used by IT professionals worldwide — improving documentation workflows and positioning ITBoost as a reliable, high-performance product within the ConnectWise ecosystem.",
     "quote": "He got good skills and is also an intelligent person. Will hire him for my next projects. Job well done!",
@@ -872,12 +872,10 @@ export const CASES: CaseStudy[] = [
       "Web Design"
     ],
     "category": "SaaS · Web Development · Web Design",
-    "oneLiner": "We built a free, professionally curated sound effects library that became the default audio resource for over 500,000 creators every month.",
-    "overview": "Devaxl built SoundSpace, a professional, organized, free sound effects library with thousands of high-quality audio files properly categorized and searchable. It became the go-to resource for YouTubers, TikTokers, and video creators worldwide.",
+    "oneLiner": "A free, professionally curated sound effects library that became the default audio resource for over 500,000 creators every month.",
+    "overview": "SoundSpace built a professional, organized, free sound effects library with thousands of high-quality audio files properly categorized and searchable. It became the go-to resource for YouTubers, TikTokers, and video creators worldwide.",
     "thumbnail": "/projects/soundAddress.png",
     "collaboration": "SoundSpace sound effects library",
-
-    "role": "Product design, full-stack build, and the search, preview, and download experience",
     "metrics": [
       {
         "value": "500k+",
@@ -896,19 +894,19 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Library Building & Curation",
-        "body": "We built the library around thousands of high-quality, professionally produced sound effects, organized into logical categories like nature, games, alarms, and transitions. We tagged every sound by category, type, mood, and use case for instant discovery, with clear licensing on each file. Weekly additions kept the library growing with creator needs."
+        "body": "Collected thousands of high-quality, professionally produced sound effects organized into logical categories like nature, games, alarms, and transitions. Every sound was tagged by category, type, mood, and use case for instant discovery, with clear licensing on each file. Weekly additions kept the library growing with creator needs."
       },
       {
         "title": "Creator Access & Distribution",
-        "body": "We made browsing, previewing, and downloading free on the web with no login or paywall for basic access. We built hover-to-preview and one-click downloads to remove all friction. A dedicated YouTube channel and video integrations showed sounds in action and drove organic discoverability."
+        "body": "Made browsing, previewing, and downloading free on the web with no login or paywall for basic access. Hover-to-preview and one-click downloads removed all friction. A dedicated YouTube channel and video integrations showed sounds in action and drove organic discoverability."
       },
       {
         "title": "Community & Network Effects",
-        "body": "We built community features around creator testimonials, trending sounds that drove FOMO adoption, and sound requests where creators voted on what to add next. Remix features and revenue sharing with top contributors expanded the library while incentivizing quality."
+        "body": "Built community through creator testimonials, trending sounds that drove FOMO adoption, and sound requests where creators voted on what to add next. Remix features and revenue sharing with top contributors expanded the library while incentivizing quality."
       },
       {
         "title": "Scale & Dominance",
-        "body": "SoundSpace became the standard resource every major creator reached for first. We shipped TikTok and influencer integrations that spread audio virally, while its free model forced premium services like Epidemic Sound and Artlist to compete on price."
+        "body": "SoundSpace became the standard resource every major creator reached for first. TikTok and influencer integrations spread audio virally, while its free model forced premium services like Epidemic Sound and Artlist to compete on price."
       }
     ],
     "results": [
@@ -939,12 +937,10 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "We built a unified property management portal that turns spreadsheets and phone tag into automated workflows, tenant self-service, and financial intelligence.",
-    "overview": "Devaxl built PropForce, a portal that centralizes tenant communication, rent collection, maintenance workflows, lease tracking, and financial reporting in one place. It shifts property managers from reactive, paper-based admin to proactive, data-driven operations.",
+    "oneLiner": "A unified property management portal that turns spreadsheets and phone tag into automated workflows, tenant self-service, and financial intelligence.",
+    "overview": "PropForce centralizes tenant communication, rent collection, maintenance workflows, lease tracking, and financial reporting in one portal. It shifts property managers from reactive, paper-based admin to proactive, data-driven operations.",
     "thumbnail": "/projects/propforce.png",
     "collaboration": "PropForce property management platform",
-
-    "role": "Product design, full-stack build, and payment and reporting integration",
     "metrics": [
       {
         "value": "35%",
@@ -963,25 +959,25 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Tenant Self-Service & Communication Hub",
-        "body": "We gave every tenant portal access to lease details, payment history, maintenance status, and documents. We built online rent payment, in-portal maintenance requests, and automated reminders that freed managers from constant calls while keeping all communication in one place per tenant."
+        "body": "Every tenant got portal access to lease details, payment history, maintenance status, and documents. Online rent payment, in-portal maintenance requests, and automated reminders freed managers from constant calls while keeping all communication in one place per tenant."
       },
       {
         "title": "Operational Workflow Automation",
-        "body": "We built auto-routing that sends maintenance requests to approved contractors with status tracking, and rent collection that runs on automatic reminders, processing, and late-payment escalation. We systematized lease lifecycle, vendor management, and inspection scheduling, turning managers from administrators into strategists."
+        "body": "Maintenance requests auto-route to approved contractors with status tracking, and rent collection runs on automatic reminders, processing, and late-payment escalation. Lease lifecycle, vendor management, and inspection scheduling were systematized, turning managers from administrators into strategists."
       },
       {
         "title": "Financial Insights & Analytics",
-        "body": "We built a real-time dashboard that surfaces per-property profitability, rent collected vs. late, and year-to-date P&L by property. We added maintenance cost analysis, tenant quality metrics, and forecasting so managers could make strategic decisions from data instead of gut feel."
+        "body": "A real-time dashboard surfaces per-property profitability, rent collected vs. late, and year-to-date P&L by property. Maintenance cost analysis, tenant quality metrics, and forecasting let managers make strategic decisions from data instead of gut feel."
       }
     ],
     "results": [
       {
         "title": "Faster Rent Collection",
-        "body": "The automated reminders, online payments, and systematic escalation we built cut rent collection time 35%, dropping days sales outstanding from 45 days to 29 days."
+        "body": "Automated reminders, online payments, and systematic escalation cut rent collection time 35%, dropping days sales outstanding from 45 days to 29 days."
       },
       {
         "title": "Quicker Maintenance Response",
-        "body": "The instant contractor assignment we shipped reduced maintenance response time 45%, from an average of 5-7 days down to 2-3 days."
+        "body": "Instant contractor assignment reduced maintenance response time 45%, from an average of 5-7 days down to 2-3 days."
       },
       {
         "title": "Happier, Stickier Tenants",

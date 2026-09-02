@@ -1,16 +1,13 @@
 import { Counter } from "@/components/ui/Counter";
 import { Marquee } from "@/components/ui/Marquee";
 
-// Company name shown in each logo, used for alt text so screen readers and
-// search engines get a name instead of "Devaxl client 1".
-const CLIENTS = [
-  { n: 1, name: "Techno Line" },
-  { n: 2, name: "Montorin" },
-  { n: 3, name: "Arrow Market" },
-  { n: 4, name: "Maxin Graphic" },
-  { n: 5, name: "Sontara" },
-  { n: 6, name: "Altra Technology" },
-];
+// Decorative only. An earlier version put each logo's company name into its alt
+// text — which asserted a commercial relationship to screen readers, Google and
+// llms.txt. Three of these files still carry the words "YOUR TAGLINE HERE" in
+// the artwork and none of the six names appears in any case study, so the claim
+// could not be supported. Empty alt is correct for decorative imagery; put the
+// names back only for logos of confirmed, nameable clients.
+const CLIENTS = [1, 2, 3, 4, 5, 6];
 
 export function Proof() {
   return (
@@ -19,12 +16,12 @@ export function Proof() {
         {/* Real client logo wall */}
         <div className="mb-10 flex items-center gap-4" data-reveal>
           <Marquee>
-            {CLIENTS.map((c) => (
+            {CLIENTS.map((n) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                key={c.n}
-                src={`/clients/client${c.n}.png`}
-                alt={`${c.name} — Devaxl client`}
+                key={n}
+                src={`/clients/client${n}.png`}
+                alt=""
                 loading="lazy"
                 className="h-8 w-auto object-contain"
               />
