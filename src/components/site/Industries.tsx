@@ -4,18 +4,21 @@ import {
   Landmark,
   Sparkles,
   Store,
-  Wrench,
+  Truck,
 } from "lucide-react";
 import { SpotlightCard } from "@/components/ui/SpotlightCard";
 import { SectionHead } from "./SectionHead";
 
+// Ordered by depth of evidence in /work, not by what sounds impressive.
+// Logistics leads because five case studies back it — Apolloe (TMS), Carrier
+// Network, Chat Center, Driver App, and Trucking Guru.
 const INDUSTRIES = [
-  { icon: Landmark, label: "Fintech", desc: "Payments, ledgers, and compliance-grade flows." },
+  { icon: Truck, label: "Logistics & fleet", desc: "TMS, dispatch, carrier data, and driver safety." },
   { icon: Boxes, label: "B2B SaaS", desc: "Multi-tenant apps, billing, and dashboards." },
-  { icon: HeartPulse, label: "Health", desc: "Records, scheduling, and HIPAA-aware systems." },
-  { icon: Store, label: "Marketplaces", desc: "Matching, payouts, and trust & safety." },
   { icon: Sparkles, label: "AI", desc: "RAG, agents, and model integration." },
-  { icon: Wrench, label: "Internal tools", desc: "Admin consoles, ops, and automation." },
+  { icon: Landmark, label: "Fintech", desc: "Payments, ledgers, and compliance-grade flows." },
+  { icon: Store, label: "Marketplaces", desc: "Matching, payouts, and trust & safety." },
+  { icon: HeartPulse, label: "Health", desc: "Records, scheduling, and HIPAA-aware systems." },
 ];
 
 export function Industries() {

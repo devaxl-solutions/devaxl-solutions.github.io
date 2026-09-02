@@ -3,11 +3,14 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { ArticleCard } from "@/components/insights/ArticleCard";
 import { FinalCta } from "@/components/site/FinalCta";
 import { getAllArticles } from "@/lib/insights";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Insights",
+  title: "Product Engineering Insights",
   description:
-    "Field notes on shipping, scaling, and modernizing real products.",
+    "Field notes from the people who build the software: shipping production v1s, modernizing legacy platforms, and embedding senior squads with founders and CTOs.",
+  alternates: { canonical: "/insights" },
 };
 
 export default function InsightsPage() {
@@ -15,6 +18,7 @@ export default function InsightsPage() {
 
   return (
     <main>
+      <JsonLd data={graph(breadcrumbSchema([{ name: "Insights", path: "/insights" }]))} />
       <PageHeader
         eyebrow="Insights"
         title="Notes from the build."

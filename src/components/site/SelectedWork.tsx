@@ -17,8 +17,8 @@ export function SelectedWork() {
     <section id="work" className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
         <SectionHead eyebrow="Selected work" title="Real products we've shipped.">
-          Design, branding, and engineering work delivered for our clients.
-          Outcome metrics are coming as clients confirm them.
+          Fifteen case studies with the problem, the approach, and the outcome —
+          a 300,000-member platform, 74% lower CRM cost, dispatch 40% faster.
         </SectionHead>
 
         <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-md:gap-[18px]">

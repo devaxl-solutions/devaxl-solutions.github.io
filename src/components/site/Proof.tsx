@@ -1,13 +1,19 @@
 import { Counter } from "@/components/ui/Counter";
 import { Marquee } from "@/components/ui/Marquee";
 
+// Decorative only. An earlier version put each logo's company name into its alt
+// text — which asserted a commercial relationship to screen readers, Google and
+// llms.txt. Three of these files still carry the words "YOUR TAGLINE HERE" in
+// the artwork and none of the six names appears in any case study, so the claim
+// could not be supported. Empty alt is correct for decorative imagery; put the
+// names back only for logos of confirmed, nameable clients.
 const CLIENTS = [1, 2, 3, 4, 5, 6];
 
 export function Proof() {
   return (
     <section className="border-b border-faint py-11">
       <div className="wrap">
-        {/* Real client logo wall */}
+        {/* Logo wall — decorative, see the note on CLIENTS above */}
         <div className="mb-10 flex items-center gap-4" data-reveal>
           <Marquee>
             {CLIENTS.map((n) => (
@@ -15,7 +21,7 @@ export function Proof() {
               <img
                 key={n}
                 src={`/clients/client${n}.png`}
-                alt={`Devaxl client ${n}`}
+                alt=""
                 loading="lazy"
                 className="h-8 w-auto object-contain"
               />

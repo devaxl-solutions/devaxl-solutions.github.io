@@ -1,6 +1,9 @@
 // Real DevAXL contact + booking details (from devaxl.com).
 
-export const CALENDLY_URL = "https://calendly.com/touqeerhassan";
+// Points at the 30-minute scoping-call event specifically, so the booking page
+// opens on the right event type instead of the profile's event list. Every CTA
+// on the site imports this one constant.
+export const CALENDLY_URL = "https://calendly.com/touqeerhassan/30min";
 
 export const CONTACT = {
   email: "sales@devaxl.com",

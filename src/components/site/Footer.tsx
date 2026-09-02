@@ -64,12 +64,14 @@ export function Footer() {
             </h2>
             <a
               href={CONTACT.emailHref}
+              data-cta="email-click"
               className="mb-[11px] block text-[14px] text-secondary transition-colors duration-[120ms] hover:text-primary"
             >
               {CONTACT.email}
             </a>
             <a
               href={CONTACT.phoneHref}
+              data-cta="phone-click"
               className="mb-[11px] block text-[14px] text-secondary transition-colors duration-[120ms] hover:text-primary"
             >
               {CONTACT.phone}
@@ -78,6 +80,7 @@ export function Footer() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
+              data-cta="book-call-footer"
               className="mb-[11px] block text-[14px] text-secondary transition-colors duration-[120ms] hover:text-primary"
             >
               Book a call

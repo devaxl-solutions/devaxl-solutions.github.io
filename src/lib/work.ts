@@ -6,6 +6,7 @@ export type CaseStudy = {
   slug: string;
   name: string;
   categories: string[]; // real tags — also used as filter keys + chips
+  industry?: string; // vertical, used to link related cases (see getRelatedCase)
   category: string; // display string, e.g. "Branding · Web Development"
   oneLiner: string;
   overview: string;
@@ -39,6 +40,7 @@ export const WORK_FILTERS = [
 export const CASES: CaseStudy[] = [
   {
     "slug": "apolloe",
+    "industry": "Logistics",
     "name": "Apolloe",
     "categories": [
       "SaaS",
@@ -90,6 +92,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "aninja-crm",
+    "industry": "Sales & CRM",
     "name": "aNinja AI",
     "categories": [
       "SaaS",
@@ -206,16 +209,17 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "nrtur",
+    "industry": "Sales & CRM",
     "name": "Nrtur",
     "categories": [
       "SaaS",
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "A lightweight CRM that replaced Bloom Creative's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
-    "overview": "Bloom Creative partnered with Nrtur to swap their overpriced HubSpot setup for a lightweight CRM built for small, fast-moving teams. The result was a 74% cut in software costs, 5-minute onboarding, and a pipeline that matched how the team actually sells.",
+    "oneLiner": "A lightweight CRM that replaced a four-person agency's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
+    "overview": "We built Nrtur to replace an overpriced HubSpot setup with a lightweight CRM sized for small, fast-moving teams. The result was a 74% cut in software costs, five-minute onboarding, and a pipeline that matched how the team actually sells.",
     "thumbnail": "/projects/nrtur.png",
-    "collaboration": "Bloom Creative, a design and creative services agency",
+    "collaboration": "A four-person creative agency, name withheld",
     "link": {
       "label": "nrtur.io",
       "href": "https://www.nrtur.io/"
@@ -234,15 +238,15 @@ export const CASES: CaseStudy[] = [
         "label": "Setup time vs. weeks"
       }
     ],
-    "challenge": "As a 4-person creative agency, Bloom Creative was paying enterprise prices for enterprise features they'd never use. HubSpot cost $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work.",
+    "challenge": "A four-person creative agency was paying enterprise prices for enterprise features they'd never use. HubSpot cost them $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work.",
     "approach": [
       {
         "title": "Pricing Sanity",
-        "body": "Nrtur's $29/user/month plan dropped the 4-person team from $360 to $95/month, a 74% reduction. The CRM finally felt like an investment instead of a grudge purchase."
+        "body": "Their CRM bill went from $360 a month to $95, a 74% reduction, and the line item finally matched what a four-person team gets out of it."
       },
       {
         "title": "Instant Adoption",
-        "body": "Setup took 5 minutes, not weeks. CEO Sarah Chen imported HubSpot contacts in under 30 minutes with migration help, and the whole team was logging deals and syncing emails by end of day, with no training sessions."
+        "body": "Setup took 5 minutes, not weeks. Their founder imported the HubSpot contacts in under 30 minutes with migration help from us, and the whole team was logging deals and syncing emails by end of day, with no training sessions."
       },
       {
         "title": "Pipeline & Email That Match Reality",
@@ -250,7 +254,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Automations That Stick",
-        "body": "A visual workflow builder let Sarah set up follow-up sequences without a consultant: proposal reminders, task assignments on stage changes, and email templates. It freed up mental overhead that had been eating her day."
+        "body": "A visual workflow builder let their founder set up follow-up sequences without a consultant: proposal reminders, task assignments on stage changes, and email templates. It freed up mental overhead that had been eating her day."
       }
     ],
     "results": [
@@ -268,13 +272,14 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Time Back on Client Work",
-        "body": "Sarah estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
+        "body": "Their founder estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
       }
     ],
-    "verdict": "Bloom Creative's story is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a 4-person agency. The 74% cost cut is remarkable, but the real win is getting the team's focus back on closing deals and serving clients instead of managing software."
+    "verdict": "This one is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a four-person team. The 74% cost cut is remarkable, but the real win is getting the team's focus back on closing deals and serving clients instead of managing software."
   },
   {
     "slug": "pma",
+    "industry": "Community & Media",
     "name": "Product Marketing Alliance",
     "categories": [
       "SaaS",
@@ -340,6 +345,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "securepoint360",
+    "industry": "IT & Security",
     "name": "SecurePoint 360",
     "categories": [
       "Security",
@@ -405,6 +411,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "itboost",
+    "industry": "IT & Security",
     "name": "ITBoost",
     "categories": [
       "SaaS",
@@ -453,6 +460,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "brb",
+    "industry": "Marketplace",
     "name": "BeautyRightBack (BRB)",
     "categories": [
       "AI",
@@ -460,9 +468,10 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "AI · SaaS · Web Development",
-    "oneLiner": "An AI beauty discovery platform that turns a 50,000-product catalog into personalized recommendations customers actually trust.",
-    "overview": "BeautyRightBack replaced a one-size-fits-all recommendation engine with an AI-powered discovery platform combining visual analysis, preference learning, and real-time inventory matching. It transformed a transactional beauty retailer into a personalized beauty consultant.",
+    "oneLiner": "We built an AI beauty discovery platform that turns a 50,000-product catalog into personalized recommendations customers actually trust.",
+    "overview": "Devaxl replaced BeautyRightBack's one-size-fits-all recommendation engine with an AI-powered discovery platform combining visual analysis, preference learning, and real-time inventory matching. We turned a transactional beauty retailer into a personalized beauty consultant.",
     "collaboration": "BeautyRightBack (BRB)",
+    "role": "AI recommendation engine, computer vision, and full-stack platform build",
     "metrics": [
       {
         "value": "3x",
@@ -481,15 +490,15 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Visual & Preference Learning Foundation",
-        "body": "Computer vision analyzes a customer photo for skin tone, undertone, texture, and concerns - no manual forms. A preference graph tracks every view, save, purchase, and return, while recommendations are matched to live inventory and given transparent confidence scores."
+        "body": "We built computer vision that analyzes a customer photo for skin tone, undertone, texture, and concerns - no manual forms. Our preference graph tracks every view, save, purchase, and return, and we matched recommendations to live inventory with transparent confidence scores."
       },
       {
         "title": "Personalized Discovery Experience",
-        "body": "An AI beauty consultant turns 3-4 quick questions into 15 tailored picks instead of 50,000 options. Virtual try-on, ingredient and allergen matching, brand and price alternatives, and dynamically generated smart collections give customers confidence to buy."
+        "body": "We built an AI beauty consultant that turns 3-4 quick questions into 15 tailored picks instead of 50,000 options. We added virtual try-on, ingredient and allergen matching, brand and price alternatives, and dynamically generated smart collections to give customers confidence to buy."
       },
       {
         "title": "Post-Purchase Engagement & Loyalty",
-        "body": "Replenishment intelligence reminds customers before products run out, and complementary recommendations pair foundation with matching concealer, primer, and setting spray. Seasonal swaps and personalized loyalty offers turn one-time buyers into repeat customers."
+        "body": "We shipped replenishment intelligence that reminds customers before products run out, plus complementary recommendations pairing foundation with matching concealer, primer, and setting spray. The seasonal swaps and personalized loyalty offers we built turn one-time buyers into repeat customers."
       }
     ],
     "results": [
@@ -503,7 +512,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "70% Less Cart Abandonment",
-        "body": "Showing a handful of personalized recommendations instead of 50,000 options drove higher conversion and far fewer abandoned carts."
+        "body": "The handful of personalized recommendations we surfaced, instead of 50,000 options, drove higher conversion and far fewer abandoned carts."
       },
       {
         "title": "World-Class Satisfaction",
@@ -514,6 +523,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "authority-alert",
+    "industry": "Marketplace",
     "name": "Authority Alert",
     "categories": [
       "SaaS",
@@ -521,10 +531,11 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · AI · Web Development",
-    "oneLiner": "A transparent, ranked marketplace that verifies coaches, aggregates real feedback, and tracks outcomes so clients can hire with confidence.",
-    "overview": "Authority Alert built a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting millions of clients with vetted coaches across every specialty.",
+    "oneLiner": "We built a transparent, ranked marketplace that verifies coaches, aggregates real feedback, and tracks outcomes so clients can hire with confidence.",
+    "overview": "Devaxl built Authority Alert, a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting millions of clients with vetted coaches across every specialty.",
     "thumbnail": "/projects/authorityAlert.png",
     "collaboration": "Authority Alert coaching marketplace",
+    "role": "Marketplace architecture, verification and matching systems, and full-stack build",
     "metrics": [
       {
         "value": "50,000+",
@@ -543,19 +554,19 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Credibility Infrastructure",
-        "body": "Built trust from the ground up with third-party verified credentials, a structured feedback system rating coaches on specific dimensions, and outcome tracking against measurable goals set with clients. A transparent ranking algorithm and dispute resolution created real accountability instead of pay-to-play visibility."
+        "body": "We built trust from the ground up with third-party verified credentials, a structured feedback system rating coaches on specific dimensions, and outcome tracking against measurable goals set with clients. Our transparent ranking algorithm and dispute resolution created real accountability instead of pay-to-play visibility."
       },
       {
         "title": "Discovery & Intelligent Matching",
-        "body": "Made finding the right coach instant with advanced filtering by specialty, experience, price, and certifications. Machine-learning match scoring suggests coaches most likely to help each client succeed, backed by transparent pricing, low-friction trials, and dedicated industry-specific marketplaces."
+        "body": "We made finding the right coach instant with advanced filtering by specialty, experience, price, and certifications. Our machine-learning match scoring suggests coaches most likely to help each client succeed, backed by transparent pricing, low-friction trials, and dedicated industry-specific marketplaces."
       },
       {
         "title": "Coach Growth & Success Tools",
-        "body": "Turned the platform into a business-building engine with marketing visibility, integrated booking and secure payments, and client management for sessions, goals, and feedback. Coaches could document real client wins and collaborate with peers, replacing slow word-of-mouth with consistent client flow."
+        "body": "We turned the platform into a business-building engine with marketing visibility, integrated booking and secure payments, and client management for sessions, goals, and feedback. Coaches could document real client wins and collaborate with peers, replacing slow word-of-mouth with consistent client flow."
       },
       {
         "title": "Network Effects & Scale",
-        "body": "As more coaches and clients joined, the platform became the default choice through compounding network effects. A specialization flywheel grew niche markets, and anonymized data on what coaching actually works built a defensible competitive moat."
+        "body": "As more coaches and clients joined, the platform became the default choice through compounding network effects. A specialization flywheel grew niche markets, and the anonymized data we collected on what coaching actually works built a defensible competitive moat."
       }
     ],
     "results": [
@@ -565,7 +576,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "2.5M+ Clients Matched",
-        "body": "Millions of people found coaches through transparent, ranked discovery, getting better at their craft, business, health, or life."
+        "body": "Millions of people found coaches through the transparent, ranked discovery we built, getting better at their craft, business, health, or life."
       },
       {
         "title": "$120M+ Annual Coaching Fees",
@@ -580,6 +591,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "carrier-network",
+    "industry": "Logistics",
     "name": "Carrier Network",
     "categories": [
       "SaaS",
@@ -587,10 +599,11 @@ export const CASES: CaseStudy[] = [
       "AI"
     ],
     "category": "SaaS · Web Development · AI",
-    "oneLiner": "A unified carrier intelligence dashboard that turns scattered trucking data into one source of truth—dispatching loads 40% faster and cutting costs 25%.",
-    "overview": "Carrier Network consolidated fragmented carrier data—profiles, performance metrics, compliance records, and communication history—into one intelligent dashboard for freight brokers and logistics companies. The result was 40% faster load assignments and 25% lower costs through smarter carrier selection.",
+    "oneLiner": "We built a unified carrier intelligence dashboard that turns scattered trucking data into one source of truth—dispatching loads 40% faster and cutting costs 25%.",
+    "overview": "Devaxl built Carrier Network, consolidating fragmented carrier data—profiles, performance metrics, compliance records, and communication history—into one intelligent dashboard for freight brokers and logistics companies. The result was 40% faster load assignments and 25% lower costs through smarter carrier selection.",
     "thumbnail": "/projects/careerNetwork.png",
     "collaboration": "Carrier Network carrier intelligence platform",
+    "role": "Data integration architecture, full-stack build, and recommendation engine development",
     "metrics": [
       {
         "value": "40%",
@@ -609,15 +622,15 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Data Consolidation & Unification",
-        "body": "Pulled carrier data from every source into one complete profile per carrier—contacts, equipment, capacity, rates, certifications, and insurance. Integrated load history, safety ratings, customer feedback, cost performance, and reliability metrics, plus government DOT compliance data and full communication logs."
+        "body": "We pulled carrier data from every source into one complete profile per carrier—contacts, equipment, capacity, rates, certifications, and insurance. We integrated load history, safety ratings, customer feedback, cost performance, and reliability metrics, plus government DOT compliance data and full communication logs."
       },
       {
         "title": "Intelligent Dashboard & Decision Support",
-        "body": "Turned raw data into actionable intelligence with a recommendation engine that surfaces the best carriers per load by service area, equipment, reliability, cost, and compliance. Transparent performance scorecards, capacity planning, and one-click load assignment replaced 30-minute searches with instant recommendations."
+        "body": "We turned raw data into actionable intelligence with a recommendation engine that surfaces the best carriers per load by service area, equipment, reliability, cost, and compliance. We shipped transparent performance scorecards, capacity planning, and one-click load assignment, replacing 30-minute searches with instant recommendations."
       },
       {
         "title": "Network Effects & Insights",
-        "body": "As adoption grew, anonymized data powered market intelligence on pricing and capacity trends, benchmarking against industry averages, and predictive insights on no-show risk and capacity limits. The system proactively flagged carriers approaching compliance violations before they happened."
+        "body": "As adoption grew, we used anonymized data to power market intelligence on pricing and capacity trends, benchmarking against industry averages, and predictive insights on no-show risk and capacity limits. We built proactive flagging so carriers approaching compliance violations were caught before they happened."
       }
     ],
     "results": [
@@ -627,7 +640,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Lower Costs",
-        "body": "Data on carrier reliability and cost performance ended overpaying for mediocre service, delivering a 25% cost reduction through better carrier selection."
+        "body": "The carrier reliability and cost-performance data we surfaced ended overpaying for mediocre service, delivering a 25% cost reduction through better carrier selection."
       },
       {
         "title": "Higher On-Time Performance",
@@ -635,23 +648,25 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Compliance & Relationship Visibility",
-        "body": "Compliance issues are caught immediately, eliminating accidental bookings of non-compliant carriers, while preferred carriers earn steady, data-backed work instead of relationship luck."
+        "body": "The compliance monitoring we built catches issues immediately, eliminating accidental bookings of non-compliant carriers, while preferred carriers earn steady, data-backed work instead of relationship luck."
       }
     ],
     "verdict": "Carrier Network shows what's possible when transparency and data replace chaos and tribal knowledge—shifting an entire industry from guesswork to systematic, performance-based carrier management. For logistics companies it meant better selection, faster dispatch, and lower costs; for carriers, transparent opportunities to earn more by performing better."
   },
   {
     "slug": "trucking-guru",
+    "industry": "Logistics",
     "name": "Trucking Guru",
     "categories": [
       "Branding",
       "Web Development"
     ],
     "category": "Branding · Web Development",
-    "oneLiner": "A personal brand and education platform that teaches trucking dispatchers and truck owners to think like entrepreneurs and build thriving businesses.",
-    "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. Over 10,000+ students have graduated, collectively building hundreds of millions in wealth.",
+    "oneLiner": "We built the brand system and platform for an education business teaching trucking dispatchers and truck owners to think like entrepreneurs and build thriving businesses.",
+    "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. The founder brought the curriculum and the audience; Devaxl built the brand system, website, and learning platform that carry it. Over 10,000+ students have graduated, collectively building hundreds of millions in wealth.",
     "thumbnail": "/projects/truckingGuru.png",
     "collaboration": "Trucking Guru",
+    "role": "Brand identity, website, and the learning and community platform behind the programs",
     "metrics": [
       {
         "value": "10,000+",
@@ -670,19 +685,19 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Personal Brand & Credibility",
-        "body": "Built deep industry credibility on a proven track record, backing taught strategies with real P&L statements. Free, practical content across social media, YouTube, and email grew an audience, while forums and groups replaced isolation with peer support and authentic, transparent storytelling."
+        "body": "The founder built deep industry credibility on a proven track record, backing taught strategies with real P&L statements. We turned it into a brand. Free, practical content across social media, YouTube, and email grew an audience, while forums and groups replaced isolation with peer support and authentic, transparent storytelling."
       },
       {
         "title": "Structured Education & Programs",
-        "body": "Converted the audience into paying students through Dispatcher Bootcamp and Truck Owner Mastery, covering load economics, broker relationships, pricing, financial management, and scaling. Advanced cohorts added group coaching and accountability, with student results meticulously documented as case studies."
+        "body": "Trucking Guru converted the audience into paying students through Dispatcher Bootcamp and Truck Owner Mastery, covering load economics, broker relationships, pricing, financial management, and scaling. Advanced cohorts added group coaching and accountability, with student results meticulously documented as case studies. We built the learning platform that delivers the programs."
       },
       {
         "title": "Community & Network Effects",
-        "body": "Built a self-sustaining ecosystem where students partnered, referred, and collaborated across the country. A job board, financing options, and service-provider partnerships formed a resource network, while celebrated alumni success stories drove word-of-mouth enrollment without expensive marketing."
+        "body": "We built the platform for a self-sustaining ecosystem where students partnered, referred, and collaborated across the country. We shipped a job board, and financing options and service-provider partnerships completed the resource network around it, while celebrated alumni success stories drove word-of-mouth enrollment without expensive marketing."
       },
       {
         "title": "Scale & Industry Impact",
-        "body": "The brand became the go-to authority in trucking business, reaching hundreds of thousands of professionals via a YouTube channel with millions of views and a 100k+ email list. Backed by an LMS, community platforms, and financing partnerships, it earned media features and conference speaking engagements."
+        "body": "The brand became the go-to authority in trucking business, reaching hundreds of thousands of professionals via a YouTube channel with millions of views and a 100k+ email list. It ran on the LMS and community platforms we built, alongside financing partnerships, and earned media features and conference speaking engagements."
       }
     ],
     "results": [
@@ -703,10 +718,11 @@ export const CASES: CaseStudy[] = [
         "body": "Working-class professionals discovered they could earn 10x more as independent operators, and Trucking Guru became the definitive voice on how to build a trucking business."
       }
     ],
-    "verdict": "Trucking Guru proves that teaching people to make better business decisions can unlock generational wealth. By selling education rather than software or services, she turned thousands of stuck trucking professionals into thriving dispatch and trucking business owners."
+    "verdict": "Trucking Guru proves that teaching people to make better business decisions changes what they can build. The founder brought the curriculum and the credibility; we built the brand, the site, and the platform that carries it to thousands of stuck trucking professionals."
   },
   {
     "slug": "chat-center",
+    "industry": "Logistics",
     "name": "Chat Center",
     "categories": [
       "SaaS",
@@ -714,10 +730,11 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Mobile App Development · Web Development",
-    "oneLiner": "A trucking-native communication platform that unifies driver-dispatcher coordination into one real-time, fully documented app.",
-    "overview": "Chat Center is a unified communication and data platform built specifically for trucking, centralizing all driver-dispatcher interaction in one app. It combines real-time messaging, task tracking, load coordination, and complete data visibility to replace fragmented, unreliable channels.",
+    "oneLiner": "We built a trucking-native communication platform that unifies driver-dispatcher coordination into one real-time, fully documented app.",
+    "overview": "Devaxl built Chat Center, a unified communication and data platform made specifically for trucking that centralizes all driver-dispatcher interaction in one app. It combines real-time messaging, task tracking, load coordination, and complete data visibility to replace fragmented, unreliable channels.",
     "thumbnail": "/projects/chatCenter.png",
     "collaboration": "Chat Center (trucking communication platform)",
+    "role": "Product design, mobile and web engineering, and third-party systems integration",
     "metrics": [
       {
         "value": "35%",
@@ -736,19 +753,19 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Unified Messaging & Real-Time Notifications",
-        "body": "Consolidated all communication into a single hub with instant messaging, read receipts, and delivery confirmation, ending the fragmented mix of calls, texts, and WhatsApp. Structured task assignments carry full load details accepted or declined with one tap, while live status indicators and priority messaging keep dispatchers aware and urgent updates seen immediately."
+        "body": "We consolidated all communication into a single hub with instant messaging, read receipts, and delivery confirmation, ending the fragmented mix of calls, texts, and WhatsApp. We built structured task assignments that carry full load details accepted or declined with one tap, plus live status indicators and priority messaging that keep dispatchers aware and urgent updates seen immediately."
       },
       {
         "title": "Data & Coordination Intelligence",
-        "body": "Turned every message, assignment, and update into logged, actionable data with complete communication history attached to each load record. Driver performance tracking and route-and-availability optimization suggest the right driver for the right load, while document, compliance, and safety logs live inside the platform for built-in accountability."
+        "body": "We turned every message, assignment, and update into logged, actionable data with complete communication history attached to each load record. We added driver performance tracking and route-and-availability optimization to suggest the right driver for the right load, and put document, compliance, and safety logs inside the platform for built-in accountability."
       },
       {
         "title": "Integration & Workflow Automation",
-        "body": "Connected Chat Center to TMS, GPS/telematics, customer-facing tracking, and payment systems so load data, location, and ETAs sync automatically with no manual entry. Automated alerts flag issues like approaching service limits, low fuel, delivery delays, or reported damage so dispatchers can intervene early."
+        "body": "We connected Chat Center to TMS, GPS/telematics, customer-facing tracking, and payment systems so load data, location, and ETAs sync automatically with no manual entry. We built automated alerts that flag issues like approaching service limits, low fuel, delivery delays, or reported damage so dispatchers can intervene early."
       },
       {
         "title": "Scale & Industry Adoption",
-        "body": "Based on user feedback, added group messaging, voice/video calls, and push notifications alongside a mobile-first design, offline sync, and multi-language support for a diverse workforce. Better coordination made drivers feel respected and valued, turning the platform into both a retention tool and a new industry standard."
+        "body": "Based on user feedback, we added group messaging, voice/video calls, and push notifications alongside a mobile-first design, offline sync, and multi-language support for a diverse workforce. Better coordination made drivers feel respected and valued, turning the platform into both a retention tool and a new industry standard."
       }
     ],
     "results": [
@@ -758,7 +775,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Faster Load Assignment",
-        "body": "Sending a load to multiple available drivers at once made assignment 50% faster, replacing 30-minute phone tag with near-instant acceptance."
+        "body": "The broadcast assignment we built—sending a load to multiple available drivers at once—made assignment 50% faster, replacing 30-minute phone tag with near-instant acceptance."
       },
       {
         "title": "Higher Operational Efficiency",
@@ -773,6 +790,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "driver-app",
+    "industry": "Logistics",
     "name": "Driver App",
     "categories": [
       "Mobile App Development",
@@ -780,10 +798,11 @@ export const CASES: CaseStudy[] = [
       "SaaS"
     ],
     "category": "Mobile App Development · AI · SaaS",
-    "oneLiner": "Real-time location, dashcam footage, and AI safety monitoring that turns trucking fleets from reactive to proactive — cutting accidents and insurance costs.",
-    "overview": "Trucking companies operated blind, with no visibility into driver behavior, location, or safety. Driver App built a real-time collaboration platform giving dispatchers live location tracking, continuous dashcam footage, and performance data — shifting fleets from reacting to problems to preventing them.",
+    "oneLiner": "We built the real-time location, dashcam footage, and AI safety monitoring that turn trucking fleets from reactive to proactive — cutting accidents and insurance costs.",
+    "overview": "Trucking companies operated blind, with no visibility into driver behavior, location, or safety. Devaxl built Driver App, a real-time collaboration platform giving dispatchers live location tracking, continuous dashcam footage, and performance data — shifting fleets from reacting to problems to preventing them.",
     "thumbnail": "/projects/driverapp.png",
     "collaboration": "Driver App",
+    "role": "Mobile app development, real-time tracking and video infrastructure, and AI safety monitoring",
     "metrics": [
       {
         "value": "40%",
@@ -802,15 +821,15 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Real-Time Location & Tracking",
-        "body": "Live GPS put every driver on a map in real time, with accurate ETAs replacing guesswork. Dispatchers optimized routes on the fly, set geofencing alerts, and confirmed deliveries automatically."
+        "body": "We put every driver on a map in real time with live GPS, replacing guesswork with accurate ETAs. Dispatchers optimized routes on the fly, set geofencing alerts, and confirmed deliveries automatically."
       },
       {
         "title": "Dashcam & Safety Footage",
-        "body": "Continuous front- and optional rear-facing dashcams streamed to secure cloud storage, with live feed access for dispatchers. AI flagged risky events like hard braking and tailgating in real time, while saved accident footage delivered undeniable evidence for coaching and insurance disputes."
+        "body": "We streamed continuous front- and optional rear-facing dashcam video to secure cloud storage, with live feed access for dispatchers. Our AI flagged risky events like hard braking and tailgating in real time, while saved accident footage delivered undeniable evidence for coaching and insurance disputes."
       },
       {
         "title": "Performance Data & Accountability",
-        "body": "Driving behavior was scored and surfaced on individual driver and fleet dashboards, turning safety into friendly competition. Aggregate analytics pinpointed risky drivers, lanes, and times of day, while data flagged predictive maintenance needs and automated DOT compliance documentation."
+        "body": "We scored driving behavior and surfaced it on individual driver and fleet dashboards, turning safety into friendly competition. Our aggregate analytics pinpointed risky drivers, lanes, and times of day, flagged predictive maintenance needs, and automated DOT compliance documentation."
       },
       {
         "title": "Culture & Scale",
@@ -839,6 +858,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     "slug": "sound-space",
+    "industry": "Community & Media",
     "name": "Sound Space",
     "categories": [
       "SaaS",
@@ -978,4 +998,45 @@ export function getCaseBySlug(slug: string): CaseStudy | undefined {
 export function getNextCase(slug: string): CaseStudy {
   const i = CASES.findIndex((c) => c.slug === slug);
   return CASES[(i + 1) % CASES.length];
+}
+
+/**
+ * The most closely related case, by shared discipline tags.
+ *
+ * The "next project" link used to walk the array in order, which chained all 15
+ * cases into a ring but linked them by accident of position. That left the
+ * strongest cluster on the site — five trucking and logistics builds (Apolloe,
+ * Carrier Network, Chat Center, Driver App, Trucking Guru) — with no thematic
+ * path between them. Preferring a case that shares tags means a reader deep in
+ * one logistics story is offered another, which is both better for them and the
+ * internal-linking signal that vertical was missing.
+ *
+ * Falls back to the next case in order, so every case still links somewhere and
+ * the ring property is preserved.
+ */
+export function getRelatedCase(slug: string): { case: CaseStudy; related: boolean } {
+  const current = getCaseBySlug(slug);
+  if (!current) return { case: getNextCase(slug), related: false };
+
+  const scored = CASES.filter((c) => c.slug !== slug)
+    .map((c) => ({
+      c,
+      // A shared vertical beats any number of shared disciplines: two trucking
+      // builds belong together more than two things that both happen to be SaaS.
+      shared:
+        (current.industry && c.industry === current.industry ? 10 : 0) +
+        c.categories.filter((cat) => current.categories.includes(cat)).length,
+    }))
+    .filter((x) => x.shared > 0)
+    .sort((a, b) => b.shared - a.shared);
+
+  // Rotate among equally-related cases by position, so the five logistics cases
+  // form a cycle rather than all pointing at the same one.
+  if (scored.length) {
+    const top = scored.filter((x) => x.shared === scored[0].shared).map((x) => x.c);
+    const i = CASES.findIndex((c) => c.slug === slug);
+    return { case: top[i % top.length], related: true };
+  }
+
+  return { case: getNextCase(slug), related: false };
 }

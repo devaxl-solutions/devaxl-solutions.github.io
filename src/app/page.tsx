@@ -1,3 +1,6 @@
+import type { Metadata } from "next";
+import { JsonLd } from "@/components/site/JsonLd";
+import { faqSchema, graph, servicesSchema } from "@/lib/schema";
 import { Hero } from "@/components/site/Hero";
 import { Proof } from "@/components/site/Proof";
 import { Capabilities } from "@/components/site/Capabilities";
@@ -11,9 +14,14 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Faq } from "@/components/site/Faq";
 import { FinalCta } from "@/components/site/FinalCta";
 
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   return (
     <main>
+      <JsonLd data={graph(servicesSchema(), faqSchema())} />
       <Hero />
       <Proof />
       <Capabilities />

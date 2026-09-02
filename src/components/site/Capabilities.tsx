@@ -6,20 +6,20 @@ const CARDS = [
   {
     icon: Rocket,
     title: "SaaS & AI MVP → launch",
-    out: "Take an idea to a production v1 real users can pay for — AI features built in where they matter, scoped tight, shipped in weeks not quarters.",
-    outcome: "Outcome: a live, revenue-ready product",
+    out: "Take an idea to a first release real users can pay for — AI built in where it earns its place, scoped tight, delivered to the plan we agreed.",
+    outcome: "Outcome: a live app people can pay for",
   },
   {
     icon: Gauge,
     title: "Scale & modernize",
-    out: "Tame a slow, brittle codebase serving thousands of users — performance, reliability, and a roadmap you can build on.",
-    outcome: "Outcome: faster, stable, maintainable",
+    out: "Take ownership of a slow, buggy codebase serving thousands of users — speed, reliability, and a roadmap you can build on.",
+    outcome: "Outcome: fast, stable, easy to extend",
   },
   {
     icon: Users,
     title: "Embed a product team",
-    out: "A dedicated squad — design, engineering, PM — that works as part of your org against your roadmap, sprint after sprint.",
-    outcome: "Outcome: durable delivery velocity",
+    out: "A dedicated senior team — design, engineering, PM — that works inside your org against your roadmap, week after week.",
+    outcome: "Outcome: steady, predictable delivery",
   },
 ];
 
@@ -28,8 +28,8 @@ export function Capabilities() {
     <section id="services" className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
         <SectionHead eyebrow="Services" title="One senior team, from first commit to scale.">
-          We plug in where you need us — a fast v1, a rescue mission on an aging
-          platform, or a long-term embedded squad.
+          We plug in where you need us — a first release, a rescue on an app
+          that has gone brittle, or a long-term embedded team.
         </SectionHead>
 
         <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1 max-md:gap-4">

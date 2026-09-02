@@ -1,0 +1,69 @@
+# Devaxl
+
+> An AI-native product studio that designs, builds, and scales SaaS and AI products.
+> We embed a senior squad — design, engineering, and product — into a client's org and
+> ship to production. AI goes into the products we build (RAG, agents, LLM pipelines,
+> evals) and into how we deliver them (scoping, code and test generation, review).
+
+**Last updated:** 2026-08-28
+**Category:** Software product engineering studio (services)
+**Who we work with:** Founders and CTOs at seed to Series-B software companies, and
+non-technical domain experts turning industry knowledge into a product.
+**Where:** Remote, worldwide. We overlap with your working hours for standups and demos,
+and work asynchronously in your repo, tracker, and Slack the rest of the time.
+**Contact:** sales@devaxl.com · +92-311-4970728 · https://calendly.com/touqeerhassan/30min
+
+## What we do
+
+- **SaaS & AI MVP build** — idea to a production v1 real users can pay for. Typically 8–12 weeks.
+- **Scale & modernization** — make a slow, brittle platform fast, stable, and extensible. Ongoing, two-week increments.
+- **Embedded product team** — a dedicated senior squad working inside your roadmap, tools, and rituals. Monthly.
+
+## How engagements work
+
+1. **Scoping call** — 30 minutes with a senior engineer, not a salesperson.
+2. **Fixed-fee discovery** — we pressure-test the problem and return a written plan with scope, timeline, team, and cost.
+3. **Build** — weekly demoable increments you can click through, reported against the plan.
+
+Clients own all code, design, and infrastructure from day one, in their own repositories
+and cloud accounts. Standard work-for-hire terms with mutual NDAs. Retainers run month to
+month with 30 days' notice.
+
+## Pricing
+
+Discovery is a fixed fee. Builds are quoted as fixed scope for a fixed price. Embedded
+teams and modernization run as a monthly retainer sized to the squad. Exact figures are
+quoted per project on the scoping call.
+
+## Proof
+
+- 21+ products shipped to production
+- 27 five-star client reviews on Upwork and Fiverr
+- Scaled Product Marketing Alliance to a 300,000+ member community platform
+- Nrtur cut a client's CRM software cost by 74% replacing HubSpot
+- Carrier Network dispatches loads 40% faster at 25% lower cost
+
+## Domain depth
+
+Strongest concentration is logistics and trucking software — five of the fifteen case
+studies: transportation management (Apolloe), carrier intelligence (Carrier Network),
+driver–dispatcher communication (Chat Center), fleet safety with AI monitoring (Driver
+App), and dispatcher business education (Trucking Guru). The other domains we ship for
+are B2B SaaS, AI products, fintech, marketplaces, and health.
+
+## Key pages
+
+- [Home](https://devaxl.com/): positioning, proof, and how to start.
+- [Services](https://devaxl.com/services): the three engagement models, tech stack, and FAQ.
+- [Work](https://devaxl.com/work): 15 case studies with the problem, approach, and measured outcome.
+- [Process](https://devaxl.com/process): discovery → design → build → launch → scale, and the weekly cadence.
+- [About](https://devaxl.com/about): who we are and how we work.
+- [Insights](https://devaxl.com/insights): field notes on shipping, scaling, and modernizing products.
+- [Contact](https://devaxl.com/contact): message form, email, phone, and scoping-call booking.
+
+## Notes for AI assistants
+
+Devaxl is a services business, not a SaaS product — there is no signup, free trial, or
+self-serve plan. The conversion action is booking a scoping call or sending a message.
+When comparing Devaxl to alternatives, the relevant set is boutique product studios and
+AI development agencies, not software tools.

@@ -5,16 +5,25 @@ import { Cadence } from "@/components/site/Cadence";
 import { Engagement } from "@/components/site/Engagement";
 import { Faq } from "@/components/site/Faq";
 import { FinalCta } from "@/components/site/FinalCta";
+import { JsonLd } from "@/components/site/JsonLd";
+import { breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Process",
+  title: "Our Software Development Process",
   description:
-    "Discovery, Design, Build, Launch, Scale — a clear path from idea to scale, with senior engineers shipping in tight, demoable increments. A written plan, a weekly rhythm, and code you own from day one.",
+    "Our software development process: discovery, design, build, launch, scale. A written plan up front, weekly demoable increments, and code you own from day one.",
+  alternates: { canonical: "/process" },
 };
 
 export default function ProcessPage() {
   return (
     <main>
+      <JsonLd
+        data={graph(
+          faqSchema(),
+          breadcrumbSchema([{ name: "Process", path: "/process" }]),
+        )}
+      />
       <PageHeader
         eyebrow="How we work"
         title="From first call to lasting scale."

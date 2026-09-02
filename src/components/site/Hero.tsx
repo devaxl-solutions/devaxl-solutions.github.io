@@ -66,23 +66,34 @@ export function Hero() {
             <span className="text-accent">SaaS &amp; AI products.</span>
           </h1>
           <p className="mt-6 max-w-[540px] text-[18px] leading-[1.65] text-secondary max-md:text-[16px]">
-            From AI-powered features to platforms serving thousands of users — we
-            embed a senior, AI-native product team and ship. We build AI into the
-            product, and use it across how we deliver.
+            We take the problem off your desk and own it through to production —
+            one senior squad, no hand-offs, and a demo you can click through every
+            week. Production v1 in 8&ndash;12 weeks, in your repos, yours from day one.
           </p>
           <div className="mt-9 flex flex-wrap gap-3.5 max-md:flex-col max-md:items-stretch">
-            <Link href="/work" className={cn(buttonVariants({ size: "lg" }), "max-md:w-full")}>
-              See what we&rsquo;ve shipped
-            </Link>
             <a
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: "ghost", size: "lg" }), "max-md:w-full")}
+              data-cta="book-call-hero"
+              className={cn(buttonVariants({ size: "lg" }), "max-md:w-full")}
             >
               Book a scoping call
             </a>
+            <Link
+              href="/work"
+              data-cta="see-work-hero"
+              className={cn(buttonVariants({ variant: "ghost", size: "lg" }), "max-md:w-full")}
+            >
+              See what we&rsquo;ve shipped
+            </Link>
           </div>
+          {/* Risk reversal directly under the primary CTA — the top objection for
+              a studio is "am I about to be sold to for 30 minutes?" */}
+          <p className="mt-4 text-[13.5px] leading-relaxed text-tertiary">
+            30 minutes with a senior engineer, not a salesperson. No pitch deck, no
+            obligation &mdash; and you own every line of code we write.
+          </p>
         </div>
 
         <ProductShowcase />
