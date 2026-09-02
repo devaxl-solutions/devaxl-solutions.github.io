@@ -1,14 +1,15 @@
-// Insights (blog) content. These 3 articles are SEED PLACEHOLDERS — replace
-// the prose, dates, authors, and cover/thumbnail media with real content.
+// Insights (blog) content.
 //
-// WARNING: there is no visible placeholder marker. An earlier version of this
-// comment claimed each article "is tagged [PLACEHOLDER: real article] in the UI"
-// — that tag was never implemented. These render as finished, dated articles,
-// they are in the sitemap, and they now carry BlogPosting structured data
-// (src/lib/schema.ts) that asserts their datePublished and author to search
-// engines and LLMs. Either byline them to a real person and treat them as
-// published, or pull /insights from the nav and sitemap until real articles
-// exist. Leaving them as-is publishes seed content under the Devaxl name.
+// "buy-the-software-unless-configuring-costs-more" is REAL — written from the
+// Nrtur engagement in work.ts, fact-checked against it, client unnamed.
+//
+// The other two are still SEED PLACEHOLDERS — replace their prose, dates and
+// authors with real content.
+//
+// WARNING on the two seeds: there is no visible placeholder marker. They render
+// as finished, dated articles, sit in the sitemap, and carry BlogPosting
+// structured data (src/lib/schema.ts) asserting their datePublished and author
+// to search engines and LLMs. Either byline them to a real person or pull them.
 
 export type ArticleBlock =
   | { type: "p"; text: string }
@@ -72,40 +73,55 @@ export const ARTICLES: Article[] = [
     ],
   },
   {
-    slug: "modernizing-a-legacy-monolith",
+    slug: "buy-the-software-unless-configuring-costs-more",
     category: "Architecture",
-    title: "Modernizing a legacy monolith while it keeps serving users.",
-    dek: "You rarely get to stop the world and rewrite. Here's how to make an aging platform fast and stable without a single maintenance window.",
-    readTime: "11 min read",
-    date: "Jan 30, 2026",
-    dateISO: "2026-01-30",
+    title: "Buy the software, unless configuring it costs more than building it.",
+    dek: "Buying is the right answer for almost every tool a company runs. Four checkable questions for the narrow cases where it isn't — and one four-person agency where the answer came back build.",
+    readTime: "9 min read",
+    date: "Sep 2, 2026",
+    dateISO: "2026-09-02",
     author: "Devaxl Engineering",
     body: [
-      { type: "p", text: "Most modernization work happens on a platform that can't go offline. Customers are using it right now, revenue depends on it being up, and the system you've been asked to fix is the same system paying everyone's salary. This is the constraint that makes legacy work hard — not the age of the code, but the fact that you have to change it while it's load-bearing. The metaphor everyone reaches for is changing the engine while the car is moving, and it's exactly right: the car does not stop, and the passengers should never feel a thing." },
-      { type: "p", text: "The temptation, always, is the rewrite. Start clean, do it properly this time, switch over when it's ready. It's the most appealing and most dangerous idea in software, because it bets the business on a single switchover that has to be perfect on the first try, after months of building in the dark with no feedback from real traffic. The rewrites that survive are the ones that were never a rewrite at all — they were a long sequence of small, reversible changes that happened to add up to a new system." },
-      { type: "h2", text: "Measure before you touch anything" },
-      { type: "p", text: "The first move on any legacy platform is not to change code — it's to be able to see. You cannot improve what you cannot measure, and more importantly, you cannot prove a change was safe without a baseline to compare against. Before refactoring a single line, we add tracing across the request path, capture the real latency distributions, and surface the actual failure modes rather than the ones everybody assumes exist." },
-      { type: "p", text: "This step routinely overturns the team's intuition. The endpoint everyone complains about is fine; the slow one is a report nobody mentioned because they've stopped expecting it to be fast. The database isn't the bottleneck — a synchronous third-party call buried three layers deep is. Opinion picks the wrong targets with remarkable consistency. Data picks the ones that actually move the numbers, and just as importantly, it gives you the evidence to say no to the optimizations that wouldn't." },
-      { type: "figure", icon: "activity", caption: "Instrumentation first: a baseline of real latency and failure modes turns modernization from guesswork into a ranked list of targets with evidence behind each one." },
-      { type: "h2", text: "Strangle, don't rewrite" },
-      { type: "p", text: "The pattern that makes this safe is the strangler fig — named for the vine that grows around a tree, gradually taking over its structure until the original can be removed without the whole thing falling down. Applied to software: you stand up the new implementation beside the old one, route a fraction of traffic through it behind a flag, and compare the two in production on real requests. The new path doesn't replace the old one. It earns its place, request by request, until there's nothing left for the old one to do." },
-      { type: "p", text: "Concretely, that means a routing layer that can send, say, one percent of traffic to the new code path while the other ninety-nine percent stays on the proven one. You watch the new path's error rate and latency against the old path's as a live control group. If it holds, you turn the dial up — five percent, twenty, fifty. If it doesn't, you turn it back to zero and nobody outside the team ever knew. Nothing about this requires a maintenance window, because at no point is the system ever in a state you can't instantly back out of." },
-      { type: "figure", icon: "git-branch", caption: "Traffic splits behind a flag: the new path runs beside the old as a live control group. Turn the dial up only when the numbers earn it; turn it to zero the instant they don't." },
-      { type: "h2", text: "The discipline that keeps it reversible" },
-      { type: "p", text: "Reversibility isn't a property you get for free — it's something you engineer into every change deliberately. Three practices do most of the work, and they're unglamorous on purpose." },
+      { type: "p", text: "Almost every build-versus-buy argument should end in buy, and the reasons aren't close. Someone else has already handled the edge cases you haven't thought of yet — the timezone bug, the tax rule, the date picker that breaks in one browser. Someone else carries the pager at 2am. And a wrong decision is cancellable: a bad subscription costs a month's notice; a bad internal tool costs every engineer-week it took to build, plus every one it takes to keep alive." },
+      { type: "p", text: "That's worth saying plainly coming from us, because building custom software is what clients pay us for, and buy is still the advice we give most often. What follows is where that default stops holding — and one client where it didn't." },
+      { type: "h2", text: "The comparison most teams get wrong" },
+      { type: "p", text: "The comparison usually runs as a price against an estimate: a monthly fee versus the six weeks an engineer thinks it'll take. Both numbers are wrong in the same direction, because neither contains what costs the most." },
+      { type: "p", text: "On the buy side, the license fee is the smallest part. The rest is time the tool takes from people forever: onboarding, configuration, the person who quietly becomes its unofficial admin, the quarterly re-tidy when pipeline stages drift from how you sell. On the build side, the estimate is the smallest part too: the rest is hosting, patches, dependency upgrades, and someone still being here in two years who understands it. Neither column appears on an invoice, which is why teams argue about the two numbers that do." },
+      { type: "figure", icon: "chart", caption: "The license fee and the build estimate are the two numbers everyone compares, and the two smallest in the decision. What decides it is hours, on both sides." },
+      { type: "h2", text: "Four questions that flip the default" },
+      { type: "p", text: "The default is buy, and moving off it takes real evidence. These four questions are deliberately answerable: you can either name the thing or you can't." },
       { type: "ul", items: [
-        "Wrap every risky change in a feature flag and a staged rollout, so the blast radius is a dial you control, not a deploy you hope about.",
-        "Build a test net around the money paths before you refactor them — characterization tests that pin down current behavior, even the bugs, so you change what you mean to and nothing else.",
-        "Keep deploys small and frequent, so a regression is a five-minute revert of one change rather than a forensic hunt through a month of batched work.",
+        "Are you paying for the shape of a company you aren't? Not extra features — the wrong ones. Enterprise tools assume approvals, handoffs and reporting lines a small team doesn't have.",
+        "Is the configuration cost recurring rather than one-off? Setup you do once is a purchase; setup that comes back every quarter is rent, charged in hours instead of dollars.",
+        "Does what you need fit in one sentence, and still fit a month later? Write it down, then check it after real use rather than on the day the tool annoys you.",
+        "Are you already maintaining the glue that keeps the bought tool usable? A spreadsheet beside it, a scheduled export, someone reconciling two systems — an unbudgeted internal product.",
       ] },
-      { type: "p", text: "The test net deserves emphasis because it's the one teams are most tempted to skip on legacy code that has no tests to begin with. You don't need full coverage — you need a net under the paths where mistakes cost money. Characterization tests that capture exactly what the system does today, quirks included, are what let you refactor aggressively without holding your breath. They turn \"I think this is equivalent\" into \"the suite says this is equivalent.\"" },
-      { type: "quote", text: "Modernization is a sequence of boring, reversible steps — not one brave leap." },
-      { type: "h2", text: "Small deploys are a safety feature" },
-      { type: "p", text: "There's a counterintuitive truth at the center of all of this: the way to make changes to a fragile system safer is to make them smaller and more frequent, not larger and more careful. A big, carefully reviewed quarterly release concentrates risk — when something breaks, you're bisecting through hundreds of changes under incident pressure. A steady stream of one-change deploys spreads that risk thin. When one breaks, the cause is obvious because it's the only thing that shipped, and the fix is a revert." },
-      { type: "p", text: "This inverts how most teams think about caution on legacy systems. Caution feels like slowing down and batching changes so you can review them thoroughly. Real caution is shipping the smallest reversible increment you can, watching it, and shipping the next one — because that's the approach where a mistake is a non-event instead of an outage." },
-      { type: "h2", text: "The payoff compounds" },
-      { type: "p", text: "Done this way, modernization stops being a terrifying project with a binary outcome and becomes a steady process with a visible trend. The platform gets measurably faster and more reliable week over week. The team's confidence rises alongside it, because every change has been proven in production rather than hoped through a switchover. And the old system doesn't get dramatically retired in a single tense evening — it just quietly runs out of traffic until removing it is a cleanup task, not an event." },
-      { type: "p", text: "That's the goal the whole time: a platform that's been modernized so gradually and so safely that the most remarkable thing about it is that nobody outside the team ever noticed it happening." },
+      { type: "p", text: "One yes is noise. Three or four, sustained over months rather than one bad week, is the case for building something." },
+      { type: "h2", text: "What that looked like for one client" },
+      { type: "p", text: "A four-person creative agency came to us paying $360 a month for HubSpot. The number wasn't the problem — $360 is fair for a working sales system. The problem was everything arranged around it." },
+      { type: "p", text: "Run the questions. Were they paying for the shape of a company they weren't? Yes: HubSpot is built for sales organizations with handoffs and reporting upward; there were four of them. Was the configuration cost recurring? Yes — weeks of onboarding, then complex configuration and constant training, and with a 30-to-90-day sales cycle nobody's hands stayed warm on the tool. Did what they needed fit in one sentence? Yes, and you can read it off what they built: track the contacts, see where the deals are, don't lose the follow-up." },
+      { type: "p", text: "The fourth question — whether they were already maintaining glue — we're leaving unscored; we don't have an honest answer to it. Three is enough. They were paying for automation, reporting and integration complexity they never used, and paying twice over: on the invoice, and in the hours it took to keep a tool that size configured for a team that small." },
+      { type: "p", text: "So their answer was build. Not in-house: nobody at a four-person creative agency was going to become a part-time software maintainer. They hired us; we built them Nrtur, and they own it. A CRM sized to the sentence — contact management, a pipeline that matches how they sell, automatic email sync, a visual workflow builder for follow-ups. That was the whole scope; setup took five minutes against weeks for the thing it replaced." },
+      { type: "figure", icon: "boxes", caption: "Contacts, a pipeline shaped like their sales, email that syncs itself, follow-ups that fire on their own. The scope of the build was the scope of the sentence." },
+      { type: "p", text: "Their CRM spend fell 74%, saving about $3,180 a year — the easiest number to quote and the least interesting one. The team estimates three to four hours a week recovered from CRM admin, and for a four-person shop that's the figure that mattered. The saving was never really the license." },
+      { type: "h2", text: "The sentence is the hard part" },
+      { type: "p", text: "All of this rests on the sentence, and the sentence is where these projects fail. Not during the build — three months later, when the thing that was supposed to do one job gets asked to do a second one that is obviously, reasonably related." },
+      { type: "quote", text: "Nobody proposes complexity. It arrives as the obvious next commit, from someone being helpful." },
+      { type: "p", text: "It's always defensible in the moment: if we're tracking deals we may as well track invoices. Each step is small, each has a good argument, and six in a row is how you arrive at a worse version of the product you left, with the maintenance bill now yours. The test isn't whether a feature would be useful — almost anything would be. The test is whether it was in the sentence." },
+      { type: "h2", text: "What this framework doesn't say" },
+      { type: "p", text: "It doesn't say HubSpot is bad software. It's very good software for the company it was designed for: one with a sales team, a marketing function, handoffs between the two, and enough deal volume that reporting is a real question. A tool being wrong for you isn't the same as a tool being wrong. The agency wasn't overcharged; they were mis-sized, and they'd sized themselves." },
+      { type: "p", text: "Run the same four questions at 200 people and every answer reverses: you are that company now, configuration is somebody's actual job, and the sentence stopped being one sentence long ago. At that size a small custom CRM is what slows you down, and moving to something like HubSpot is the boring, correct next decision." },
+      { type: "p", text: "And it doesn't say building is cheap because someone else writes the code. Commissioned software is a standing obligation: a hosting bill, a day when a dependency needs updating, and an owner, who is you. The agency didn't get zero maintenance; they got maintenance proportional to what they use rather than to what they were sold. Let it grow and you've bought back the complexity you were escaping, with the patching now yours." },
+      { type: "h2", text: "Running it against your own stack" },
+      { type: "p", text: "This is an afternoon, not a project, and it's worth doing whether or not you ever hire anyone: most of what it produces is a decision to leave things alone with better reasons than before." },
+      { type: "ul", items: [
+        "List every recurring tool and what it costs a month. That column you already have.",
+        "Beside each, estimate the hours: onboarding, configuration, admin, training, and the reconciliation nobody counts as work.",
+        "Write the sentence for each tool. If you can't get it down to one, the answer is buy. Stop there.",
+        "Check the sentence again a month later. If it grew, the answer is buy.",
+      ] },
+      { type: "p", text: "Most of your stack will pass, and that's the correct result. The value is in the one line item where the numbers don't work." },
+      { type: "p", text: "If one doesn't pass, what's in front of you is smaller than it sounds. It isn't becoming a software company. It's writing one sentence, paying for exactly that sentence, and defending it for as long as you own the result. The agency's problem was never the price of a CRM; it was the price of a CRM built for somebody else." },
     ],
   },
   {

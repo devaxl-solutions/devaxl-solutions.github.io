@@ -242,7 +242,7 @@ export const CASES: CaseStudy[] = [
     "approach": [
       {
         "title": "Pricing Sanity",
-        "body": "Nrtur's $29/user/month plan dropped the 4-person team from $360 to $95/month, a 74% reduction. The CRM finally felt like an investment instead of a grudge purchase."
+        "body": "Their CRM bill went from $360 a month to $95, a 74% reduction, and the line item finally matched what a four-person team gets out of it."
       },
       {
         "title": "Instant Adoption",
