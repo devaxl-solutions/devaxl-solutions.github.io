@@ -49,7 +49,6 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development",
     "oneLiner": "A dispatcher's decades of trucking expertise turned into a production-ready TMS SaaS that earns recurring revenue.",
     "overview": "Devaxl partnered with Apollo-e to turn a founder's hands-on logistics expertise into a market-ready Transportation Management System. We guided him through the full product lifecycle, from concept and architecture to deployment and go-to-market, building a revenue-generating SaaS for the trucking industry.",
-    "thumbnail": "/projects/apolloe.png",
     "collaboration": "Apollo-e (TMS SaaS for trucking)",
     "link": {
       "label": "apolloe.com",
@@ -533,7 +532,6 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · AI · Web Development",
     "oneLiner": "We built a transparent, ranked marketplace that verifies coaches, aggregates real feedback, and tracks outcomes so clients can hire with confidence.",
     "overview": "Devaxl built Authority Alert, a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting millions of clients with vetted coaches across every specialty.",
-    "thumbnail": "/projects/authorityAlert.png",
     "collaboration": "Authority Alert coaching marketplace",
     "role": "Marketplace architecture, verification and matching systems, and full-stack build",
     "metrics": [
@@ -900,7 +898,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Scale & Dominance",
-        "body": "SoundSpace became the standard resource every major creator reached for first. TikTok and influencer integrations spread audio virally, while its free model forced premium services like Epidemic Sound and Artlist to compete on price."
+        "body": "SoundSpace became the standard resource every major creator reached for first. TikTok and influencer integrations spread audio virally."
       }
     ],
     "results": [
