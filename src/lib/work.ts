@@ -471,7 +471,6 @@ export const CASES: CaseStudy[] = [
     "oneLiner": "We built an AI beauty discovery platform that turns a 50,000-product catalog into personalized recommendations customers actually trust.",
     "overview": "Devaxl replaced BeautyRightBack's one-size-fits-all recommendation engine with an AI-powered discovery platform combining visual analysis, preference learning, and real-time inventory matching. We turned a transactional beauty retailer into a personalized beauty consultant.",
     "collaboration": "BeautyRightBack (BRB)",
-
     "role": "AI recommendation engine, computer vision, and full-stack platform build",
     "metrics": [
       {
@@ -536,7 +535,6 @@ export const CASES: CaseStudy[] = [
     "overview": "Devaxl built Authority Alert, a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting millions of clients with vetted coaches across every specialty.",
     "thumbnail": "/projects/authorityAlert.png",
     "collaboration": "Authority Alert coaching marketplace",
-
     "role": "Marketplace architecture, verification and matching systems, and full-stack build",
     "metrics": [
       {
@@ -605,7 +603,6 @@ export const CASES: CaseStudy[] = [
     "overview": "Devaxl built Carrier Network, consolidating fragmented carrier data—profiles, performance metrics, compliance records, and communication history—into one intelligent dashboard for freight brokers and logistics companies. The result was 40% faster load assignments and 25% lower costs through smarter carrier selection.",
     "thumbnail": "/projects/careerNetwork.png",
     "collaboration": "Carrier Network carrier intelligence platform",
-
     "role": "Data integration architecture, full-stack build, and recommendation engine development",
     "metrics": [
       {
@@ -669,7 +666,6 @@ export const CASES: CaseStudy[] = [
     "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. The founder brought the curriculum and the audience; Devaxl built the brand system, website, and learning platform that carry it. Over 10,000+ students have graduated, collectively building hundreds of millions in wealth.",
     "thumbnail": "/projects/truckingGuru.png",
     "collaboration": "Trucking Guru",
-
     "role": "Brand identity, website, and the learning and community platform behind the programs",
     "metrics": [
       {
@@ -738,7 +734,6 @@ export const CASES: CaseStudy[] = [
     "overview": "Devaxl built Chat Center, a unified communication and data platform made specifically for trucking that centralizes all driver-dispatcher interaction in one app. It combines real-time messaging, task tracking, load coordination, and complete data visibility to replace fragmented, unreliable channels.",
     "thumbnail": "/projects/chatCenter.png",
     "collaboration": "Chat Center (trucking communication platform)",
-
     "role": "Product design, mobile and web engineering, and third-party systems integration",
     "metrics": [
       {
@@ -807,7 +802,6 @@ export const CASES: CaseStudy[] = [
     "overview": "Trucking companies operated blind, with no visibility into driver behavior, location, or safety. Devaxl built Driver App, a real-time collaboration platform giving dispatchers live location tracking, continuous dashcam footage, and performance data — shifting fleets from reacting to problems to preventing them.",
     "thumbnail": "/projects/driverapp.png",
     "collaboration": "Driver App",
-
     "role": "Mobile app development, real-time tracking and video infrastructure, and AI safety monitoring",
     "metrics": [
       {

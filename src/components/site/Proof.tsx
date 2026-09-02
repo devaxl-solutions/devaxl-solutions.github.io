@@ -13,7 +13,7 @@ export function Proof() {
   return (
     <section className="border-b border-faint py-11">
       <div className="wrap">
-        {/* Real client logo wall */}
+        {/* Logo wall — decorative, see the note on CLIENTS above */}
         <div className="mb-10 flex items-center gap-4" data-reveal>
           <Marquee>
             {CLIENTS.map((n) => (

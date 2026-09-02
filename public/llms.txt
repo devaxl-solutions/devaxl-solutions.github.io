@@ -40,11 +40,8 @@ quoted per project on the scoping call.
 - 21+ products shipped to production
 - 27 five-star client reviews on Upwork and Fiverr
 - Scaled Product Marketing Alliance to a 300,000+ member community platform
-- SecurePoint 360 reached SOC 2 Type II in 6 months, unlocking an $800k+ enterprise deal
 - Nrtur cut a client's CRM software cost by 74% replacing HubSpot
 - Carrier Network dispatches loads 40% faster at 25% lower cost
-- Sound Space serves 500,000+ creators monthly
-- Agencii cut a digital agency's full proposal build from 8 days to 8 hours
 
 ## Domain depth
 
