@@ -10,7 +10,7 @@ import { breadcrumbSchema, graph } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "SaaS, AI & Logistics Case Studies",
   description:
-    "15 case studies with numbers: a 300,000-member platform, SOC 2 in 6 months, an $800k deal closed, 74% lower CRM cost, dispatch 40% faster. 5 logistics builds.",
+    "15 case studies in SaaS, AI and logistics — a 300,000-member community platform, a CRM that cut software costs 74%, and carrier data that dispatches loads 40% faster.",
   alternates: { canonical: "/work" },
 };
 

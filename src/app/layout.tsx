@@ -43,17 +43,21 @@ export const metadata: Metadata = {
   // sets `alternates` for any reason replaces this whole key, so it must supply
   // its own canonical.
   robots: { index: true, follow: true },
+  // No `url` here. Next.js merges metadata shallowly, so a root-level
+  // openGraph.url is inherited by every page that doesn't set its own — the
+  // same trap the canonical bug fell into, and it made every shared link
+  // resolve to the homepage. Next derives og:url from the page when omitted.
+  // Only siteName and type here. Setting title/description/url at the root
+  // makes every page that omits its own openGraph share as the HOMEPAGE —
+  // /work was posting to Slack and LinkedIn as "SaaS & AI Development Company".
+  // Omitted, Next derives og:title and og:description from each page's own
+  // title and description, which is what we want everywhere.
   openGraph: {
     type: "website",
-    url: "/",
     siteName: "Devaxl",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
   },
 };
 

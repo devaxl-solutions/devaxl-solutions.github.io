@@ -218,7 +218,7 @@ export default function CasePage({ params }: { params: { slug: string } }) {
                   </p>
                   <footer className="mt-4 flex items-center gap-2 text-[13px] text-tertiary">
                     <span className="rounded-pill border border-faint bg-surface-3 px-2.5 py-1 font-mono text-[11px] text-accent">
-                      {c.rating ?? "5.0"} ★
+                      {c.rating} ★
                     </span>
                     Verified client review · Upwork
                   </footer>
