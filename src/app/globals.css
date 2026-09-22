@@ -31,7 +31,7 @@
   --ink-100: #f4f4f1;
   --ink-200: #c6c6c2;
   --ink-300: #9a9a98;
-  --ink-400: #6e6e6e;
+  --ink-400: #8a8a88; /* was #6e6e6e (3.5-3.9:1 on the dark surfaces); now 5.1:1+ on canvas, surface-1 and surface-2 */
   --ink-500: #4a4a4d;
 
   /* Accent: bright golden amber (DevAXL brand #FFB600) */
