@@ -1,12 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CALENDLY_URL, CONTACT } from "@/lib/site";
 import { trackEvent } from "@/components/site/Analytics";
 
 type Status = "idle" | "submitting" | "success" | "error";
+
+// Paying customers decides which next step we offer after submit: a live
+// product goes to the codebase-review call, a pre-launch idea goes to MVP builds.
+const CUSTOMER_OPTIONS = [
+  { value: "none", label: "None yet (pre-launch)" },
+  { value: "1-50", label: "1 to 50" },
+  { value: "50-500", label: "50 to 500" },
+  { value: "500+", label: "More than 500" },
+];
 
 const FIELD =
   "w-full rounded-md border border-subtle bg-surface-1 px-4 py-3 text-[14px] text-primary " +
@@ -18,6 +28,7 @@ const LABEL = "mb-2 block text-[12px] font-medium uppercase tracking-caps text-t
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [preLaunch, setPreLaunch] = useState(false);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -31,6 +42,8 @@ export function ContactForm() {
       name: String(fd.get("name") ?? ""),
       email: String(fd.get("email") ?? ""),
       phone: String(fd.get("phone") ?? ""),
+      product: String(fd.get("product") ?? ""),
+      customers: String(fd.get("customers") ?? ""),
       message: String(fd.get("message") ?? ""),
       website: String(fd.get("website") ?? ""), // honeypot
     };
@@ -44,8 +57,10 @@ export function ContactForm() {
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
       if (res.ok && data.ok) {
         setStatus("success");
+        setPreLaunch(payload.customers === "none");
         // Counted on delivery, not on click — a submit that errored isn't a lead.
-        trackEvent("contact-form-submit");
+        // The customer bucket tells us how much traffic is rescue-qualified.
+        trackEvent("contact-form-submit", payload.customers ? { customers: payload.customers } : {});
         form.reset();
       } else {
         setStatus("error");
@@ -70,6 +85,16 @@ export function ContactForm() {
         <h3 className="mt-6 text-[18px] font-semibold tracking-[-0.01em] text-primary">
           Message sent.
         </h3>
+        {preLaunch ? (
+          <p className="mt-1.5 max-w-[40ch] text-[14px] text-secondary">
+            We&apos;ll reply within one business day. Since you&apos;re pre-launch,
+            our{" "}
+            <Link href="/services" className="text-accent hover:underline">
+              MVP builds
+            </Link>{" "}
+            are the better fit, and the reply will cover that.
+          </p>
+        ) : (
         <p className="mt-1.5 max-w-[40ch] text-[14px] text-secondary">
           We&apos;ll reply within one business day. Want to talk sooner?{" "}
           <a
@@ -79,7 +104,7 @@ export function ContactForm() {
             data-cta="book-call-success"
             className="text-accent hover:underline"
           >
-            Book a scoping call
+            Book a codebase review call
           </a>
           , or email{" "}
           <a href={CONTACT.emailHref} className="text-accent hover:underline">
@@ -87,6 +112,7 @@ export function ContactForm() {
           </a>
           .
         </p>
+        )}
         <button
           type="button"
           onClick={() => setStatus("idle")}
@@ -161,9 +187,39 @@ export function ContactForm() {
         />
       </div>
 
+      <div className="mt-4 grid grid-cols-[1.4fr_1fr] gap-4 max-md:grid-cols-1">
+        <div>
+          <label htmlFor="cf-product" className={LABEL}>
+            What does the product do?
+          </label>
+          <input
+            id="cf-product"
+            name="product"
+            type="text"
+            placeholder="A CRM for home-service businesses"
+            className={FIELD}
+          />
+        </div>
+        <div>
+          <label htmlFor="cf-customers" className={LABEL}>
+            Paying customers
+          </label>
+          <select id="cf-customers" name="customers" defaultValue="" className={FIELD}>
+            <option value="" disabled>
+              Select one
+            </option>
+            {CUSTOMER_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
       <div className="mt-4">
         <label htmlFor="cf-message" className={LABEL}>
-          What are you working on?
+          What went wrong with the last team?
         </label>
         <textarea
           id="cf-message"
@@ -171,7 +227,7 @@ export function ContactForm() {
           required
           minLength={10}
           rows={5}
-          placeholder="Even two lines helps — what you're building or fixing, and what's stuck."
+          placeholder="Two lines is enough: what's broken, and what happened with whoever built it."
           className={FIELD + " resize-y"}
         />
       </div>

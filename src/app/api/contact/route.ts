@@ -8,6 +8,8 @@ type Payload = {
   name?: string;
   email?: string;
   phone?: string;
+  product?: string;
+  customers?: string;
   message?: string;
   // honeypot — real users never fill this; bots do.
   website?: string;
@@ -32,6 +34,8 @@ export async function POST(req: Request) {
   const email = (body.email ?? "").trim();
   const phone = (body.phone ?? "").trim();
   const message = (body.message ?? "").trim();
+  const product = (body.product ?? "").trim().slice(0, 300);
+  const customers = (body.customers ?? "").trim().slice(0, 20);
 
   if (name.length < 2 || message.length < 10 || !EMAIL_RE.test(email)) {
     return NextResponse.json(
@@ -61,6 +65,8 @@ export async function POST(req: Request) {
       name,
       email,
       phone: phone || "—",
+      product: product || "—",
+      paying_customers: customers || "—",
       message,
       _to_note: RECIPIENT_NOTE,
     }),
