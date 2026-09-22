@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Devaxl — We design, build, and scale SaaS & AI products";
+export const alt = "Devaxl — We rescue B2B SaaS products other teams left broken";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 // Generated on-demand at runtime (Vercel) rather than prerendered at build —
@@ -54,7 +54,7 @@ export default function OpengraphImage() {
             X
           </div>
           <div style={{ display: "flex", color: "#9A9A98", fontSize: 24, letterSpacing: 4 }}>
-            AI-NATIVE PRODUCT STUDIO
+            SAAS RESCUE &amp; REBUILD
           </div>
         </div>
 
@@ -63,25 +63,25 @@ export default function OpengraphImage() {
             style={{
               display: "flex",
               color: "#F4F4F1",
-              fontSize: 78,
+              fontSize: 72,
               fontWeight: 700,
               lineHeight: 1.05,
               letterSpacing: -2,
             }}
           >
-            We design, build, and scale
+            We rescue B2B SaaS products
           </div>
           <div
             style={{
               display: "flex",
               color: "#FFB600",
-              fontSize: 78,
+              fontSize: 72,
               fontWeight: 700,
               lineHeight: 1.05,
               letterSpacing: -2,
             }}
           >
-            SaaS &amp; AI products.
+            other teams left broken.
           </div>
         </div>
 

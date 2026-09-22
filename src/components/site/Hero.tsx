@@ -60,15 +60,15 @@ export function Hero() {
 
       <div className="wrap relative grid grid-cols-[1.02fr_0.98fr] items-center gap-12 max-lg:gap-10 max-md:grid-cols-1 max-md:gap-9">
         <div>
-          <span className="eyebrow">AI-native product studio</span>
+          <span className="eyebrow">SaaS rescue &amp; rebuild</span>
           <h1 className="t-display mt-[22px]">
-            We design, build, and scale{" "}
-            <span className="text-accent">SaaS &amp; AI products.</span>
+            We rescue B2B SaaS products{" "}
+            <span className="text-accent">other teams left broken.</span>
           </h1>
           <p className="mt-6 max-w-[540px] text-[18px] leading-[1.65] text-secondary max-md:text-[16px]">
-            We take the problem off your desk and own it through to production —
-            one senior squad, no hand-offs, and a demo you can click through every
-            week. Production v1 in 8&ndash;12 weeks, in your repos, yours from day one.
+            Your product has paying customers, but the last dev team missed
+            deadlines, shipped bugs, or walked away. We take over the codebase,
+            stabilize it, and get your roadmap shipping on a schedule you can trust.
           </p>
           <div className="mt-9 flex flex-wrap gap-3.5 max-md:flex-col max-md:items-stretch">
             <a
@@ -78,21 +78,22 @@ export function Hero() {
               data-cta="book-call-hero"
               className={cn(buttonVariants({ size: "lg" }), "max-md:w-full")}
             >
-              Book a scoping call
+              Book a codebase review call
             </a>
             <Link
-              href="/work"
-              data-cta="see-work-hero"
+              href="/work/aninja-crm"
+              data-cta="see-rescue-hero"
               className={cn(buttonVariants({ variant: "ghost", size: "lg" }), "max-md:w-full")}
             >
-              See what we&rsquo;ve shipped
+              See a rescue we ran
             </Link>
           </div>
           {/* Risk reversal directly under the primary CTA — the top objection for
               a studio is "am I about to be sold to for 30 minutes?" */}
           <p className="mt-4 text-[13.5px] leading-relaxed text-tertiary">
-            30 minutes with a senior engineer, not a salesperson. No pitch deck, no
-            obligation &mdash; and you own every line of code we write.
+            30 minutes with a senior engineer, not a salesperson. Tell us what broke
+            with the last team and get a straight answer on whether we should take
+            it over.
           </p>
         </div>
 
