@@ -14,6 +14,7 @@ const BASE = "https://devaxl.com";
 // than a fresh lie.
 const REVISED = {
   home: "2026-08-28", // hero, selected-work and closing-CTA copy rewritten
+  rescue: "2026-09-22", // new SaaS rescue landing page
   work: "2026-08-28", // title and description rewritten around the case numbers
   services: "2026-08-28", // FAQ expanded to 8 questions; capability copy revised
   process: "2026-08-28", // FAQ expanded to 8 questions; step copy revised
@@ -50,6 +51,7 @@ function casePriority(c: CaseStudy): number {
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${BASE}/`, lastModified: REVISED.home, changeFrequency: "monthly", priority: 1 },
+    { url: `${BASE}/rescue`, lastModified: REVISED.rescue, changeFrequency: "monthly", priority: 0.95 },
     { url: `${BASE}/work`, lastModified: REVISED.work, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/services`, lastModified: REVISED.services, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/process`, lastModified: REVISED.process, changeFrequency: "monthly", priority: 0.7 },

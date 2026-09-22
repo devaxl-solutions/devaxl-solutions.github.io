@@ -29,9 +29,9 @@ export function FinalCta() {
       <div className="wrap relative" data-reveal>
         <h2 className="t-display mx-auto max-w-[760px]">Hand it over. We&rsquo;ll take it from here.</h2>
         <p className="mx-auto mt-5 max-w-[600px] text-[18px] leading-[1.6] text-secondary max-md:text-[16px]">
-          Tell us where your product is today &mdash; or what went wrong last time.
-          In 30 minutes you&rsquo;ll get a straight answer on whether we&rsquo;re the
-          right team to own it, backed by 27 five-star client reviews.
+          Tell us what&rsquo;s broken and what went wrong with the last team. In 30
+          minutes a senior engineer will tell you whether we&rsquo;re the right team
+          to take it over.
         </p>
         <div className="mt-9 flex justify-center gap-3.5 max-md:flex-col max-md:items-stretch">
           <a
@@ -41,7 +41,7 @@ export function FinalCta() {
             data-cta="book-call-final"
             className={cn(buttonVariants({ size: "lg" }), "max-md:w-full")}
           >
-            Book a scoping call
+            Book a codebase review call
           </a>
           <Link
             href="/work"

@@ -14,18 +14,19 @@ import { CommandMenu } from "./CommandMenu";
 type MegaItem = { label: string; desc: string; href: string };
 
 const SERVICES: MegaItem[] = [
-  { label: "SaaS & AI MVP → launch", desc: "Idea to a production v1 in weeks.", href: "/services" },
-  { label: "AI product engineering", desc: "RAG, agents & LLM features, in production.", href: "/services#ai" },
-  { label: "Scale & modernize", desc: "Make a heavy platform fast and stable.", href: "/services" },
+  { label: "SaaS rescue & takeover", desc: "Take over a product another team left broken.", href: "/rescue" },
+  { label: "Modernization retainer", desc: "Make a stable platform faster and easier to extend.", href: "/services" },
   { label: "Embed a product team", desc: "A senior squad inside your org.", href: "/services" },
+  { label: "MVP build", desc: "A validated idea to a production v1.", href: "/services" },
 ];
 
 const FEATURED = getAllCases()
   .slice(0, 3)
   .map((c) => ({ label: c.name, desc: c.oneLiner, href: `/work/${c.slug}` }));
 
+// Process lives on /rescue and /services now; the footer still links /process.
 const SIMPLE = [
-  { label: "Process", href: "/process" },
+  { label: "Rescue", href: "/rescue" },
   { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
