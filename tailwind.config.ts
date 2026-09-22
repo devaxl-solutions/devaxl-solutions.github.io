@@ -37,8 +37,8 @@ const config: Config = {
           400: "var(--amber-400)",
           500: "var(--amber-500)",
         },
-        success: "var(--green-400)",
-        danger: "var(--red-400)",
+        success: { DEFAULT: "var(--green-400)", quiet: "var(--green-tint)" },
+        danger: { DEFAULT: "var(--red-400)", quiet: "var(--red-tint)" },
         info: "var(--blue-400)",
         // semantic text aliases
         primary: "var(--ink-100)",
