@@ -1,20 +1,21 @@
 # Devaxl
 
-> An AI-native product studio that designs, builds, and scales SaaS and AI products.
-> We embed a senior squad — design, engineering, and product — into a client's org and
-> ship to production. AI goes into the products we build (RAG, agents, LLM pipelines,
-> evals) and into how we deliver them (scoping, code and test generation, review).
+> A senior engineering studio that takes over B2B SaaS products other teams left broken.
+> We audit the codebase, fix what breaks most, put a release process in place, and stay
+> on as the engineering team or hand back to the client's own hires. We also run
+> modernization retainers, embedded product teams and MVP builds.
 
-**Last updated:** 2026-08-28
+**Last updated:** 2026-09-22
 **Category:** Software product engineering studio (services)
-**Who we work with:** Founders and CTOs at seed to Series-B software companies, and
-non-technical domain experts turning industry knowledge into a product.
+**Who we work with:** Founders and CTOs of B2B SaaS companies with paying customers
+whose product has become unstable or stalled under a previous team.
 **Where:** Remote, worldwide. We overlap with your working hours for standups and demos,
 and work asynchronously in your repo, tracker, and Slack the rest of the time.
-**Contact:** sales@devaxl.com · +92-311-4970728 · https://calendly.com/touqeerhassan/30min
+**Contact:** sales@devaxl.com · +92-311-4970728 · https://calendly.com/touqeerhassan/30min · https://devaxl.com/rescue
 
 ## What we do
 
+- **SaaS rescue and takeover** — take over a live product, audit it, stabilize it, fix the release process, and get features shipping again. At aNinja: first stable release in 6 weeks, releases up from 1 to 4 a month, production incidents down 23%.
 - **SaaS & AI MVP build** — idea to a production v1 real users can pay for. Typically 8–12 weeks.
 - **Scale & modernization** — make a slow, brittle platform fast, stable, and extensible. Ongoing, two-week increments.
 - **Embedded product team** — a dedicated senior squad working inside your roadmap, tools, and rituals. Monthly.

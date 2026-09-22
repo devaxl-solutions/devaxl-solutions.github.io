@@ -33,7 +33,7 @@ export function organizationSchema() {
     image: abs("/devaxl-logo.png"),
     slogan: "Development accelerated",
     description:
-      "An AI-native product studio that designs, builds, and scales SaaS and AI products for founders and CTOs — MVP builds, embedded product teams, and platform modernization.",
+      "A senior engineering studio that takes over B2B SaaS products other teams left broken, stabilizes them, and gets them shipping again. Also modernization retainers, embedded product teams and MVP builds.",
     email: CONTACT.email,
     telephone: CONTACT.phone,
     sameAs: SOCIALS.map((s) => s.href),
@@ -41,6 +41,7 @@ export function organizationSchema() {
     // site actually shows: the six Industries cards, the four TechStack groups,
     // and the AI-native columns. Nothing inferred, nothing aspirational.
     knowsAbout: [
+      "SaaS rescue and codebase takeover",
       "SaaS product development",
       "AI product engineering",
       "Retrieval-augmented generation",
@@ -50,9 +51,6 @@ export function organizationSchema() {
       "Logistics and fleet software",
       "Transportation management systems",
       "B2B SaaS platforms",
-      "Fintech engineering",
-      "Marketplace platforms",
-      "Healthcare software",
       "React and Next.js",
       "Node.js",
       "AWS cloud infrastructure",
@@ -85,12 +83,19 @@ export function websiteSchema() {
 }
 
 /**
- * The three engagement models, as they appear on /services.
+ * The engagement models, as they appear on /services, with rescue first
+ * (its canonical page is /rescue).
  * No `offers` node — we publish no prices, and inventing them would make the
  * markup inaccurate. Add `offers` here the day a price signal ships.
  */
 export function servicesSchema() {
   const services = [
+    {
+      name: "SaaS rescue and codebase takeover",
+      description:
+        "Take over a live B2B SaaS product from a previous team, audit it, fix what breaks most, and put a release process in place so it ships reliably again.",
+      path: "/rescue",
+    },
     {
       name: "SaaS & AI MVP build",
       description:
@@ -119,7 +124,7 @@ export function servicesSchema() {
     },
     provider: { "@id": ORG_ID },
     areaServed: "Worldwide",
-    url: abs("/services"),
+    url: abs(("path" in s && s.path) || "/services"),
   }));
 }
 

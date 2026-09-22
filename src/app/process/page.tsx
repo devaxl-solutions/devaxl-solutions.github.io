@@ -11,7 +11,7 @@ import { breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Our Software Development Process",
   description:
-    "Our software development process: discovery, design, build, launch, scale. A written plan up front, weekly demoable increments, and code you own from day one.",
+    "How a SaaS rescue works: audit, stabilize, fix the release process, ship again, then stay on or hand back. Weekly demos and code you own from day one.",
   alternates: { canonical: "/process" },
 };
 

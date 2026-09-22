@@ -10,8 +10,8 @@ import { Analytics } from "@/components/site/Analytics";
 import { graph, organizationSchema, websiteSchema } from "@/lib/schema";
 
 const SITE_DESCRIPTION =
-  "Devaxl builds SaaS and AI products for founders and CTOs — MVP builds, embedded development teams, and platform modernization. 21+ products shipped.";
-const SITE_TITLE = "SaaS & AI Development Company for Founders — Devaxl";
+  "Devaxl takes over B2B SaaS products other teams left broken, stabilizes them, and gets releases shipping again. 27 five-star client reviews.";
+const SITE_TITLE = "SaaS Rescue & Development for B2B Founders — Devaxl";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://devaxl.com"),
@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   applicationName: "Devaxl",
   keywords: [
+    "SaaS rescue",
+    "take over codebase from agency",
+    "fix buggy SaaS app",
+    "replace development agency",
+    "legacy SaaS modernization",
     "AI development agency",
     "SaaS development company",
     "product engineering",
