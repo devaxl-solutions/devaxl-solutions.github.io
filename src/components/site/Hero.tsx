@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CALENDLY_URL } from "@/lib/site";
 import { HeroDotGrid } from "./HeroDotGrid";
-import { ProductShowcase } from "./ProductShowcase";
+import { RescueShowcase } from "./RescueShowcase";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -97,7 +97,7 @@ export function Hero() {
           </p>
         </div>
 
-        <ProductShowcase />
+        <RescueShowcase />
       </div>
     </header>
   );

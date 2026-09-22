@@ -45,6 +45,8 @@
   --amber-700: #8a6100;
   --amber-glow: rgba(255, 182, 0, 0.16);
   --amber-tint: rgba(255, 182, 0, 0.1);
+  --green-tint: rgba(63, 185, 105, 0.12);
+  --red-tint: rgba(240, 88, 79, 0.1);
 
   /* Semantic status (used sparingly) */
   --green-400: #3fb969;
