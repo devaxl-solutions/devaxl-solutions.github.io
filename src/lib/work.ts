@@ -100,7 +100,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development",
     "oneLiner": "We rescued aNinja's stalled CRM platform from a broken dev partnership, restoring stability and shipping features that fueled real user growth.",
     "overview": "After aNinja's growth stalled under a failed development partnership, Devaxl stepped in to salvage their CRM platform, stabilizing the codebase and accelerating feature delivery to turn a stalled product into a reliable, high-performing SaaS.",
-    "thumbnail": "/projects/aninjaCrm.png",
+    "thumbnail": "/projects/aninjaCrm.webp",
     "collaboration": "aNinja CRM",
     "link": {
       "label": "app.aninja.com",
@@ -151,7 +151,7 @@ export const CASES: CaseStudy[] = [
     "category": "AI · SaaS",
     "oneLiner": "Agencii's coordinated AI agent swarm automated a digital agency's entire proposal pipeline, turning week-long deliverables into a single business day.",
     "overview": "A mid-sized digital agency was drowning in manual work for every client pitch, with deliverables that should take a day stretching into a week. By integrating Agencii's AI agent swarm, the team automated its full pipeline from research to presentation to visuals to video, all coordinated automatically.",
-    "thumbnail": "/projects/agencii.png",
+    "thumbnail": "/projects/agencii.webp",
     "collaboration": "Built on Agencii's AI agent swarm",
     "link": {
       "label": "agencii.ai",
@@ -217,7 +217,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development",
     "oneLiner": "A lightweight CRM that replaced a four-person agency's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
     "overview": "We built Nrtur to replace an overpriced HubSpot setup with a lightweight CRM sized for small, fast-moving teams. The result was a 74% cut in software costs, five-minute onboarding, and a pipeline that matched how the team actually sells.",
-    "thumbnail": "/projects/nrtur.png",
+    "thumbnail": "/projects/nrtur.webp",
     "collaboration": "A four-person creative agency, name withheld",
     "link": {
       "label": "nrtur.io",
@@ -287,7 +287,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development",
     "oneLiner": "The enterprise-grade SaaS backbone that scaled Product Marketing Alliance into the world's largest PMM community of 300,000+ members.",
     "overview": "Product Marketing Alliance partnered with Devaxl to rebuild its community platform into a unified, scalable SaaS system. We architected and built the full stack powering certifications, memberships, events, and 24/7 engagement across 300,000+ members globally.",
-    "thumbnail": "/projects/pma.png",
+    "thumbnail": "/projects/pma.webp",
     "collaboration": "Product Marketing Alliance (PMA)",
     "link": {
       "label": "productmarketingalliance.com",
@@ -353,7 +353,7 @@ export const CASES: CaseStudy[] = [
     "category": "Security · SaaS",
     "oneLiner": "A Series A SaaS hit SOC 2 Type II certification in 6 months, unlocking an $800k+ enterprise deal without hiring a full-time CISO.",
     "overview": "A 40+ employee Series A SaaS company needed SOC 2 Type II certification to close its largest enterprise prospect. With no security team, it partnered with SecurePoint 360 and achieved certification within 6 months, landing the deal and building a lasting security program.",
-    "thumbnail": "/projects/securepoint360.png",
+    "thumbnail": "/projects/securepoint360.webp",
     "collaboration": "SecurePoint 360 Virtual CISO partnership with a Series A B2B SaaS company",
     "link": {
       "label": "securepoint360.com",
@@ -420,7 +420,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · AI · Web Development",
     "oneLiner": "Backend lead on an enterprise IT-documentation SaaS — scalable systems, secure auth, and high-load API integrations.",
     "overview": "As Backend Project Lead for ITBoost — an MSP documentation SaaS by ConnectWise — built scalable systems with Node.js, JWT, Redis, Async, and Passport, integrated with .NET services and third-party APIs under high load. Also contributed across the frontend (React, Redux, Bootstrap, Angular), with SaaS and AI automation and integrations to n8n, Make.com, Zapier, and GoHighLevel.",
-    "thumbnail": "/projects/itboost.png",
+    "thumbnail": "/projects/itboost.webp",
     "role": "Full-Stack Engineer & Backend Project Lead",
     "collaboration": "An MSP documentation SaaS by ConnectWise.",
     "link": {
@@ -599,7 +599,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development · AI",
     "oneLiner": "We built a unified carrier intelligence dashboard that turns scattered trucking data into one source of truth—dispatching loads 40% faster and cutting costs 25%.",
     "overview": "Devaxl built Carrier Network, consolidating fragmented carrier data—profiles, performance metrics, compliance records, and communication history—into one intelligent dashboard for freight brokers and logistics companies. The result was 40% faster load assignments and 25% lower costs through smarter carrier selection.",
-    "thumbnail": "/projects/careerNetwork.png",
+    "thumbnail": "/projects/careerNetwork.webp",
     "collaboration": "Carrier Network carrier intelligence platform",
     "role": "Data integration architecture, full-stack build, and recommendation engine development",
     "metrics": [
@@ -662,7 +662,7 @@ export const CASES: CaseStudy[] = [
     "category": "Branding · Web Development",
     "oneLiner": "We built the brand system and platform for an education business teaching trucking dispatchers and truck owners to think like entrepreneurs and build thriving businesses.",
     "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. The founder brought the curriculum and the audience; Devaxl built the brand system, website, and learning platform that carry it. Over 10,000+ students have graduated, collectively building hundreds of millions in wealth.",
-    "thumbnail": "/projects/truckingGuru.png",
+    "thumbnail": "/projects/truckingGuru.webp",
     "collaboration": "Trucking Guru",
     "role": "Brand identity, website, and the learning and community platform behind the programs",
     "metrics": [
@@ -730,7 +730,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Mobile App Development · Web Development",
     "oneLiner": "We built a trucking-native communication platform that unifies driver-dispatcher coordination into one real-time, fully documented app.",
     "overview": "Devaxl built Chat Center, a unified communication and data platform made specifically for trucking that centralizes all driver-dispatcher interaction in one app. It combines real-time messaging, task tracking, load coordination, and complete data visibility to replace fragmented, unreliable channels.",
-    "thumbnail": "/projects/chatCenter.png",
+    "thumbnail": "/projects/chatCenter.webp",
     "collaboration": "Chat Center (trucking communication platform)",
     "role": "Product design, mobile and web engineering, and third-party systems integration",
     "metrics": [
@@ -798,7 +798,7 @@ export const CASES: CaseStudy[] = [
     "category": "Mobile App Development · AI · SaaS",
     "oneLiner": "We built the real-time location, dashcam footage, and AI safety monitoring that turn trucking fleets from reactive to proactive — cutting accidents and insurance costs.",
     "overview": "Trucking companies operated blind, with no visibility into driver behavior, location, or safety. Devaxl built Driver App, a real-time collaboration platform giving dispatchers live location tracking, continuous dashcam footage, and performance data — shifting fleets from reacting to problems to preventing them.",
-    "thumbnail": "/projects/driverapp.png",
+    "thumbnail": "/projects/driverapp.webp",
     "collaboration": "Driver App",
     "role": "Mobile app development, real-time tracking and video infrastructure, and AI safety monitoring",
     "metrics": [
@@ -866,7 +866,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development · Web Design",
     "oneLiner": "A free, professionally curated sound effects library that became the default audio resource for over 500,000 creators every month.",
     "overview": "SoundSpace built a professional, organized, free sound effects library with thousands of high-quality audio files properly categorized and searchable. It became the go-to resource for YouTubers, TikTokers, and video creators worldwide.",
-    "thumbnail": "/projects/soundAddress.png",
+    "thumbnail": "/projects/soundAddress.webp",
     "collaboration": "SoundSpace sound effects library",
     "metrics": [
       {
@@ -931,7 +931,7 @@ export const CASES: CaseStudy[] = [
     "category": "SaaS · Web Development",
     "oneLiner": "A unified property management portal that turns spreadsheets and phone tag into automated workflows, tenant self-service, and financial intelligence.",
     "overview": "PropForce centralizes tenant communication, rent collection, maintenance workflows, lease tracking, and financial reporting in one portal. It shifts property managers from reactive, paper-based admin to proactive, data-driven operations.",
-    "thumbnail": "/projects/propforce.png",
+    "thumbnail": "/projects/propforce.webp",
     "collaboration": "PropForce property management platform",
     "metrics": [
       {
