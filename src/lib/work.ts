@@ -28,11 +28,10 @@ export type CaseStudy = {
 
 export const WORK_FILTERS = [
   "All",
+  "Rescue",
   "SaaS",
   "AI",
   "Web Development",
-  "Web Design",
-  "Branding",
   "Security",
   "Mobile App Development",
 ] as const;
@@ -94,11 +93,12 @@ export const CASES: CaseStudy[] = [
     "industry": "Sales & CRM",
     "name": "aNinja AI",
     "categories": [
+      "Rescue",
       "SaaS",
       "Web Development"
     ],
-    "category": "SaaS · Web Development",
-    "oneLiner": "We rescued aNinja's stalled CRM platform from a broken dev partnership, restoring stability and shipping features that fueled real user growth.",
+    "category": "Rescue · SaaS",
+    "oneLiner": "We took over aNinja's CRM after a failed dev partnership: first stable release in 6 weeks, and releases up from 1 to 4 a month.",
     "overview": "After aNinja's growth stalled under a failed development partnership, Devaxl stepped in to salvage their CRM platform, stabilizing the codebase and accelerating feature delivery to turn a stalled product into a reliable, high-performing SaaS.",
     "thumbnail": "/projects/aninjaCrm.png",
     "collaboration": "aNinja CRM",
@@ -106,7 +106,7 @@ export const CASES: CaseStudy[] = [
       "label": "app.aninja.com",
       "href": "https://app.aninja.com/"
     },
-    "challenge": "aNinja had a strong vision for a specialized CRM for service-oriented businesses, but execution was broken. Their previous development partner left missed deadlines, incomplete features, and code quality issues that were actively hurting the product. Users were frustrated, growth had stalled, and trust in the engineering team had evaporated. The core problem was an engineering capability gap, not the product idea.",
+    "challenge": "aNinja had a strong vision for a specialized CRM for service-oriented businesses, but execution was broken. Their previous development partner left missed deadlines, incomplete features, and code quality issues that were actively hurting the product. Growth had stalled, and the company had lost confidence in its engineering partner. The core problem was an engineering capability gap, not the product idea.",
     "approach": [
       {
         "title": "Codebase Audit & Stabilization",
@@ -123,8 +123,12 @@ export const CASES: CaseStudy[] = [
     ],
     "results": [
       {
-        "title": "Significant Revenue Growth",
-        "body": "With a stable, improving product and a reliable engineering team, aNinja could confidently acquire and retain customers, translating directly into user growth and recurring revenue expansion."
+        "title": "Stable in 6 Weeks",
+        "body": "The first stable release shipped 6 weeks after we took over the codebase, and production incidents have fallen 23% since."
+      },
+      {
+        "title": "Releases Up From 1 to 4 a Month",
+        "body": "With code review gates, a staging environment and realistic sprint planning in place, aNinja went from roughly one release a month to four."
       },
       {
         "title": "Diverse Industry Adoption",
@@ -139,7 +143,21 @@ export const CASES: CaseStudy[] = [
         "body": "The platform is no longer held back by technical debt, with an engineering foundation that supports continued growth without constant firefighting or rewrites."
       }
     ],
-    "verdict": "aNinja's story is one of redemption through engineering discipline. By combining rigorous code quality, predictable processes, and focused feature development, we transformed a stalled SaaS into a thriving one, proving the biggest unlock is often an engineering partner you can trust to deliver."
+    "verdict": "aNinja's story is one of redemption through engineering discipline. By combining rigorous code quality, predictable processes, and focused feature development, we transformed a stalled SaaS into a thriving one, proving the biggest unlock is often an engineering partner you can trust to deliver.",
+    "metrics": [
+      {
+        "value": "6 weeks",
+        "label": "From takeover to first stable release"
+      },
+      {
+        "value": "1 → 4",
+        "label": "Releases a month, before and after"
+      },
+      {
+        "value": "−23%",
+        "label": "Production incidents"
+      }
+    ]
   },
   {
     "slug": "agencii",
