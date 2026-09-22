@@ -39,9 +39,8 @@ quoted per project on the scoping call.
 
 - 21+ products shipped to production
 - 27 five-star client reviews on Upwork and Fiverr
-- Scaled Product Marketing Alliance to a 300,000+ member community platform
-- Nrtur cut a client's CRM software cost by 74% replacing HubSpot
-- Carrier Network dispatches loads 40% faster at 25% lower cost
+- Rebuilt the platform behind Product Marketing Alliance, a 300,000+ member professional community
+- Took over and stabilized aNinja, a US CRM for service businesses, after a failed dev partnership
 
 ## Domain depth
 

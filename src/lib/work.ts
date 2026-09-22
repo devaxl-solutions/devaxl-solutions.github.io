@@ -157,21 +157,7 @@ export const CASES: CaseStudy[] = [
       "label": "agencii.ai",
       "href": "https://agencii.ai/"
     },
-    "metrics": [
-      {
-        "value": "10x",
-        "label": "Faster proposals / volume"
-      },
-      {
-        "value": "8 hrs",
-        "label": "Per full proposal (vs 8 days)"
-      },
-      {
-        "value": "60%",
-        "label": "Gross margin on new service"
-      }
-    ],
-    "challenge": "The agency's pitch process was sequential, manual, and disconnected: research lived in one tool, presentation design in another, and video in a third, with no automation tying them together. A single $50k proposal took roughly 8 days to assemble and 10 to revise. Strategists spent 70% of their time on execution and only 30% on actual strategy, and new business slowed because the team couldn't scale proposal volume without hiring more people just to execute.",
+    "challenge": "The agency's pitch process was sequential, manual, and disconnected: research lived in one tool, presentation design in another, and video in a third, with no automation tying them together.",
     "approach": [
       {
         "title": "Unified Agent Orchestration",
@@ -183,28 +169,16 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Phased Rollout & Refinement",
-        "body": "Week 1 integrated Agencii and wired outputs together (research to deck to visuals to video). The first live test coordinated all 6 agents and produced 80% of the deliverable, saving 4 days; weeks 3-4 refined prompts, brand themes, and research queries to move from working to genuinely great."
+        "body": "We integrated Agencii and wired the outputs together, from research to deck to visuals to video."
       }
     ],
     "results": [
       {
-        "title": "8 Hours, Not 8 Days",
+        "title": "Proposals in a Day, Not a Week",
         "body": "A full proposal package of research, slides, visuals, video, and docs now takes a morning of setup and a few hours of orchestration instead of a full week."
-      },
-      {
-        "title": "10x Proposal Volume",
-        "body": "The agency can now pitch 15-20 clients per month versus 2-3 before, handling 10x the volume with no new headcount."
-      },
-      {
-        "title": "Higher Quality & Better Win Rate",
-        "body": "Clients receive proposals 3-4 days faster than competitors with deeper research and more consistent design, lifting close rates while strategists focus on positioning and narrative."
-      },
-      {
-        "title": "Revenue Expansion",
-        "body": "A new premium \"Done-For-You Proposal\" service runs at 60% gross margin, which would be impossible at human labor costs, and the team has seen zero turnover since implementation."
       }
     ],
-    "verdict": "The agency didn't replace its strategists, it multiplied them: one strategist can now direct 8 AI agents to produce what 5 strategists couldn't before, moving the bottleneck from execution to strategy. The lesson is clear: automate the workflow, not individual tasks, and let coordinated agents give humans back their time while output and revenue scale."
+    "verdict": "The agency didn't replace its strategists, it multiplied them: coordinated AI agents now handle the execution, so the bottleneck moved from production to strategy. Automate the workflow, not individual tasks, and let agents give people back their time."
   },
   {
     "slug": "nrtur",
@@ -215,38 +189,15 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "A lightweight CRM that replaced a four-person agency's bloated HubSpot setup, cutting software costs 74% and putting their team's focus back on closing deals.",
-    "overview": "We built Nrtur to replace an overpriced HubSpot setup with a lightweight CRM sized for small, fast-moving teams. The result was a 74% cut in software costs, five-minute onboarding, and a pipeline that matched how the team actually sells.",
+    "oneLiner": "A lightweight CRM for small B2B service teams, with texting, email, calls and follow-up in one inbox.",
+    "overview": "We built Nrtur as a lightweight CRM sized for small, fast-moving teams that find enterprise CRMs too heavy: a pipeline that matches how small teams sell, two-way email sync, and follow-up automation a founder can set up without a consultant.",
     "thumbnail": "/projects/nrtur.png",
     "collaboration": "A four-person creative agency, name withheld",
     "link": {
       "label": "nrtur.io",
       "href": "https://www.nrtur.io/"
     },
-    "metrics": [
-      {
-        "value": "74%",
-        "label": "Reduction in CRM costs"
-      },
-      {
-        "value": "$3,180/yr",
-        "label": "Saved on software"
-      },
-      {
-        "value": "5 min",
-        "label": "Setup time vs. weeks"
-      }
-    ],
-    "challenge": "A four-person creative agency was paying enterprise prices for enterprise features they'd never use. HubSpot cost them $360/month and demanded weeks of onboarding, complex configuration, and constant training, built for Fortune 500s rather than scrappy agencies on 30-90 day sales cycles. They were paying for unused automation, reporting, and integration complexity that slowed them down. The real cost was time: setting up the system, training new members, and fighting the interface instead of doing creative work.",
     "approach": [
-      {
-        "title": "Pricing Sanity",
-        "body": "Their CRM bill went from $360 a month to $95, a 74% reduction, and the line item finally matched what a four-person team gets out of it."
-      },
-      {
-        "title": "Instant Adoption",
-        "body": "Setup took 5 minutes, not weeks. Their founder imported the HubSpot contacts in under 30 minutes with migration help from us, and the whole team was logging deals and syncing emails by end of day, with no training sessions."
-      },
       {
         "title": "Pipeline & Email That Match Reality",
         "body": "A kanban-style pipeline with drag-and-drop cards, status labels, and deal scoring matched exactly how the team sells. Two-way Gmail and Outlook sync automatically attached every client thread to the right contact and deal."
@@ -256,25 +207,7 @@ export const CASES: CaseStudy[] = [
         "body": "A visual workflow builder let their founder set up follow-up sequences without a consultant: proposal reminders, task assignments on stage changes, and email templates. It freed up mental overhead that had been eating her day."
       }
     ],
-    "results": [
-      {
-        "title": "74% Lower CRM Costs",
-        "body": "Monthly spend dropped from $360 to $95, putting $3,180/year back in the bank, real money for a small agency."
-      },
-      {
-        "title": "Faster Deal Movement",
-        "body": "A pipeline view that matches how they sell lets the team spot bottlenecks immediately and automate follow-ups, so deals move faster through each stage."
-      },
-      {
-        "title": "Zero Onboarding Friction",
-        "body": "New freelancers and contractors log in, see the pipeline, and start moving deals with no training or walkthroughs."
-      },
-      {
-        "title": "Time Back on Client Work",
-        "body": "Their founder estimates the team saves 3-4 hours per week previously lost to CRM admin, navigation, and workarounds, time now spent with clients and on revenue-driving work."
-      }
-    ],
-    "verdict": "This one is about removing friction, not adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations at a price that makes sense for a four-person team. The 74% cost cut is remarkable, but the real win is getting the team's focus back on closing deals and serving clients instead of managing software."
+    "verdict": "Nrtur is about removing friction rather than adding features: contact management that works, a pipeline that matches reality, automatic email sync, and time-saving automations sized for a small team."
   },
   {
     "slug": "pma",
@@ -285,37 +218,23 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "SaaS · Web Development",
-    "oneLiner": "The enterprise-grade SaaS backbone that scaled Product Marketing Alliance into the world's largest PMM community of 300,000+ members.",
-    "overview": "Product Marketing Alliance partnered with Devaxl to rebuild its community platform into a unified, scalable SaaS system. We architected and built the full stack powering certifications, memberships, events, and 24/7 engagement across 300,000+ members globally.",
+    "oneLiner": "The SaaS platform behind Product Marketing Alliance, a professional community of 300,000+ product marketers.",
+    "overview": "Product Marketing Alliance partnered with Devaxl to rebuild its community platform into a unified, scalable SaaS system. We architected and built the full stack powering certifications, memberships, events, and 24/7 engagement for PMA's global community.",
     "thumbnail": "/projects/pma.png",
     "collaboration": "Product Marketing Alliance (PMA)",
     "link": {
       "label": "productmarketingalliance.com",
       "href": "https://www.productmarketingalliance.com/"
     },
-    "metrics": [
-      {
-        "value": "300k+",
-        "label": "Active members"
-      },
-      {
-        "value": "5,000+",
-        "label": "Summit attendees"
-      },
-      {
-        "value": "4.9/5",
-        "label": "Google rating"
-      }
-    ],
-    "challenge": "PMA had grown to 300,000+ product marketers, but rapid expansion exposed critical infrastructure gaps. Certifications, membership tiers, events, and engagement were spread across disconnected systems and manual workarounds. The technical foundation simply couldn't scale with demand, and the team was spending more time managing infrastructure than growing the community. They needed a unified platform that could reliably reach 500k+ members without performance degradation.",
+    "challenge": "PMA had grown to 300,000+ product marketers, but rapid expansion exposed critical infrastructure gaps. Certifications, membership tiers, events, and engagement were spread across disconnected systems and manual workarounds. The technical foundation simply couldn't scale with demand, and the team was spending more time managing infrastructure than growing the community.",
     "approach": [
       {
         "title": "Unified Membership Platform",
-        "body": "We designed a modular SaaS architecture consolidating PMA's fragmented systems into one platform. It handled tiered membership (Insider, Pro, Pro+, Exec+), payment processing, automated provisioning, a certification engine, and a real-time analytics dashboard. An API-first design and secure single sign-on were built to absorb 10x growth without rewrites."
+        "body": "We designed a modular SaaS architecture consolidating PMA's fragmented systems into one platform. It handled tiered membership (Insider, Pro, Pro+, Exec+), payment processing, automated provisioning, a certification engine, and a real-time analytics dashboard."
       },
       {
         "title": "Events & Community Infrastructure",
-        "body": "We built the connective tissue for PMA's events, meetups, and mentorship. This included an events platform for the Product Marketing Summit and 100+ annual events, Slack/Discord integration for onboarding and tier verification, mentorship matching, and an LMS powering certification courses with video, quizzes, and progress tracking."
+        "body": "We built the connective tissue for PMA's events, meetups, and mentorship."
       },
       {
         "title": "Growth & Monetization Systems",
@@ -324,23 +243,15 @@ export const CASES: CaseStudy[] = [
     ],
     "results": [
       {
-        "title": "300,000+ Active Members",
-        "body": "The platform reliably serves hundreds of thousands of product marketers daily across Asia, Europe, and North America, with zero downtime during growth surges."
+        "title": "A Platform Built for Scale",
+        "body": "The platform serves PMA's global membership across Asia, Europe, and North America and holds up during growth surges."
       },
       {
         "title": "Sustainable Membership Revenue",
-        "body": "The unified billing system handles thousands of monthly subscription transactions across four membership tiers, powering reliable recurring revenue."
-      },
-      {
-        "title": "Global Event Success",
-        "body": "The annual Product Marketing Summit scaled seamlessly from 500 to 5,000+ attendees, with frictionless registration, networking, and post-event experiences."
-      },
-      {
-        "title": "Industry Recognition",
-        "body": "PMA has won awards from Financial Times, G2, and TrustPilot, earning 4.9/5 on Google and 4.7/5 on G2 — reflecting both product quality and user trust."
+        "body": "The unified billing system handles recurring subscriptions across all four membership tiers, powering reliable recurring revenue."
       }
     ],
-    "verdict": "Product Marketing Alliance shows what happens when community vision meets enterprise-grade technology: PMA had the magic, and we built the foundation sturdy enough to support 300,000+ professionals and flexible enough to evolve with member needs."
+    "verdict": "Product Marketing Alliance had the community; we built the foundation sturdy enough to support it and flexible enough to evolve with member needs."
   },
   {
     "slug": "securepoint360",
@@ -351,29 +262,15 @@ export const CASES: CaseStudy[] = [
       "SaaS"
     ],
     "category": "Security · SaaS",
-    "oneLiner": "A Series A SaaS hit SOC 2 Type II certification in 6 months, unlocking an $800k+ enterprise deal without hiring a full-time CISO.",
-    "overview": "A 40+ employee Series A SaaS company needed SOC 2 Type II certification to close its largest enterprise prospect. With no security team, it partnered with SecurePoint 360 and achieved certification within 6 months, landing the deal and building a lasting security program.",
+    "oneLiner": "A Series A SaaS reached SOC 2 Type II certification and unlocked its largest enterprise deal without hiring a full-time CISO.",
+    "overview": "A Series A SaaS company needed SOC 2 Type II certification to close its largest enterprise prospect. With no security team, it partnered with SecurePoint 360, achieved certification, landed the deal and built a lasting security program.",
     "thumbnail": "/projects/securepoint360.png",
     "collaboration": "SecurePoint 360 Virtual CISO partnership with a Series A B2B SaaS company",
     "link": {
       "label": "securepoint360.com",
       "href": "https://www.securepoint360.com/"
     },
-    "metrics": [
-      {
-        "value": "$800k+",
-        "label": "Enterprise deal closed"
-      },
-      {
-        "value": "6 months",
-        "label": "To SOC 2 Type II certification"
-      },
-      {
-        "value": "$150k+",
-        "label": "Annual CISO cost avoided"
-      }
-    ],
-    "challenge": "The company's largest pipeline opportunity, worth $800k+ annually, hinged on a non-negotiable SOC 2 Type II requirement. But it had no security infrastructure, no compliance framework, and no in-house expertise in security operations like audit readiness and evidence collection. The choice was stark: hire a CISO at $150k+ over 6 months, fail the audit and lose the deal, or find an expert partner. They chose the partner.",
+    "challenge": "The company's largest pipeline opportunity hinged on a non-negotiable SOC 2 Type II requirement, but it had no security infrastructure, no compliance framework, and no in-house expertise in security operations like audit readiness and evidence collection.",
     "approach": [
       {
         "title": "Audit Readiness Assessment",
@@ -390,23 +287,15 @@ export const CASES: CaseStudy[] = [
     ],
     "results": [
       {
-        "title": "$800k+ Deal Closed",
+        "title": "Enterprise Deal Closed",
         "body": "With SOC 2 Type II certification in hand, the prospect's risk committee approved the contract, the company's largest deal to date, opening doors to other enterprise opportunities previously blocked by compliance."
       },
       {
         "title": "Enterprise Sales Acceleration",
         "body": "SOC 2 became a competitive advantage, letting sales confidently tell prospects the company is audit-ready and shifting pipeline momentum."
-      },
-      {
-        "title": "No CISO Hire Needed (Yet)",
-        "body": "The Virtual CISO model delivered expert guidance at a fraction of the cost, avoiding a $150k+ full-time hire and its onboarding overhead while matching the company's growth stage."
-      },
-      {
-        "title": "Sustainable Security Maturity",
-        "body": "Beyond the certification, the company built lasting security muscle memory: monthly vulnerability scans, documented change procedures, and regular training that now run on autopilot, with confidence carrying forward to future audits like ISO 27001, GDPR, and HIPAA."
       }
     ],
-    "verdict": "Enterprise expansion demands security maturity most companies haven't built yet, and the smart move is partnering with experts rather than panicking or over-hiring. SecurePoint 360 prioritized relentlessly and stayed involved through audit execution, closing an $800k deal and leaving behind security practices that compound over time."
+    "verdict": "Enterprise expansion demands security maturity most companies haven't built yet. SecurePoint 360 prioritized relentlessly and stayed involved through audit execution, closing the deal and leaving behind security practices that compound over time."
   },
   {
     "slug": "itboost",
@@ -467,25 +356,11 @@ export const CASES: CaseStudy[] = [
       "Web Development"
     ],
     "category": "AI · SaaS · Web Development",
-    "oneLiner": "We built an AI beauty discovery platform that turns a 50,000-product catalog into personalized recommendations customers actually trust.",
+    "oneLiner": "We built an AI beauty discovery platform that turns a very large product catalog into personalized recommendations customers actually trust.",
     "overview": "Devaxl replaced BeautyRightBack's one-size-fits-all recommendation engine with an AI-powered discovery platform combining visual analysis, preference learning, and real-time inventory matching. We turned a transactional beauty retailer into a personalized beauty consultant.",
     "collaboration": "BeautyRightBack (BRB)",
     "role": "AI recommendation engine, computer vision, and full-stack platform build",
-    "metrics": [
-      {
-        "value": "3x",
-        "label": "Revenue growth in 18 months"
-      },
-      {
-        "value": "45%",
-        "label": "Improvement in customer retention"
-      },
-      {
-        "value": "70%",
-        "label": "Reduction in cart abandonment"
-      }
-    ],
-    "challenge": "BeautyRightBack carried 50,000+ products from hundreds of brands, but customers were overwhelmed and defaulting to \"buy what I always buy.\" 60% couldn't find what they needed without help, cart abandonment hit 70%, and average order value stayed flat. Beauty is the ultimate personalization problem - skin tone, type, undertone, concerns, allergies, and budget make popularity-based recommendations useless. They needed to become a personal beauty consultant, not a product catalog.",
+    "challenge": "Beauty is the ultimate personalization problem - skin tone, type, undertone, concerns, allergies, and budget make popularity-based recommendations useless. They needed to become a personal beauty consultant, not a product catalog.",
     "approach": [
       {
         "title": "Visual & Preference Learning Foundation",
@@ -493,32 +368,15 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Personalized Discovery Experience",
-        "body": "We built an AI beauty consultant that turns 3-4 quick questions into 15 tailored picks instead of 50,000 options. We added virtual try-on, ingredient and allergen matching, brand and price alternatives, and dynamically generated smart collections to give customers confidence to buy."
+        "body": "We added virtual try-on, ingredient and allergen matching, brand and price alternatives, and dynamically generated smart collections to give customers confidence to buy."
       },
       {
         "title": "Post-Purchase Engagement & Loyalty",
         "body": "We shipped replenishment intelligence that reminds customers before products run out, plus complementary recommendations pairing foundation with matching concealer, primer, and setting spray. The seasonal swaps and personalized loyalty offers we built turn one-time buyers into repeat customers."
       }
     ],
-    "results": [
-      {
-        "title": "3x Revenue Growth",
-        "body": "Revenue tripled within 18 months as customers found products faster and bought with confidence; average order value jumped 2.3x and acquisition costs dropped 40%."
-      },
-      {
-        "title": "45% Higher Retention",
-        "body": "One-time buyers became repeat customers, with replenishment reminders driving 35% of repeat purchases in a category known for brand-switching."
-      },
-      {
-        "title": "70% Less Cart Abandonment",
-        "body": "The handful of personalized recommendations we surfaced, instead of 50,000 options, drove higher conversion and far fewer abandoned carts."
-      },
-      {
-        "title": "World-Class Satisfaction",
-        "body": "NPS jumped from a mediocre 32 to a world-class 72 as customers felt genuinely understood by the platform."
-      }
-    ],
-    "verdict": "BeautyRightBack stopped treating customers as browsers and started treating them as people with unique, complex preferences it actually understood - becoming a trusted advisor at scale. The result: 3x revenue, loyal customers, and a position as the industry-leading beauty intelligence platform."
+    "results": [],
+    "verdict": "BeautyRightBack stopped treating customers as browsers and started treating them as people with complex preferences it actually understood, becoming a trusted advisor at scale."
   },
   {
     "slug": "authority-alert",
@@ -531,24 +389,10 @@ export const CASES: CaseStudy[] = [
     ],
     "category": "SaaS · AI · Web Development",
     "oneLiner": "We built a transparent, ranked marketplace that verifies coaches, aggregates real feedback, and tracks outcomes so clients can hire with confidence.",
-    "overview": "Devaxl built Authority Alert, a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting millions of clients with vetted coaches across every specialty.",
+    "overview": "Devaxl built Authority Alert, a transparent, ranked marketplace for coaches with verified credentials, real feedback, and outcome tracking. It brought standards to a fragmented industry, connecting clients with vetted coaches across every specialty.",
     "collaboration": "Authority Alert coaching marketplace",
     "role": "Marketplace architecture, verification and matching systems, and full-stack build",
-    "metrics": [
-      {
-        "value": "50,000+",
-        "label": "Coaches on platform"
-      },
-      {
-        "value": "2.5M+",
-        "label": "Clients matched & coached"
-      },
-      {
-        "value": "$120M+",
-        "label": "Annual coaching fees"
-      }
-    ],
-    "challenge": "The coaching industry faced a credibility crisis: anyone could call themselves a coach, with no standards, no verification, and no way to know if one was legitimate or effective. Clients had no central registry to check credentials, only cherry-picked testimonials to judge by, and prices ranging from $50 to $5,000/hour with zero transparency. Good coaches stayed hidden while mediocre ones thrived through aggressive marketing, scattered across LinkedIn, Facebook groups, and personal networks.",
+    "challenge": "The coaching industry faced a credibility crisis: anyone could call themselves a coach, with no standards, no verification, and no way to know if one was legitimate or effective. Good coaches stayed hidden while mediocre ones thrived through aggressive marketing, scattered across LinkedIn, Facebook groups, and personal networks.",
     "approach": [
       {
         "title": "Credibility Infrastructure",
@@ -564,28 +408,20 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Network Effects & Scale",
-        "body": "As more coaches and clients joined, the platform became the default choice through compounding network effects. A specialization flywheel grew niche markets, and the anonymized data we collected on what coaching actually works built a defensible competitive moat."
+        "body": "As more coaches and clients joined, the platform grew through compounding network effects. A specialization flywheel grew niche markets, and the anonymized data we collected on what coaching actually works built a defensible competitive moat."
       }
     ],
     "results": [
       {
-        "title": "50,000+ Coaches on Platform",
-        "body": "From boutique practitioners to established names, Authority Alert became the standard place for coaches seeking credibility, visibility, and scale to list."
+        "title": "Coaches Joined the Platform",
+        "body": "From boutique practitioners to established names, coaches seeking credibility, visibility, and scale listed on Authority Alert."
       },
       {
-        "title": "2.5M+ Clients Matched",
-        "body": "Millions of people found coaches through the transparent, ranked discovery we built, getting better at their craft, business, health, or life."
-      },
-      {
-        "title": "$120M+ Annual Coaching Fees",
-        "body": "Coaches collectively earn $120M+ annually from engagements arranged through the platform, turning coaching into a thriving, transparent industry."
-      },
-      {
-        "title": "Top Coaches 10x Income",
-        "body": "Top-rated coaches no longer hustle for clients; some went from 5 clients/month to 30+, while emerging coaches with strong outcomes outrank famous names with mediocre reviews."
+        "title": "Clients Matched with Coaches",
+        "body": "Clients found coaches through the transparent, ranked discovery we built, and got better at their craft, business, health, or life."
       }
     ],
-    "verdict": "Authority Alert proved that transparency and accountability create thriving markets. By removing information asymmetry with verified credentials, real feedback, and actual outcomes, it gave the coaching industry standards, made invisible coaches visible, and helped millions of clients hire with confidence."
+    "verdict": "Authority Alert proved that transparency and accountability create thriving markets. By removing information asymmetry with verified credentials, real feedback, and actual outcomes, it gave the coaching industry standards, made invisible coaches visible, and helped clients hire with confidence."
   },
   {
     "slug": "carrier-network",
@@ -597,26 +433,12 @@ export const CASES: CaseStudy[] = [
       "AI"
     ],
     "category": "SaaS · Web Development · AI",
-    "oneLiner": "We built a unified carrier intelligence dashboard that turns scattered trucking data into one source of truth—dispatching loads 40% faster and cutting costs 25%.",
-    "overview": "Devaxl built Carrier Network, consolidating fragmented carrier data—profiles, performance metrics, compliance records, and communication history—into one intelligent dashboard for freight brokers and logistics companies. The result was 40% faster load assignments and 25% lower costs through smarter carrier selection.",
+    "oneLiner": "We built a unified carrier intelligence dashboard that turns scattered trucking data into one source of truth for dispatch.",
+    "overview": "Devaxl built Carrier Network, consolidating fragmented carrier data (profiles, performance metrics, compliance records, and communication history) into one dashboard for freight brokers and logistics companies, so carrier selection runs on data instead of memory.",
     "thumbnail": "/projects/careerNetwork.png",
     "collaboration": "Carrier Network carrier intelligence platform",
     "role": "Data integration architecture, full-stack build, and recommendation engine development",
-    "metrics": [
-      {
-        "value": "40%",
-        "label": "Faster load assignments"
-      },
-      {
-        "value": "25%",
-        "label": "Cost reduction"
-      },
-      {
-        "value": "98%",
-        "label": "On-time delivery rate"
-      }
-    ],
-    "challenge": "The trucking industry runs on 1990s infrastructure, with carrier data scattered across spreadsheets, emails, contact apps, and government sites—no single source of truth on reliability, cost, capacity, or compliance. Finding the right carrier for a load took 30-60 minutes of phone calls and manual searching, and decisions were made on gut feel rather than data. Loads went to unreliable carriers, premium rates were paid for mediocre service, and compliance risks went unmanaged. The data existed from every interaction; it was just trapped in disconnected systems.",
+    "challenge": "The trucking industry runs on 1990s infrastructure, with carrier data scattered across spreadsheets, emails, contact apps, and government sites—no single source of truth on reliability, cost, capacity, or compliance. Loads went to unreliable carriers, premium rates were paid for mediocre service, and compliance risks went unmanaged. The data existed from every interaction; it was just trapped in disconnected systems.",
     "approach": [
       {
         "title": "Data Consolidation & Unification",
@@ -624,7 +446,7 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Intelligent Dashboard & Decision Support",
-        "body": "We turned raw data into actionable intelligence with a recommendation engine that surfaces the best carriers per load by service area, equipment, reliability, cost, and compliance. We shipped transparent performance scorecards, capacity planning, and one-click load assignment, replacing 30-minute searches with instant recommendations."
+        "body": "We turned raw data into actionable intelligence with a recommendation engine that surfaces the best carriers per load by service area, equipment, reliability, cost, and compliance."
       },
       {
         "title": "Network Effects & Insights",
@@ -632,18 +454,6 @@ export const CASES: CaseStudy[] = [
       }
     ],
     "results": [
-      {
-        "title": "Faster Load Assignments",
-        "body": "What used to take 30-60 minutes of phone calls now takes minutes—a 40% faster process that lets dispatchers book more loads and serve customers quicker."
-      },
-      {
-        "title": "Lower Costs",
-        "body": "The carrier reliability and cost-performance data we surfaced ended overpaying for mediocre service, delivering a 25% cost reduction through better carrier selection."
-      },
-      {
-        "title": "Higher On-Time Performance",
-        "body": "Booking data-ranked reliable carriers pushed overall on-time delivery to 98%, with that satisfaction carrying downstream to end customers."
-      },
       {
         "title": "Compliance & Relationship Visibility",
         "body": "The compliance monitoring we built catches issues immediately, eliminating accidental bookings of non-compliant carriers, while preferred carriers earn steady, data-backed work instead of relationship luck."
@@ -661,25 +471,11 @@ export const CASES: CaseStudy[] = [
     ],
     "category": "Branding · Web Development",
     "oneLiner": "We built the brand system and platform for an education business teaching trucking dispatchers and truck owners to think like entrepreneurs and build thriving businesses.",
-    "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. The founder brought the curriculum and the audience; Devaxl built the brand system, website, and learning platform that carry it. Over 10,000+ students have graduated, collectively building hundreds of millions in wealth.",
+    "overview": "Trucking Guru is a personal brand and education platform teaching trucking professionals the business fundamentals their industry never taught them. The founder brought the curriculum and the audience; Devaxl built the brand system, website, and learning platform that carry it.",
     "thumbnail": "/projects/truckingGuru.png",
     "collaboration": "Trucking Guru",
     "role": "Brand identity, website, and the learning and community platform behind the programs",
-    "metrics": [
-      {
-        "value": "10,000+",
-        "label": "Students transformed"
-      },
-      {
-        "value": "$100M+",
-        "label": "In collective student wealth"
-      },
-      {
-        "value": "10x",
-        "label": "Potential income increase"
-      }
-    ],
-    "challenge": "The trucking industry is full of capable people making poor business decisions. Dispatchers earn $40-$60k/year as employees despite having the skills to run their own dispatch businesses, while truck owners excel at moving freight but lack cost accounting, pricing strategy, and scaling know-how. Business schools train corporate MBAs, but nobody teaches business fundamentals to trucking professionals, so dispatchers stay employees and truck owners stay small.",
+    "challenge": "The trucking industry is full of capable people making poor business decisions. Business schools train corporate MBAs, but nobody teaches business fundamentals to trucking professionals, so dispatchers stay employees and truck owners stay small.",
     "approach": [
       {
         "title": "Personal Brand & Credibility",
@@ -695,28 +491,11 @@ export const CASES: CaseStudy[] = [
       },
       {
         "title": "Scale & Industry Impact",
-        "body": "The brand became the go-to authority in trucking business, reaching hundreds of thousands of professionals via a YouTube channel with millions of views and a 100k+ email list. It ran on the LMS and community platforms we built, alongside financing partnerships, and earned media features and conference speaking engagements."
+        "body": "It ran on the LMS and community platforms we built, alongside financing partnerships, and earned media features and conference speaking engagements."
       }
     ],
-    "results": [
-      {
-        "title": "10,000+ Students Transformed",
-        "body": "Over 10,000 paying students across the programs changed their financial trajectories, going from completion to genuine transformation as employees turned entrepreneurs."
-      },
-      {
-        "title": "Wealth Created",
-        "body": "Documented case studies show dozens of students going from $50-80k/year to $200k-$500k+, with some building multi-million-dollar dispatch or trucking operations."
-      },
-      {
-        "title": "Collective Income Growth",
-        "body": "Across 10,000+ students lifting their income from roughly $50k to $100k–$500k a year, the community has collectively built hundreds of millions of dollars in wealth."
-      },
-      {
-        "title": "Economic Mobility & Authority",
-        "body": "Working-class professionals discovered they could earn 10x more as independent operators, and Trucking Guru became the definitive voice on how to build a trucking business."
-      }
-    ],
-    "verdict": "Trucking Guru proves that teaching people to make better business decisions changes what they can build. The founder brought the curriculum and the credibility; we built the brand, the site, and the platform that carries it to thousands of stuck trucking professionals."
+    "results": [],
+    "verdict": "Trucking Guru proves that teaching people to make better business decisions changes what they can build. The founder brought the curriculum and the credibility; we built the brand, the site, and the platform that carries it to trucking professionals."
   },
   {
     "slug": "chat-center",
@@ -733,21 +512,7 @@ export const CASES: CaseStudy[] = [
     "thumbnail": "/projects/chatCenter.png",
     "collaboration": "Chat Center (trucking communication platform)",
     "role": "Product design, mobile and web engineering, and third-party systems integration",
-    "metrics": [
-      {
-        "value": "35%",
-        "label": "Reduction in miscommunication delays"
-      },
-      {
-        "value": "50%",
-        "label": "Faster load assignment"
-      },
-      {
-        "value": "20%",
-        "label": "Improvement in operational efficiency"
-      }
-    ],
-    "challenge": "Driver-dispatcher communication was fragmented across phone calls, texts, WhatsApp, email, and CB radio, with critical updates getting lost and no record of conversations. Dispatchers had no visibility into driver status and burned 30 minutes phone-tagging drivers to fill an urgent load, while drivers missed load changes and drove hundreds of miles the wrong way. The result was constant miscommunication delays, slow assignments, data loss, and frustrated customers. Most trucking companies accepted this chaos as simply how the industry worked.",
+    "challenge": "Driver-dispatcher communication was fragmented across phone calls, texts, WhatsApp, email, and CB radio, with critical updates getting lost and no record of conversations. The result was constant miscommunication delays, slow assignments, data loss, and frustrated customers. Most trucking companies accepted this chaos as simply how the industry worked.",
     "approach": [
       {
         "title": "Unified Messaging & Real-Time Notifications",
@@ -766,24 +531,7 @@ export const CASES: CaseStudy[] = [
         "body": "Based on user feedback, we added group messaging, voice/video calls, and push notifications alongside a mobile-first design, offline sync, and multi-language support for a diverse workforce. Better coordination made drivers feel respected and valued, turning the platform into both a retention tool and a new industry standard."
       }
     ],
-    "results": [
-      {
-        "title": "Fewer Miscommunication Delays",
-        "body": "Clear, real-time, documented updates drove a 35% reduction in miscommunication-related delays, so drivers stopped missing updates and dispatchers stopped wondering if messages landed."
-      },
-      {
-        "title": "Faster Load Assignment",
-        "body": "The broadcast assignment we built—sending a load to multiple available drivers at once—made assignment 50% faster, replacing 30-minute phone tag with near-instant acceptance."
-      },
-      {
-        "title": "Higher Operational Efficiency",
-        "body": "Cutting communication overhead delivered a 20% improvement in overall operational efficiency, letting drivers drive more and dispatchers strategize instead of chase."
-      },
-      {
-        "title": "Scalability & Retention",
-        "body": "A dispatcher who once managed 15 drivers could now effectively manage 25, while better, more respectful communication improved driver retention and made recruiting easier."
-      }
-    ],
+    "results": [],
     "verdict": "Chat Center proves that communication which is clear, real-time, and documented transforms operational efficiency. By making driver-dispatcher coordination instant, visible, and recorded, it became the backbone of operational success for an industry where coordination is everything."
   },
   {
@@ -801,21 +549,7 @@ export const CASES: CaseStudy[] = [
     "thumbnail": "/projects/driverapp.png",
     "collaboration": "Driver App",
     "role": "Mobile app development, real-time tracking and video infrastructure, and AI safety monitoring",
-    "metrics": [
-      {
-        "value": "40%",
-        "label": "reduction in accidents"
-      },
-      {
-        "value": "60%",
-        "label": "savings on insurance claims"
-      },
-      {
-        "value": "20-30%",
-        "label": "lower insurance premiums"
-      }
-    ],
-    "challenge": "Trucking companies faced a visibility crisis that cost millions. Accidents happened with no footage to explain why, so insurers questioned claims and drivers disputed fault — driving up premiums companies couldn't defend. Dispatchers had no view into driver behavior or real-time location, leaving unsafe driving uncorrected and routes impossible to optimize. The prevailing culture assumed accidents could only be managed after the fact, never prevented.",
+    "challenge": "Trucking companies faced an expensive visibility crisis. Accidents happened with no footage to explain why, so insurers questioned claims and drivers disputed fault — driving up premiums companies couldn't defend. Dispatchers had no view into driver behavior or real-time location, leaving unsafe driving uncorrected and routes impossible to optimize. The prevailing culture assumed accidents could only be managed after the fact, never prevented.",
     "approach": [
       {
         "title": "Real-Time Location & Tracking",
@@ -836,23 +570,11 @@ export const CASES: CaseStudy[] = [
     ],
     "results": [
       {
-        "title": "40% Fewer Accidents",
-        "body": "Real-time behavior monitoring, AI-powered incident detection, and targeted coaching drove a 40% reduction in accidents as drivers drove safer knowing they were observed."
-      },
-      {
-        "title": "60% Lower Insurance Claims",
-        "body": "Footage proving driver safety or fault cut insurance claims 60%, resolving liability disputes with video evidence and lowering premiums substantially."
-      },
-      {
-        "title": "Cheaper Premiums",
-        "body": "Insurers offered 20-30% lower premiums to companies with proven safety data, saving thousands per truck annually."
-      },
-      {
         "title": "Data-Driven Operations",
         "body": "Real-time location enabled route optimization and accurate ETAs, while real performance data replaced anecdote — showing which drivers, routes, and times were safest."
       }
     ],
-    "verdict": "Driver App proved that making the invisible visible prevents accidents before they happen. By combining GPS, dashcam footage, AI risk detection, and transparent performance data, fleets went fully proactive — fewer accidents, millions saved, and safety made a shared value rather than a compliance checkbox."
+    "verdict": "Driver App proved that making the invisible visible prevents accidents before they happen. By combining GPS, dashcam footage, AI risk detection, and transparent performance data, fleets moved from reacting to incidents to preventing them."
   },
   {
     "slug": "sound-space",
@@ -864,25 +586,11 @@ export const CASES: CaseStudy[] = [
       "Web Design"
     ],
     "category": "SaaS · Web Development · Web Design",
-    "oneLiner": "A free, professionally curated sound effects library that became the default audio resource for over 500,000 creators every month.",
-    "overview": "SoundSpace built a professional, organized, free sound effects library with thousands of high-quality audio files properly categorized and searchable. It became the go-to resource for YouTubers, TikTokers, and video creators worldwide.",
+    "oneLiner": "A free, professionally curated sound effects library built for video creators.",
+    "overview": "SoundSpace built a professional, organized, free sound effects library with a large set of high-quality audio files properly categorized and searchable. It became the go-to resource for YouTubers, TikTokers, and video creators worldwide.",
     "thumbnail": "/projects/soundAddress.png",
     "collaboration": "SoundSpace sound effects library",
-    "metrics": [
-      {
-        "value": "500k+",
-        "label": "Active monthly creators"
-      },
-      {
-        "value": "50M+",
-        "label": "Sound effect downloads"
-      },
-      {
-        "value": "$20/mo",
-        "label": "Premium rivals undercut by free model"
-      }
-    ],
-    "challenge": "Creators faced an impossible audio choice: pay $15-50 per premium sound effect, settle for generic royalty-free packs everyone else uses, or hunt across the web for hours with uncertain licensing. Every video needs sound design, and professionals burned 20-30% of production time just finding and implementing audio. No single library existed that was free, well-organized, professionally produced, legally clear, and continuously updated.",
+    "challenge": "No single library existed that was free, well-organized, professionally produced, legally clear, and continuously updated.",
     "approach": [
       {
         "title": "Library Building & Curation",
@@ -897,26 +605,14 @@ export const CASES: CaseStudy[] = [
         "body": "Built community through creator testimonials, trending sounds that drove FOMO adoption, and sound requests where creators voted on what to add next. Remix features and revenue sharing with top contributors expanded the library while incentivizing quality."
       },
       {
-        "title": "Scale & Dominance",
-        "body": "SoundSpace became the standard resource every major creator reached for first. TikTok and influencer integrations spread audio virally."
+        "title": "Distribution & Growth",
+        "body": "TikTok and influencer integrations helped the library spread among creators."
       }
     ],
     "results": [
       {
-        "title": "500,000+ Monthly Creators",
-        "body": "From podcasters to YouTubers to TikTokers, half a million creators use SoundSpace every month."
-      },
-      {
-        "title": "50M+ Downloads",
-        "body": "The library has been downloaded 50 million times, each a moment a creator found the perfect audio for their content."
-      },
-      {
-        "title": "Fastest Growing Audio Resource",
-        "body": "Competing against premium services costing $20/month, SoundSpace's free model grew faster than any paid alternative."
-      },
-      {
-        "title": "Creator Efficiency Gain",
-        "body": "Creators save 30-60 minutes per video finding audio, freeing millions of hours across the community for actual creativity."
+        "title": "Adopted by Creators",
+        "body": "From podcasters to YouTubers to TikTokers, creators use SoundSpace as a go-to source of free sound effects."
       }
     ],
     "verdict": "SoundSpace proves that solving a creator's friction point brilliantly makes you indispensable. By removing the cost, quality, and licensing barriers around audio at once, it grew from a niche problem into the first place creators look, a resource so essential that competing with it is nearly impossible."
@@ -933,21 +629,7 @@ export const CASES: CaseStudy[] = [
     "overview": "PropForce centralizes tenant communication, rent collection, maintenance workflows, lease tracking, and financial reporting in one portal. It shifts property managers from reactive, paper-based admin to proactive, data-driven operations.",
     "thumbnail": "/projects/propforce.png",
     "collaboration": "PropForce property management platform",
-    "metrics": [
-      {
-        "value": "35%",
-        "label": "Faster rent collection"
-      },
-      {
-        "value": "45%",
-        "label": "Faster maintenance response"
-      },
-      {
-        "value": "60%",
-        "label": "Tenant satisfaction gain"
-      }
-    ],
-    "challenge": "Property management ran on spreadsheets, phone calls, and scattered email threads, so maintenance requests got lost, rent collection was manual and unreliable, and true per-property profitability was invisible. Tenants had no way to pay online or track requests, driving churn toward professionally-managed competitors. A manager with 20-30 properties spent 80% of their time on admin instead of strategy, so profitability plateaued as adding properties meant hiring more people.",
+    "challenge": "Property management ran on spreadsheets, phone calls, and scattered email threads, so maintenance requests got lost, rent collection was manual and unreliable, and true per-property profitability was invisible. Tenants had no way to pay online or track requests, driving churn toward professionally-managed competitors.",
     "approach": [
       {
         "title": "Tenant Self-Service & Communication Hub",
@@ -962,25 +644,8 @@ export const CASES: CaseStudy[] = [
         "body": "A real-time dashboard surfaces per-property profitability, rent collected vs. late, and year-to-date P&L by property. Maintenance cost analysis, tenant quality metrics, and forecasting let managers make strategic decisions from data instead of gut feel."
       }
     ],
-    "results": [
-      {
-        "title": "Faster Rent Collection",
-        "body": "Automated reminders, online payments, and systematic escalation cut rent collection time 35%, dropping days sales outstanding from 45 days to 29 days."
-      },
-      {
-        "title": "Quicker Maintenance Response",
-        "body": "Instant contractor assignment reduced maintenance response time 45%, from an average of 5-7 days down to 2-3 days."
-      },
-      {
-        "title": "Happier, Stickier Tenants",
-        "body": "Professional, transparent service improved tenant satisfaction 60% and reduced tenant churn 30%, stabilizing revenue through longer tenures."
-      },
-      {
-        "title": "Lower Costs, Scalable Portfolios",
-        "body": "Admin automation cut labor cost per property 40%, letting managers handle 30 properties instead of 10 and scale portfolios without proportional labor increases."
-      }
-    ],
-    "verdict": "PropForce shows what's possible when you digitize an industry still running on paper and phone calls. By automating communication, centralizing operations, and exposing real profitability, it made property managers roughly 3x more productive and shifted the business from reactive chaos to proactive, data-driven management."
+    "results": [],
+    "verdict": "PropForce shows what's possible when you digitize an industry still running on paper and phone calls. By automating communication, centralizing operations, and exposing real profitability, it moved property managers from reactive firefighting to proactive, data-driven management."
   }
 ];
 
