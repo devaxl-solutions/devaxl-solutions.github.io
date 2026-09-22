@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const ACTIONS = [
   {
     icon: CalendarClock,
-    label: "Book a scoping call",
+    label: "Book a codebase review call",
     value: "30 minutes with a senior engineer",
     href: CALENDLY_URL,
     external: true,
@@ -49,8 +49,8 @@ export default function ContactPage() {
       <JsonLd data={graph(breadcrumbSchema([{ name: "Contact", path: "/contact" }]))} />
       <PageHeader
         eyebrow="Contact"
-        title="Tell us where your product is."
-        intro="A short message or a scoping call with a senior engineer — not a salesperson. We'll tell you exactly how we'd help, and whether we're the right fit."
+        title="Tell us what's broken."
+        intro="A short message or a codebase review call with a senior engineer, not a salesperson. Tell us what went wrong with the last team and we'll tell you whether we should take it over."
       />
 
       <section className="py-16 max-md:py-12">
