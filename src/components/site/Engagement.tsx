@@ -7,16 +7,16 @@ import { SectionHead } from "./SectionHead";
 
 const TIERS = [
   {
-    name: "MVP Build",
-    cta_id: "book-call-mvp",
-    who: "For founders taking a validated idea to a working first release.",
+    name: "Rescue & Takeover",
+    cta_id: "book-call-rescue",
+    who: "For a live B2B SaaS whose last team left it unstable or stalled.",
     points: [
-      "Fixed-scope, fixed-timeline delivery",
-      "Design, engineering & QA included",
-      "A live app people can pay for",
+      "Codebase audit and a written fix plan first",
+      "Stabilize what breaks most, then fix the release process",
+      "Continue as a monthly retainer, or hand back to your team",
     ],
-    cta: "Scope your v1",
-    featured: false,
+    cta: "Book a codebase review",
+    featured: true,
   },
   {
     name: "Dedicated Team",
@@ -28,18 +28,18 @@ const TIERS = [
       "Works inside your Slack and tools",
     ],
     cta: "Plan your team",
-    featured: true,
+    featured: false,
   },
   {
-    name: "Modernization Retainer",
-    cta_id: "book-call-retainer",
-    who: "For an app that has to get faster, steadier, and easier to extend.",
+    name: "MVP Build",
+    cta_id: "book-call-mvp",
+    who: "For founders taking a validated idea to a working first release.",
     points: [
-      "Performance & reliability work",
-      "Incremental, zero-downtime rollout",
-      "Ongoing architecture guidance",
+      "Fixed-scope, fixed-timeline delivery",
+      "Design, engineering & QA included",
+      "A live app people can pay for",
     ],
-    cta: "Scope a retainer",
+    cta: "Scope your v1",
     featured: false,
   },
 ];
@@ -67,7 +67,7 @@ export function Engagement() {
             >
               {t.featured && (
                 <span className="mb-[18px] inline-flex h-[23px] w-fit items-center rounded-pill border border-[rgba(255,182,0,0.3)] bg-accent-quiet px-2.5 text-[11px] font-semibold tracking-[0.02em] text-accent">
-                  Most common
+                  Start here
                 </span>
               )}
               <h3 className="text-[26px] font-semibold tracking-tight">{t.name}</h3>
