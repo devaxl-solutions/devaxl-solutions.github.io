@@ -40,13 +40,19 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-export function Faq() {
+export function Faq({
+  items = FAQS,
+  title = "The questions founders ask first.",
+}: {
+  items?: { q: string; a: string }[];
+  title?: string;
+} = {}) {
   return (
     <section className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap grid grid-cols-[0.8fr_1.2fr] gap-16 max-lg:grid-cols-1 max-lg:gap-10">
-        <SectionHead eyebrow="FAQ" title="The questions founders ask first." />
+        <SectionHead eyebrow="FAQ" title={title} />
         <div className="border-t border-faint">
-          {FAQS.map((f) => (
+          {items.map((f) => (
             <FaqItem key={f.q} {...f} />
           ))}
         </div>

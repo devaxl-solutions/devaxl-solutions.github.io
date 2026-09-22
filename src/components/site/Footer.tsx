@@ -15,9 +15,9 @@ const COLS = [
   {
     title: "Services",
     links: [
-      { label: "MVP Build", href: "/services" },
+      { label: "SaaS Rescue", href: "/rescue" },
       { label: "Dedicated Team", href: "/services" },
-      { label: "Modernization", href: "/services" },
+      { label: "MVP Build", href: "/services" },
     ],
   },
 ];
