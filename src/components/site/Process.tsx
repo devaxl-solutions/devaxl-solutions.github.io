@@ -5,12 +5,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SectionHead } from "./SectionHead";
 
+// The rescue process. A takeover starts with an audit, not with design, so the
+// old Discovery / Design / Build / Launch / Scale steps described an MVP build
+// rather than the work most clients hire us for.
 const STEPS = [
-  { n: "01", title: "Discovery", body: "We pressure-test the problem, scope, and success metrics before a line of code." },
-  { n: "02", title: "Design", body: "Flows and screens designed against the real app, not throwaway mockups." },
-  { n: "03", title: "Build", body: "Senior engineers ship in tight, demoable increments you can use every week." },
-  { n: "04", title: "Launch", body: "Production-hardened release — monitoring, CI/CD, and a runbook from day one." },
-  { n: "05", title: "Scale", body: "We stay on to speed up, harden, and extend as your user base grows." },
+  { n: "01", title: "Audit", body: "We get access, produce a clean build, and map what actually runs in production." },
+  { n: "02", title: "Stabilize", body: "We fix what breaks most often, rotate secrets, remove stale access, and confirm backups restore." },
+  { n: "03", title: "Fix releases", body: "Code review on every change, staging that matches production, CI checks, and one owner per release." },
+  { n: "04", title: "Ship again", body: "Features restart on a predictable cadence, with a demo you can click through every week." },
+  { n: "05", title: "Stay or hand back", body: "We stay on as your engineering team, or hand a documented codebase to your own hires." },
 ];
 
 export function Process() {
@@ -61,7 +64,7 @@ export function Process() {
   return (
     <section id="process" className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
-        <SectionHead eyebrow="How we work" title="A clear path from idea to scale." />
+        <SectionHead eyebrow="How we work" title="How a rescue works." />
 
         <div
           ref={railRef}
