@@ -26,8 +26,8 @@ export default function ProcessPage() {
       />
       <PageHeader
         eyebrow="How we work"
-        title="From first call to lasting scale."
-        intro="A senior team, a written plan, and tight demoable increments you can use every week. Here is the path."
+        title="From takeover to shipping again."
+        intro="Most engagements start with a product another team left unstable. We audit it, stabilize it, fix how it ships, and then build on it with a demo you can use every week."
       />
       <Process />
       <Cadence />
