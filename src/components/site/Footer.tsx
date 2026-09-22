@@ -36,8 +36,8 @@ export function Footer() {
               Development accelerated
             </p>
             <p className="max-w-[280px] text-[14px] leading-[1.65] text-secondary">
-              A premium product engineering studio. We design, build, and scale
-              SaaS products for founders and CTOs.
+              A senior engineering studio. We take over B2B SaaS products other
+              teams left broken and get them shipping again.
             </p>
           </div>
 
