@@ -4,7 +4,6 @@ import { faqSchema, graph, servicesSchema } from "@/lib/schema";
 import { Hero } from "@/components/site/Hero";
 import { Proof } from "@/components/site/Proof";
 import { Capabilities } from "@/components/site/Capabilities";
-import { AiNative } from "@/components/site/AiNative";
 import { Industries } from "@/components/site/Industries";
 import { SelectedWork } from "@/components/site/SelectedWork";
 import { Process } from "@/components/site/Process";
@@ -25,7 +24,6 @@ export default function Home() {
       <Hero />
       <Proof />
       <Capabilities />
-      <AiNative />
       <Industries />
       <SelectedWork />
       <Process />

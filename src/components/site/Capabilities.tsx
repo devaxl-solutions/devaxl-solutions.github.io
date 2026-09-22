@@ -1,25 +1,31 @@
-import { ArrowRight, Gauge, Rocket, Users } from "lucide-react";
+import { ArrowRight, Gauge, LifeBuoy, Rocket, Users } from "lucide-react";
 import { SpotlightCard } from "@/components/ui/SpotlightCard";
 import { SectionHead } from "./SectionHead";
 
 const CARDS = [
   {
-    icon: Rocket,
-    title: "SaaS & AI MVP → launch",
-    out: "Take an idea to a first release real users can pay for — AI built in where it earns its place, scoped tight, delivered to the plan we agreed.",
-    outcome: "Outcome: a live app people can pay for",
+    icon: LifeBuoy,
+    title: "SaaS rescue & takeover",
+    out: "We take over a live product from a previous team, audit it, fix what breaks most, and put a release process in place.",
+    outcome: "Outcome: a product you can ship on again",
   },
   {
     icon: Gauge,
-    title: "Scale & modernize",
-    out: "Take ownership of a slow, buggy codebase serving thousands of users — speed, reliability, and a roadmap you can build on.",
+    title: "Modernization retainer",
+    out: "Once the product is stable, we make it faster, steadier, and easier to extend, in increments you can use every two weeks.",
     outcome: "Outcome: fast, stable, easy to extend",
   },
   {
     icon: Users,
-    title: "Embed a product team",
-    out: "A dedicated senior team — design, engineering, PM — that works inside your org against your roadmap, week after week.",
+    title: "Embedded product team",
+    out: "A dedicated senior team (design, engineering, PM) that works inside your org against your roadmap, week after week.",
     outcome: "Outcome: steady, predictable delivery",
+  },
+  {
+    icon: Rocket,
+    title: "MVP build",
+    out: "Take a validated idea to a first release real users can pay for, scoped tight and delivered to the plan we agreed.",
+    outcome: "Outcome: a live app people can pay for",
   },
 ];
 
@@ -27,12 +33,11 @@ export function Capabilities() {
   return (
     <section id="services" className="border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
-        <SectionHead eyebrow="Services" title="One senior team, from first commit to scale.">
-          We plug in where you need us — a first release, a rescue on an app
-          that has gone brittle, or a long-term embedded team.
+        <SectionHead eyebrow="Services" title="We stabilize it first, then stay on to scale it.">
+          Most of our work starts with a product someone else built.
         </SectionHead>
 
-        <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1 max-md:gap-4">
+        <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 max-md:gap-4">
           {CARDS.map(({ icon: Icon, ...c }) => (
             <SpotlightCard
               key={c.title}
@@ -55,6 +60,11 @@ export function Capabilities() {
             </SpotlightCard>
           ))}
         </div>
+
+        <p className="mt-8 max-w-[680px] text-[14px] leading-relaxed text-secondary" data-reveal>
+          We use AI across delivery for code review, test generation and scoping,
+          so a small senior team covers more ground.
+        </p>
       </div>
     </section>
   );

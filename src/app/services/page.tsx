@@ -29,8 +29,8 @@ export default function ServicesPage() {
       />
       <PageHeader
         eyebrow="Services"
-        title="Ship SaaS & AI products."
-        intro="We plug in where you need us — a first release, an AI feature your app needs, a rescue on a platform that has aged badly, or a long-term embedded team. One senior team, end to end."
+        title="Take it over, stabilize it, then scale it."
+        intro="Most of our work starts with a B2B SaaS product another team left unstable. We audit it, fix what breaks most, put a release process in place, and stay on as your engineering team. We also build MVPs and embed long-term teams."
       />
       <Capabilities />
       <AiNative />
