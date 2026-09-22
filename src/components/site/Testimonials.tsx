@@ -5,8 +5,28 @@ import { SectionHead } from "./SectionHead";
 
 type Quote = { quote: string; name: string; src: string };
 
-// Real client reviews from Upwork & Fiverr.
+// Real client reviews from Upwork. The three rescue and migration reviews lead
+// because they speak to the offer. Fiverr gig reviews and the one-day
+// HTML-to-Angular job are left out: true, but they sell a different business.
 const QUOTES: Quote[] = [
+  {
+    quote:
+      "Our app was full of bugs; they took ownership and resolved everything fast, with excellent communication.",
+    name: "John",
+    src: "Upwork",
+  },
+  {
+    quote:
+      "More than a five-star team — exceptional communication and understanding. They transformed our application.",
+    name: "Mateen",
+    src: "Upwork",
+  },
+  {
+    quote:
+      "They moved our whole architecture to AWS and set up video hosting — our streaming is better than ever.",
+    name: "Anthony",
+    src: "Upwork",
+  },
   {
     quote:
       "Devaxl combine technical expertise with professionalism, communication, timeliness, and flexibility — for React, Strapi, and Node.js your search ends here.",
@@ -21,24 +41,6 @@ const QUOTES: Quote[] = [
   },
   {
     quote:
-      "Totally recommended. Clear communication and delivery exactly as requested — clean and thorough.",
-    name: "Takneo",
-    src: "Fiverr",
-  },
-  {
-    quote:
-      "An amazing job; everything worked perfectly. Would definitely hire them again.",
-    name: "Mark",
-    src: "Fiverr",
-  },
-  {
-    quote:
-      "Needed html/css converted to Angular 8 — the team responded in minutes and finished in under a day.",
-    name: "Laura",
-    src: "Upwork",
-  },
-  {
-    quote:
       "Finished exactly as I wanted and were very helpful setting up the demo site. Will keep working with them.",
     name: "Gary",
     src: "Upwork",
@@ -49,28 +51,10 @@ const QUOTES: Quote[] = [
     name: "Tom",
     src: "Upwork",
   },
-  {
-    quote:
-      "More than a five-star team — exceptional communication and understanding. They transformed our application.",
-    name: "Mateen",
-    src: "Upwork",
-  },
-  {
-    quote:
-      "Our app was full of bugs; they took ownership and resolved everything fast, with excellent communication.",
-    name: "John",
-    src: "Upwork",
-  },
-  {
-    quote:
-      "They moved our whole architecture to AWS and set up video hosting — our streaming is better than ever.",
-    name: "Anthony",
-    src: "Upwork",
-  },
 ];
 
-const ROW_TOP = QUOTES.slice(0, 5);
-const ROW_BOTTOM = QUOTES.slice(5);
+const ROW_TOP = QUOTES.slice(0, 4);
+const ROW_BOTTOM = QUOTES.slice(4);
 
 const EDGE_MASK =
   "linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent)";
@@ -147,8 +131,8 @@ export function Testimonials() {
     <section id="about" className="overflow-hidden border-b border-faint py-24 max-md:py-16">
       <div className="wrap">
         <SectionHead eyebrow="Clients" title="Trusted by founders and teams.">
-          A few of the 27 five-star reviews clients have left us on Upwork and
-          Fiverr.
+          From the 27 five-star reviews clients have left us on Upwork and
+          Fiverr, starting with the ones about taking over a product.
         </SectionHead>
       </div>
 
